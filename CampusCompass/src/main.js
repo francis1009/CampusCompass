@@ -4,6 +4,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// Importing Bootstrap 5 CSS
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Optionally, import Bootstrap 5 JS if needed
+import 'bootstrap'
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
