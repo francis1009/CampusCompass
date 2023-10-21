@@ -19,14 +19,14 @@ create Table GeneralDetails (
 #drop table PSLE_Score_Details
 create table PSLE_Score_Details (
 	School_Code int not null,
-    IP_Affiliation varchar(10) not null,
-    IP_NonAffiliation varchar(10) not null,
-    Express_Affiliation varchar(10) not null,
-    Express_NonAffiliation varchar(10) not null,
-    NA_Affiliation varchar(10) not null,
-    NA_NonAffiliation varchar(10) not null,
-    NT_Affiliation varchar(10) not null,
-    NT_NonAffiliation varchar(10) not null,
+    IP_Affiliation varchar(20) not null,
+    IP_NonAffiliation varchar(20) not null,
+    Express_Affiliation varchar(20) not null,
+    Express_NonAffiliation varchar(20) not null,
+    NA_Affiliation varchar(20) not null,
+    NA_NonAffiliation varchar(20) not null,
+    NT_Affiliation varchar(20) not null,
+    NT_NonAffiliation varchar(20) not null,
     Primary Key (School_Code),
     Constraint PSLE_Score_Details_fk1 Foreign Key (School_Code) References GeneralDetails(School_Code)
     );
