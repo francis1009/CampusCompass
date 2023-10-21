@@ -8,6 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
+      <Sidebar></Sidebar>
       <HelloWorld msg="You did it!" />
 
       <nav>
@@ -20,6 +21,16 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <RouterView />
 </template>
+
+<script>
+import Sidebar from "@/components/sidebar/Sidebar.vue";
+
+export default {
+  components: {
+    Sidebar,
+  },
+};
+</script>
 
 <style scoped>
 header {
