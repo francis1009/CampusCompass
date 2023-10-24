@@ -233,7 +233,7 @@ for url_list in big_url_list:
 
         school_image_src = soup.find("div", class_="moe-card w:4xl p:xs m-r:2xl fls:0 m-b:l")
         school_image_link = school_image_src.find("img")
-        school_image_link = "https//moe.gov.sg" + school_image_link["src"]  
+        school_image_link = "https://moe.gov.sg" + school_image_link["src"]  
         #print(school_image_link)
 
         #table1: general info of schools
