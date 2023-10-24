@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/indivschool',
       name: 'indivschool',
       component: () => import('../views/indivschview.vue')
+    },
+    {
+      path: '/recommended',
+      name: 'recommended',
+      component: () => import('../views/Recommended.vue')
     }
   ]
 })
