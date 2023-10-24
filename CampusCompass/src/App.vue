@@ -4,11 +4,14 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+  <div id="app">
+    <Sidebar></Sidebar>
+  </div>
+  <!--
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <Sidebar></Sidebar>
       <HelloWorld msg="You did it!" />
 
       <nav>
@@ -18,12 +21,13 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-
+  -->
   <RouterView />
 </template>
 
 <script>
 import Sidebar from "@/components/sidebar/Sidebar.vue";
+import SchoolCard from "@/components/SchoolCard.vue"
 
 export default {
   components: {

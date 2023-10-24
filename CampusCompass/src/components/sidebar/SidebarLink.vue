@@ -1,12 +1,12 @@
 <template>
-  <router-link :to="to" class="link" :class="{ active: isActive }">
+  <Router-link :to="to" class="link" :class="{ active: isActive }">
     <font-awesome-icon class="icon" :icon="faIcon" />
     <transition name="fade">
       <span v-if="!collapsed">
         <slot />
       </span>
     </transition>
-  </router-link>
+  </Router-link>
 </template>
 
 <script>

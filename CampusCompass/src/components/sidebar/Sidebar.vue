@@ -14,7 +14,7 @@
         <SidebarLink to="/compare" icon="square-poll-vertical">
             Compare
         </SidebarLink>
-        <SidebarLink to="/recommender" icon="heart">
+        <SidebarLink to="/recommended" icon="heart">
             Recommender
         </SidebarLink>
         
