@@ -8,7 +8,7 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Optionally, import Bootstrap 5 JS if needed
-import 'bootstrap'
+import 'bootstrap/dist/js/bootstrap.js'
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'

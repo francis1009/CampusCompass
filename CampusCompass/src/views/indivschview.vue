@@ -1,8 +1,29 @@
 <template>
     <body>
+  <!--Ask why this does not work-->
+  <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+
+
+
+
+
+    
         <div v-if="school">
-            <img :src=school_image>
+            <img width=200 height=200 :src=school_image>
             <h2>general info</h2>
+            
             <ul>
                 <li>{{ school.School_Name }}</li>
                 <li>{{ school.School_Address }}</li>
@@ -10,7 +31,17 @@
                 <li>{{ school.School_Postal_Code }}</li>
             </ul>
         </div>
+        
+         
+      
+    
         <div v-if="subjects">
+            <p>
+      <a class="btn btn-primary" @click="toggleCollapseSubjects" role="button" aria-expanded="isCollapsedSubjects" aria-controls="collapseExampleSubjects">
+        Subjects
+      </a>
+         </p>
+            <div :class="['collapse', { 'show': isCollapsedSubjects }]" id="collapseExampleSubjects">
             <h2>subjects</h2>
             <ul>
                 <li v-for="subject of subjects">
@@ -18,15 +49,33 @@
                 </li>
             </ul>
         </div>
+    </div>
+    
+         
         <div v-if="dsa">
+            <p>
+      <a class="btn btn-primary" @click="toggleCollapseDSA" role="button" aria-expanded="isCollapsedDSA" aria-controls="collapseExampleDSA">
+        DSA
+      </a>
+         </p>
+            <div :class="['collapse', { 'show': isCollapsedDSA }]" id="collapseExampleDSA">
             <h2>dsa</h2>
             <ul>
                 <li v-for="dsa of dsa">
                     {{ dsa }}
                 </li>
             </ul>
+            </div>
         </div>
+       
+    
         <div v-if="cca">
+            <p>
+      <a class="btn btn-primary" @click="toggleCollapseCCA" role="button" aria-expanded="isCollapsedCCA" aria-controls="collapseExampleCCA">
+        CCA
+      </a>
+         </p>
+            <div :class="['collapse', { 'show': isCollapsedCCA }]" id="collapseExampleCCA">
             <h2>cca</h2>
             <ul>
                 <li v-for="cca of cca">
@@ -34,15 +83,29 @@
                 </li>
             </ul>
         </div>
+        </div>
         <div v-if="affiliations">
+            <p>
+                <a class="btn btn-primary" @click="toggleCollapseAffiliations" role="button" aria-expanded="isCollapsedAffiliations" aria-controls="collapseExampleAffiliations">
+                    Affiliated Schools
+                </a>
+            </p>
+            <div :class="['collapse', { 'show': isCollapsedAffiliations }]" id="collapseExampleAffiliations">
             <h2>affiliations</h2>
             <ul>
                 <li v-for="affiliation of affiliations">
                     {{ affiliation }}
                 </li>
             </ul>   
+            </div>
         </div>
         <div v-if="psle">
+            <p>
+                <a class="btn btn-primary" @click="toggleCollapsePSLE" role="button" aria-expanded="isCollapsedPSLE" aria-controls="collapseExamplePSLE">
+                    PSLE scores
+                </a>
+            </p>
+            <div :class="['collapse', { 'show': isCollapsedPSLE }]" id="collapseExamplePSLE">
             <h2>psle</h2>
             <ul>
                 <li>IP: {{ psle.IP_NonAffiliation }}</li>
@@ -51,19 +114,30 @@
                 <li>Normal(T): {{ psle.NT_NonAffiliation }}</li>
             </ul>
         </div>
+        </div>
         <div v-if="electives">
+            <p>
+                <a class="btn btn-primary" @click="toggleCollapseElective" role="button" aria-expanded="isCollapsedElective" aria-controls="collapseExampleElective">
+                    Electives
+                </a>
+            </p>
+            <div :class="['collapse', { 'show': isCollapsedElective }]" id="collapseExampleElective">
+            
             <h2>electives</h2>
             <ul v-for="elective of electives">
                 <li v-for="elective_desc of elective">
                     {{ elective_desc }}
                 </li>
             </ul>
+            </div>
         </div>
     </body>
 </template>
 
 <script>
 import axios from 'axios';
+
+
 export default {
     data() { 
         return { 
@@ -75,7 +149,13 @@ export default {
               special_ed: [],
               affiliations: [],
               psle: {},
-              electives: []
+              electives: [],
+              isCollapsedSubjects: false,
+              isCollapsedDSA: false,
+              isCollapsedCCA: false,
+              isCollapsedAffiliations: false,
+              isCollapsedPSLE: false,
+              isCollapsedElective: false
             
         };
     }, // data
@@ -95,7 +175,7 @@ export default {
                 .then(response => {
                     console.log(response.data);
                     this.school = response.data;
-                    //this.school_image = response.data.School_Image_Source;
+                    this.school_image = response.data.School_Image_Source;
                     console.log(this.school);
 
                 })
@@ -182,8 +262,28 @@ export default {
                 .catch( error => {
                     console.error(error);
                 });
+        },
+        toggleCollapseSubjects() {
+            this.isCollapsedSubjects = !this.isCollapsedSubjects;
+        },
+        toggleCollapseDSA() {
+            this.isCollapsedDSA = !this.isCollapsedDSA;
+        },
+        toggleCollapseCCA() {
+            this.isCollapsedCCA = !this.isCollapsedCCA;
+        },
+        toggleCollapseAffiliations() {
+            this.isCollapsedAffiliations = !this.isCollapsedAffiliations;
+        },
+        toggleCollapsePSLE() {
+            this.isCollapsedPSLE = !this.isCollapsedPSLE;
+        },
+        toggleCollapseElective() {
+            this.isCollapsedElective = !this.isCollapsedElective;
         }
+
     } // methods
 };
 
 </script>
+

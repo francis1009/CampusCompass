@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <div id="app">
     <Sidebar></Sidebar>
   </div>
-  <!--
+  
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -22,7 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-  -->
+  
   <RouterView />
 </template>
 
@@ -78,6 +78,8 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
+    padding-left: calc(var(--section-gap) / 2);
+    margin-top: calc(var(--section-gap) / 5);
   }
 
   .logo {

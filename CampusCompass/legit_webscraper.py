@@ -472,7 +472,7 @@ for url_list in big_url_list:
                 cnx.commit()
 
 
-        #cursor.close()
-        #cnx.close()
+        cursor.close()
+        cnx.close()
 
 
