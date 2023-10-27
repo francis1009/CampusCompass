@@ -23,14 +23,20 @@ const router = createRouter({
       component: () => import('../views/TestView.vue')
     },
     {
-      path: '/indivschool',
+      path: '/indivschool/:searchID',
       name: 'indivschool',
-      component: () => import('../views/indivschview.vue')
+      component: () => import('../views/indivschview.vue'),
+      props: true 
     },
     {
       path: '/recommended',
       name: 'recommended',
       component: () => import('../views/Recommended.vue')
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: () => import('../views/SearchView.vue')
     }
   ]
 })
