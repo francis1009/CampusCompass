@@ -139,6 +139,7 @@ import axios from 'axios';
 
 
 export default {
+    props: ['searchID'],
     data() { 
         return { 
               school: {},
@@ -155,10 +156,13 @@ export default {
               isCollapsedCCA: false,
               isCollapsedAffiliations: false,
               isCollapsedPSLE: false,
-              isCollapsedElective: false
+              isCollapsedElective: false,
+              
+              
             
         };
     }, // data
+    
     mounted() {
         this.GetSchoolDetails();
         this.GetSubjectDetails();
@@ -171,7 +175,9 @@ export default {
     }, // mounted
     methods: {
         GetSchoolDetails() {
-            axios.get('http://localhost:5000/details/7020')
+            console.log(this.searchID)
+            console.log(this.searchID);
+            axios.get('http://localhost:5000/details/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.school = response.data;
@@ -184,7 +190,7 @@ export default {
                 });
         },
         GetSubjectDetails() {
-            axios.get('http://localhost:5000/subjects/7020')
+            axios.get('http://localhost:5000/subjects/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.subjects = response.data.Subjects_Offered;
@@ -196,7 +202,7 @@ export default {
                 });
         },
         GetDSADetails() {
-            axios.get('http://localhost:5000/dsa/7020')
+            axios.get('http://localhost:5000/dsa/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.dsa = response.data.DSA_CCA;
@@ -208,7 +214,7 @@ export default {
                 });
         },
         GetCCADetails() {
-            axios.get('http://localhost:5000/cca/7020')
+            axios.get('http://localhost:5000/cca/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.cca = response.data.CCA_Offered;
@@ -219,7 +225,7 @@ export default {
                 });
         },
         getspecialed() {
-            axios.get('http://localhost:5000/special_ed/7020')
+            axios.get('http://localhost:5000/special_ed/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.special_ed = response.data.Special_Ed_Programmes;
@@ -230,7 +236,7 @@ export default {
                 });
         },
         getaffiliated() {
-            axios.get('http://localhost:5000/affiliations/7020')
+            axios.get('http://localhost:5000/affiliations/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.affiliations = response.data.Affiliated_Schools;
@@ -242,7 +248,7 @@ export default {
                 });
         },
         getpslescores() {
-            axios.get('http://localhost:5000/psle/7020')
+            axios.get('http://localhost:5000/psle/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.psle = response.data;
@@ -253,7 +259,7 @@ export default {
                 });
         },
         getelectives() {
-            axios.get('http://localhost:5000/electives/7020')
+            axios.get('http://localhost:5000/electives/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.electives = response.data.Electives;
