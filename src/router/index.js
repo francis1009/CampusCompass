@@ -39,7 +39,17 @@ const router = createRouter({
       component: () => import('../views/SearchView.vue')
     },
     {
-      path: '/filter',
+      path: '/start',
+      name: 'start',
+      component: () => import('../views/start.vue')
+    },
+    {
+      path: '/compare',
+      name: 'compare',
+      component: () => import('../views/ComparisonView.vue')
+    },
+    {
+      path: 'filter',
       name: 'filter',
       component: () => import('../views/FilterView.vue')
     }
