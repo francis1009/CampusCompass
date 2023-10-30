@@ -4,11 +4,14 @@
         <div class="searchListMainDiv">
         <h1>Search Your School</h1>
         <input type="text" v-model="search" placeholder="Search...">
-        <button v-on:click="SearchforSchool()">Search</button>
+        <button v-on:click="AddSchool()">Add</button>
         <ul>
           <li v-for="(item, index) in filteredList" :key="index" @click="() => search = item" v-html="item.replace(search, `<strong>${search}</strong>`)"></li>
         </ul>
     </div>
+    <ul v-for="school in selectedSchools">
+        <li> {{ school }} </li>
+    </ul>
     </body>
 </template>
 
@@ -21,7 +24,10 @@ export default {
             search: "",
             schools: [],
             SchoolandIDpairs: [],
-            searchID: ""
+            searchID: "",
+            selectedSchools: [],
+            school_to_compare1: [],
+            school_to_compare2: [],
         };
     },
     computed: {
@@ -54,17 +60,8 @@ export default {
                 console.error(error);
             });
         },
-        SearchforSchool() {
-            console.log(this.search);
-            for (var pair in this.SchoolandIDpairs) {
-                if (this.SchoolandIDpairs[pair].schoolName == this.search) {
-                    console.log(this.SchoolandIDpairs[pair].schoolID);
-                    this.searchID = this.SchoolandIDpairs[pair].schoolID;
-                    console.log(this.searchID)
-
-                    this.$router.push('/indivschool/' + this.searchID);
-                }
-            }
+        AddSchool() {
+            this.selectedSchools.push(this.search);
         }
     },
     components: { RouterLink }
