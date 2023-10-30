@@ -43,7 +43,15 @@ export default {
           ],
         },
         {
-          text: "Question 2: Another question text",
+          text: "Question 2: If yes is click",
+          options: [
+            { text: 'Option A', type: 'btn btn-custom' },
+            { text: 'Option B', type: 'btn btn-custom' },
+            // Add more options as needed
+          ],
+        },
+        {
+          text: "Question 3: If no is click",
           options: [
             { text: 'Option A', type: 'btn btn-custom' },
             { text: 'Option B', type: 'btn btn-custom' },
@@ -61,11 +69,13 @@ export default {
   methods: {
     handleOptionClick(option) {
       // Handle the click event for the selected option
-      console.log('Selected option:', option);
 
-      // Change the flow to the next scenario
-      this.flow++;
-
+      if (option.text === 'No') {
+        this.flow = 2;
+      } else {
+        // For other options, advance to the next scenario
+        this.flow++;
+      }
       // You can add more logic here if needed, e.g., check for the end of scenarios.
     },
   },
@@ -85,25 +95,25 @@ export default {
 .image {
   width: 100%;
   height: auto;
+  opacity: 0.1;
+  height: 500px; /* Limit the height of the image */
 }
 
 .content {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
-  background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text more readable */
-  padding: 20px; /* Add padding for spacing */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
 }
 
 .question {
   font-size: 24px;
   color: #253028;
+  font-weight: bold;
 }
 
 .options {
-  margin-top: 20px; /* Add spacing between question and options */
+  margin-top: 20px;
 }
-
-/* Other CSS styles for buttons */
 </style>
