@@ -8,7 +8,7 @@
             </span>
         </h1>
 
-        <SidebarLink to="/viewSchools" icon="table">
+        <SidebarLink to="/viewschools" icon="table">
             View Schools
         </SidebarLink>
         <SidebarLink to="/compare" icon="square-poll-vertical">
