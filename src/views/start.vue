@@ -1,76 +1,89 @@
 <template>
-    <!-- BS carousel: start -->
+  <div>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div v-for="(item, index) in carouselItems" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
-          <img :src="item.src" class="d-block w-100 image" :alt="item.alt">
-          <!-- Overlay the {{ test }} text on top of the image -->
+        <div v-for="(question, index) in questions" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
+          <img :src="question.imageSrc" class="d-block w-100 image" :alt="question.imageAlt">
           <div class="question">
-            {{ question }}
+            {{ question.text }}
           </div>
-          <div class="">
-            <button type="button" class="btn btn-primary">Yes</button>
-            <button type="button" class="btn btn-primary">No</button>
+          <div class="button">
+            <button v-for="(option, optionIndex) in question.options" :key="optionIndex" :class="option.type" @click="handleOptionClick(option)">
+              {{ option.text }}
+            </button>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <!-- Add your carousel controls here -->
     </div>
-    <!-- BS carousel: end -->
-  </template>
-  
-  <script>
-  import axios from 'axios';
-  
-  export default {
-    data() {
-      return {
-        flow: 1,
-        question: "Do you want us to recommend a secondary school for you?",
-        carouselItems: [
-          { src: 'src/assets/CHS.jpg', alt: 'Image 1' },
-          { src: 'src/assets/NYGH.jpg', alt: 'Image 2' },
-          { src: '', alt: 'Image 3' },
-          // Add more items as needed
-        ],
-      };
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      flow: 1,
+      questions: [
+        {
+          text: "Question 1: Do you want us to recommend a secondary school for you?",
+          imageSrc: 'src/assets/CHS.jpg',
+          imageAlt: 'Image 1',
+          options: [
+            { text: 'Yes', type: 'btn btn-primary' },
+            { text: 'No', type: 'btn btn-primary' },
+          ],
+        },
+        {
+          text: "Question 2: Another question text",
+          imageSrc: 'src/assets/NYGH.jpg',
+          imageAlt: 'Image 2',
+          options: [
+            { text: 'Option A', type: 'btn btn-primary' },
+            { text: 'Option B', type: 'btn btn-primary' },
+            // Add more options as needed
+          ],
+        },
+        // Add more questions as needed
+      ],
+    };
+  },
+  methods: {
+    handleOptionClick(option) {
+      // Handle the click event for the selected option
+      console.log('Selected option:', option);
+      // You can add logic here to handle different options as needed.
     },
-    methods: {},
-  };
-  </script>
-  
-  <style scoped>
-  /* CSS for the overlay text */
-  .question {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    text-align: center;
-    font-size: 30px;
-    color: #253028;
-    font-weight: bold;
-  }
+  },
+};
+</script>
 
-  .button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+<style scoped>
+/* CSS for the overlay text and image fading */
+.question {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  text-align: center;
+  font-size: 30px;
+  color: #253028;
+  font-weight: bold;
+}
 
-  }
-  
-  /* CSS for the fading effect on the images */
-  .image {
-    height: 500px;
-    opacity: 0.1; /* Adjust the opacity value as needed for the images */
-  }
-  </style>
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.image {
+  height: 500px;
+  opacity: 0.1;
+}
+</style>
+
   
   
