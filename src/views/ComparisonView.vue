@@ -1,6 +1,5 @@
 <template>
     <body>
-        <h2>Search for School</h2>
         <div class="searchListMainDiv">
         <h1>Search Your School</h1>
         <input type="text" v-model="search" placeholder="Search...">
