@@ -15,9 +15,9 @@
         </template>
       </draggable>
       <div class="comparison-container">
-        <div class="comparison-section">
+        <div class="comparison-section" style="height: 100vh;" >
           <h3>Compare School 1</h3>
-          <draggable v-model="school_to_compare1" tag="ul" :itemKey="customKey" group="compare_school" @change="getschooldetails1">
+          <draggable v-model="school_to_compare1" :tag="'ul'" :itemKey="customKey" group="compare_school" @change="getschooldetails1">
             <template v-slot:item="{ element }">
               <li>{{ element }}</li>
             </template>
@@ -51,9 +51,9 @@
             </div>
           </div>
         </div>
-        <div class="comparison-section">
+        <div class="comparison-section" style="height: 100vh;" >
           <h3>Compare School 2</h3>
-          <draggable v-model="school_to_compare2" tag="ul" :itemKey="customKey" group="compare_school" @change="getschooldetails2">
+          <draggable v-model="school_to_compare2" :tag="'ul'" :itemKey="customKey" group="compare_school" @change="getschooldetails2">
             <template v-slot:item="{ element }">
               <li>{{ element }}</li>
             </template>
