@@ -1,67 +1,108 @@
 <template>
-    <body>
-        <div class="searchListMainDiv">
+    <div>
+      <div class="searchListMainDiv">
         <h1>Search Your School</h1>
         <input type="text" v-model="search" placeholder="Search...">
         <button v-on:click="AddSchool()">Add</button>
         <ul>
           <li v-for="(item, index) in filteredList" :key="index" @click="() => search = item" v-html="item.replace(search, `<strong>${search}</strong>`)"></li>
         </ul>
-        </div>
-        <h2>Chosen Schools</h2>
-            <draggable v-model="selectedSchools" tag="ul" :itemKey="customKey" group="compare_school">
-                <template v-slot:item="{element}">
-                <li>{{ element }}</li>
-                </template>
-            </draggable>
-        <h3>Compare School 1</h3>
-            <draggable v-model="school_to_compare1" tag="ul" :itemKey="customKey" group="compare_school" @change="getschooldetails1">
-                <template v-slot:item="{element}">
-                <li>{{ element }}</li>
-                </template>
-            </draggable>
-        <div v-if="this.school_to_compare1.length > 0">
-            <ul>
-                <li v-for="attribute in sch1">
-                    {{ attribute}}
-                </li>
-            </ul>
-            
-                <div v-for="subject in subjects1">
-                    <div v-bind:style="{ color : subjects2.includes(subject) ? 'green' : 'red'}"> 
-                    {{ subject}}
-                    </div>
-                    
-                </div>
-            
-            
-        </div>
-        <h3>Compare School 2</h3>
-        <draggable v-model="school_to_compare2" tag="ul" :itemKey="customKey" group="compare_school" @change="getschooldetails2">
-                <template v-slot:item="{element}">
-                <li>{{ element }}</li>
-                </template>
-            </draggable>
-        </body>
-
-        <div v-if="this.school_to_compare2.length > 0">
-            <ul>
-                <li v-for="attribute in sch2">
-                    {{ attribute}}
-                </li>
-            </ul>
-            
-                <div v-for="subject in subjects2">
-                    <div v-bind:style="{ color : subjects1.includes(subject) ? 'green' : 'red'}"> 
-                    {{ subject}}
-                    </div>
-                </div>
-            
-        </div>
-
-        
+      </div>
+      <h2>Chosen Schools</h2>
+      <draggable v-model="selectedSchools" tag="ul" :itemKey="customKey" group="compare_school">
+        <template v-slot:item="{ element }">
+          <li>{{ element }}</li>
+        </template>
+      </draggable>
+      <div class="comparison-container">
+        <div class="comparison-section">
+          <h3>Compare School 1</h3>
+          <draggable v-model="school_to_compare1" tag="ul" :itemKey="customKey" group="compare_school" @change="getschooldetails1">
+            <template v-slot:item="{ element }">
+              <li>{{ element }}</li>
+            </template>
+          </draggable>
+          <div v-if="school_to_compare1.length > 0">
+            <!-- Content for Compare School 1 -->
+            <div v-if="school_to_compare1.length > 0">
+  
+    <ul>
+        <li v-for="attribute in sch1">
+            {{ attribute}}
+        </li>
+    </ul>
     
-</template>
+        <div v-for="subject in subjects1">
+            <div v-bind:style="{ color : subjects2.includes(subject) ? 'green' : 'red'}"> 
+            {{ subject}}
+            </div>
+            
+        </div>
+  </div>
+            <ul>
+              <li v-for="attribute in sch1">
+                {{ attribute }}
+              </li>
+            </ul>
+            <div v-for="subject in subjects1">
+              <div v-bind:style="{ color : subjects2.includes(subject) ? 'green' : 'red' }">
+                {{ subject }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comparison-section">
+          <h3>Compare School 2</h3>
+          <draggable v-model="school_to_compare2" tag="ul" :itemKey="customKey" group="compare_school" @change="getschooldetails2">
+            <template v-slot:item="{ element }">
+              <li>{{ element }}</li>
+            </template>
+          </draggable>
+          <div v-if="school_to_compare2.length > 0">
+            <!-- Content for Compare School 2 -->
+            <div v-if="school_to_compare2.length > 0">
+  
+    <ul>
+        <li v-for="attribute in sch2">
+            {{ attribute}}
+        </li>
+    </ul>
+    
+        <div v-for="subject in subjects2">
+            <div v-bind:style="{ color : subjects1.includes(subject) ? 'green' : 'red'}"> 
+            {{ subject}}
+            </div>
+        </div>
+  </div>
+            <ul>
+              <li v-for="attribute in sch2">
+                {{ attribute }}
+              </li>
+            </ul>
+            <div v-for="subject in subjects2">
+              <div v-bind:style="{ color : subjects1.includes(subject) ? 'green' : 'red' }">
+                {{ subject }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <style>
+    .comparison-container {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
+    }
+  
+    .comparison-section {
+      flex: 1;
+      border: 1px solid black;
+    }
+  </style>
+  
 
     
 
