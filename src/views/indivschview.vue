@@ -207,22 +207,24 @@ export default {
 
     // },
     methods: {
-        GetSchoolDetails() {
+        async GetSchoolDetails() {
             console.log(this.searchID)
             console.log(this.searchID);
-            axios.get('http://localhost:5000/details/' + this.searchID)
+            try {
+            await axios.get('http://localhost:5000/details/' + this.searchID)
                 .then(response => {
                     console.log(response.data);
                     this.school = response.data;
                     this.school_image = response.data.School_Image_Source;
                     console.log(this.school);
-                    this.new_postal_code = response.data.School_Postal_Code.slice(1, 8);
+                    this.new_postal_code = response.data.School_Postal_Code.slice(1,7);
                     console.log(this.new_postal_code);
 
                 })
-                .catch(error => {
+            }
+                catch(error) {
                     console.error(error);
-                });
+                };
         },
         GetSubjectDetails() {
             axios.get('http://localhost:5000/subjects/' + this.searchID)
@@ -325,22 +327,24 @@ export default {
         toggleCollapseMap() {
             this.isCollapsedMap = !this.isCollapsedMap;
         },
-        getmap() {
-            axios.get('https://www.onemap.gov.sg/api/staticmap/getStaticImage?layerchosen=default&zoom=17&width=400&height=512&postal=' + this.new_postal_code,
-                {
-                   
-                })
-
-                .then(response => {
-                   
-                    console.log(response);
-                    this.one_map = response.config.url;
-                    console.log(response.config.url);
-                })
-                .catch(error => {
+        async getmap() {
+           await this.GetSchoolDetails();
+           try {
+                console.log(this.new_postal_code)
+                axios.get(`https://www.onemap.gov.sg/api/staticmap/getStaticImage?layerchosen=default&zoom=17&width=400&height=512&postal=${this.new_postal_code}`)
+                    .then(response => {
+                        console.log(response.data);
+                        this.one_map = response.config.url;
+                        console.log(response.config.url);
+                    })
+                
+           }
+            
+                catch(error) {
+    
                     console.log("ONE MAP ERROR");
                     console.error(error);
-                });
+                };
 
         }
 
