@@ -1,3 +1,4 @@
+use SingaporeSchools;
 -- updated region of school
 select distinct School_Region from GeneralDetails;
 ALTER TABLE GeneralDetails ADD Main_Region varchar(50);
