@@ -1,3 +1,4 @@
+drop schema singaporeschools;
 create schema SingaporeSchools;
 use SingaporeSchools;
 #drop table GeneralDetails;
@@ -100,3 +101,9 @@ select * from generaldetails;
 select * from psle_score_details;
 select * from special_ed_support;
 select * from subjects_offered;
+
+
+select * from cca_offered;
+select * from subjects_offered;
+select * from GeneralDetails;
+
