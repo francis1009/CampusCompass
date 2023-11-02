@@ -5,8 +5,8 @@ ALTER TABLE GeneralDetails ADD Main_Region varchar(50);
 select * from GeneralDetails;
 
 update GeneralDetails set Main_Region = "North" where School_Region in ("Ang Mo Kio", "Woodlands", "Sembawang", "Yishun");
-update GeneralDetails set Main_Region = "North-East" where School_Region in ("Hougang", "Punggol", "Seng Kang");
-update GeneralDetails set Main_Region = "Central" where School_Region in ("Bukit Timah","Toa Payoh", "Bukit Merah", "Bishan", "Queenstown","Marine Parade","Novena");
+update GeneralDetails set Main_Region = "North-East" where School_Region in ("Hougang", "Punggol", "Seng Kang","Serangoon");
+update GeneralDetails set Main_Region = "Central" where School_Region in ("Bukit Timah","Toa Payoh", "Bukit Merah", "Bishan", "Queenstown","Marine Parade","Novena", "Central");
 update GeneralDetails set Main_Region = "East" where School_Region in ("Jurong East", "Clementi","Bukit Batok","Bukit Panjang","Choa Chu Kang","Jurong West");
 update GeneralDetails set Main_Region = "West" where School_Region in ("Kallang", "Bedok", "Geylang", "Tampines", "Pasir Ris");
 
