@@ -32,6 +32,7 @@ export default {
 <style scoped>
 .checkbox-list {
   max-height: 150px;
+  max-width: 200px;
   overflow-y: auto;
 }
 </style>
