@@ -1,44 +1,69 @@
 <template>
     <div class="d-flex container">
-        <div>
-            <label>Areas:</label>
-            <div class="checkbox-list">
+        <div class="filter-criteria">
+            <div>
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#areaCollapse" role="button" aria-expanded="false" aria-controls="areaCollapse"
+                    style="border-radius:20px">
+                    Areas
+                </a>
+            </div>
+            <div class="checkbox-list collapse" id="areaCollapse">
                 <div v-for="area in areas" :key="area">
                     <input type="checkbox" :value="area" v-model="selectedAreas">
                     {{ area }}
                 </div>
             </div>
         </div>
-        <div>
-            <label>Subjects:</label>
-            <div class="checkbox-list">
+        <div class="filter-criteria">
+            <div>
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#subjectCollapse" role="button" aria-expanded="false" aria-controls="subjectCollapse"
+                    style="border-radius:20px">
+                    Subjects
+                </a>
+            </div>
+            <div class="checkbox-list collapse" id="subjectCollapse">
             <div v-for="subject in subjects" :key="subject">
                 <input type="checkbox" :value="subject" v-model="selectedSubjects">
                 {{ subject }}
             </div>
             </div>
         </div>
-        <div>
-            <label>CCAs:</label>
-            <div class="checkbox-list">
+        <div class="filter-criteria">
+            <div>
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#ccaCollapse" role="button" aria-expanded="false" aria-controls="ccaCollapse"
+                    style="border-radius:20px">
+                    CCA
+                </a>
+            </div>
+            <div class="checkbox-list collapse" id="ccaCollapse">
             <div v-for="cca in ccas" :key="cca">
                 <input type="checkbox" :value="cca" v-model="selectedCCAs">
                 {{ cca }}
             </div>
             </div>
         </div>
-        <div>
-            <label>DSAs:</label>
-            <div class="checkbox-list">
+        <div class="filter-criteria">
+            <div>
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#dsaCollapse" role="button" aria-expanded="false" aria-controls="dsaCollapse"
+                    style="border-radius:20px">
+                    DSA
+                </a>
+            </div>
+            <div class="checkbox-list collapse" id="dsaCollapse">
             <div v-for="dsa in dsas" :key="dsa">
                 <input type="checkbox" :value="dsa" v-model="selectedDSAs">
                 {{ dsa }}
             </div>
             </div>
         </div>
-        <div>
-            <label>Special Education Needs:</label>
-            <div class="checkbox-list">
+        <div class="filter-criteria">
+            <div>
+                <a class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#speEdCollapse" role="button" aria-expanded="false" aria-controls="speEdCollapse"
+                    style="border-radius:20px">
+                    Special Education
+                </a>
+            </div>
+            <div class="checkbox-list collapse" id="speEdCollapse">
             <div v-for="se in specialEducations" :key="se">
                 <input type="checkbox" :value="se" v-model="selectedSpecialEducations">
                 {{ se }}
@@ -58,8 +83,12 @@
         </div>-->
     </div>
     <div>
-        <button @click="getSchoolsByCriteria">Apply Filters</button>
+        <center>
+            <button @click="getSchoolsByCriteria" class="btn">Apply Filters</button>
+        </center>
     </div>
+    <div v-if="loading" class="loading-text">Filters are being applied...</div>
+    <div v-if="noSchools" class="noSchools-text">No schools match your filters, please try something else :(</div>
 </template>
 
 <script>
@@ -70,6 +99,8 @@
         },
         data(){
             return{
+                loading: false,
+                noSchools: false,
                 allSchoolInfo: [],
                 mainAreas: ['North', 'North-East', 'Central', 'East', 'West'],
                 areas: ['Ang Mo Kio','Bedok','Bishan','Bukit Batok','Bukit Merah','Bukit Panjang',
@@ -199,6 +230,7 @@
         },
         methods: {
             async getSchoolsByCriteria() {
+                this.loading = true;
                 try  {
                     
                     const schoolsResponse = await axios.get('http://localhost:5000/details');
@@ -236,6 +268,10 @@
                     console.error('Error fetching data:', error);
                 }
                 console.log("filtered schools: "+this.filteredSchools);
+                this.loading=false;
+                if(this.filteredSchools.length == 0){
+                    this.noSchools = true;
+                }
                 this.$router.push({
                     name: 'recommended', 
                     query: { schools: JSON.stringify(this.filteredSchools) }
@@ -246,9 +282,43 @@
 </script>
 
 <style scoped>
+    .filter-criteria {
+        margin: 20px;
+        width: 200px;
+        height: 250px;
+    }
     .checkbox-list {
         max-height: 200px;
-        max-width: 200px;
         overflow-y: auto;
+    }
+
+    .checkbox-list::-webkit-scrollbar-track,
+    .checkbox-list::-webkit-scrollbar {
+        width: 10px; 
+        background-color: #f5f5f5; 
+    }
+
+    .checkbox-list::-webkit-scrollbar-thumb {
+        background-color: #888; 
+        border-radius: 5px; 
+        border: 2px solid #f5f5f5; 
+    }
+
+    .checkbox-list::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+
+    label {
+        font-size: 
+    }
+
+    .btn {
+        background-color: #50ad82;
+        color: white;
+        margin: 20px
+    }
+    .loading-text {
+        text-align: center;
+        margin: 20px;
     }
 </style>

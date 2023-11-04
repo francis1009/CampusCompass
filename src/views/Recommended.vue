@@ -1,5 +1,6 @@
 <template>
     <start/>
+    <br /> <br />
     <Filter />
     <div class="album py-5 bg-white">
         <h1>These are your recommended schools:</h1>
