@@ -1,5 +1,5 @@
 <template>
-    <start/>
+    <carousel />
     <Filter />
     <div class="album py-5 bg-white">
         <h1>These are your recommended schools:</h1>
@@ -17,13 +17,13 @@
 
 <script>
 import SchoolCard from "../components/SchoolCard.vue";
-import start from "./start.vue";
+import carousel from "./carousel.vue";
 import Filter from "../components/filter/Filter.vue";
 
 export default {
     components: {
         SchoolCard,
-        start,
+        carousel,
         Filter
     },
     props: {
