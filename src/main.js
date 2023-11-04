@@ -3,6 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import mitt from 'mitt'
 
 // Importing Bootstrap 5 CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -22,7 +23,11 @@ import { faTable, faSquarePollVertical, faHeart, faAngleDoubleLeft } from '@fort
 /* add icons to the library */
 library.add(faTable, faSquarePollVertical, faHeart, faAngleDoubleLeft)
 
+
+
 const app = createApp(App)
+
+export const eventBus = mitt()
 
 app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)

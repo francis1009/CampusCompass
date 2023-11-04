@@ -1,9 +1,10 @@
 <template>
     <start/>
+    <carousel @scrollToRecommend="scrollToRecommend" />
     <br /> <br />
     <Filter />
     <div class="album py-5 bg-white">
-        <h1>These are your recommended schools:</h1>
+        <h1 ref="recommend" id="recommend" >These are your recommended schools:</h1>
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
@@ -18,13 +19,13 @@
 
 <script>
 import SchoolCard from "../components/SchoolCard.vue";
-import start from "./start.vue";
+import carousel from "./carousel.vue";
 import Filter from "../components/filter/Filter.vue";
 
 export default {
     components: {
         SchoolCard,
-        start,
+        carousel,
         Filter
     },
     props: {
@@ -41,7 +42,24 @@ export default {
         });
     },
     methods: {
-        
+        // Scroll to the recommend section if user clicks no or finished all questions
+        scrollToRecommend() {
+            this.$nextTick(() => {
+            // Get the DOM element for the 'recommend' section
+            const recommendElement = this.$refs.recommend;
+
+            if (recommendElement) {
+                // Calculate the Y position of the recommend section relative to the viewport
+                const yOffset = recommendElement.getBoundingClientRect().top;
+
+                // Scroll to the recommend section with a smooth animation
+                window.scrollTo({
+                    top: window.scrollY + yOffset,
+                    behavior: 'smooth'
+                });
+            }
+        });
+        }
     },
     data() {
         return {
