@@ -1,5 +1,6 @@
 <template>
     <start/>
+    <Filter />
     <div class="album py-5 bg-white">
         <h1>These are your recommended schools:</h1>
     <div class="container-fluid">
@@ -17,22 +18,41 @@
 <script>
 import SchoolCard from "../components/SchoolCard.vue";
 import start from "./start.vue";
+import Filter from "../components/filter/Filter.vue";
 
 export default {
     components: {
         SchoolCard,
-        start
+        start,
+        Filter
+    },
+    props: {
+        schools: {
+            type: Array,
+            required: false,
+            default: () => []
+        }
+    },
+    mounted() {
+        this.$router.push({
+            name: 'recommended', 
+            query: { schools: JSON.stringify([]) }
+        });
+    },
+    methods: {
+        
     },
     data() {
         return {
-            schools: [
-                { name: "School1", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-                { name: "School2", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-                { name: "School3", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-                { name: "School4", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-                { name: "School5", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-                { name: "School6", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            ]
+            // schools: [
+            //     3072, 3001
+            //     // { name: "School1", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
+            //     // { name: "School2", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
+            //     // { name: "School3", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
+            //     // { name: "School4", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
+            //     // { name: "School5", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
+            //     // { name: "School6", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
+            // ]
         };
     },
 };
