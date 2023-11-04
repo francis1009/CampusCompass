@@ -6,8 +6,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'recommended',
+      component: () => import('../views/Recommended.vue')
     },
     {
       path: '/about',
@@ -29,19 +29,9 @@ const router = createRouter({
       props: true 
     },
     {
-      path: '/recommended',
-      name: 'recommended',
-      component: () => import('../views/Recommended.vue')
-    },
-    {
       path: '/search',
       name: 'search',
       component: () => import('../views/SearchView.vue')
-    },
-    {
-      path: '/start',
-      name: 'start',
-      component: () => import('../views/start.vue')
     },
     {
       path: '/compare',

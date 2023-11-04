@@ -84,14 +84,7 @@ export default {
     handleOptionClick(option) {
       // Handle the click event for the selected option
 
-      if (option.text === 'No') {
-        this.flow = 2;
-      } else if (option.text === 'Option A') {
-        // For other options, advance to the next scenario
-        this.flow++;
-      } else {
-        this.flow--;
-      }
+      
       // You can add more logic here if needed, e.g., check for the end of scenarios.
     },
   },

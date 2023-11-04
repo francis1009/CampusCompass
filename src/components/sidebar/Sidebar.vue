@@ -8,14 +8,14 @@
             </span>
         </h1>
 
+        <SidebarLink to="/" icon="heart">
+            Recommender
+        </SidebarLink>
         <SidebarLink to="/viewschools" icon="table">
             View Schools
         </SidebarLink>
         <SidebarLink to="/compare" icon="square-poll-vertical">
             Compare
-        </SidebarLink>
-        <SidebarLink to="/recommended" icon="heart">
-            Recommender
         </SidebarLink>
         
         <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar">

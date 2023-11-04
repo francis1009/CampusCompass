@@ -1,4 +1,5 @@
 <template>
+    <start/>
     <div class="album py-5 bg-white">
         <h1>These are your recommended schools:</h1>
     <div class="container-fluid">
@@ -15,10 +16,12 @@
 
 <script>
 import SchoolCard from "../components/SchoolCard.vue";
+import start from "./start.vue";
 
 export default {
     components: {
-        SchoolCard
+        SchoolCard,
+        start
     },
     data() {
         return {
