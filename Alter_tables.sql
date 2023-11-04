@@ -7,8 +7,8 @@ select * from GeneralDetails;
 update GeneralDetails set Main_Region = "North" where School_Region in ("Ang Mo Kio", "Woodlands", "Sembawang", "Yishun");
 update GeneralDetails set Main_Region = "North-East" where School_Region in ("Hougang", "Punggol", "Seng Kang","Serangoon");
 update GeneralDetails set Main_Region = "Central" where School_Region in ("Bukit Timah","Toa Payoh", "Bukit Merah", "Bishan", "Queenstown","Marine Parade","Novena", "Central");
-update GeneralDetails set Main_Region = "East" where School_Region in ("Jurong East", "Clementi","Bukit Batok","Bukit Panjang","Choa Chu Kang","Jurong West");
-update GeneralDetails set Main_Region = "West" where School_Region in ("Kallang", "Bedok", "Geylang", "Tampines", "Pasir Ris");
+update GeneralDetails set Main_Region = "West" where School_Region in ("Jurong East", "Clementi","Bukit Batok","Bukit Panjang","Choa Chu Kang","Jurong West");
+update GeneralDetails set Main_Region = "East" where School_Region in ("Kallang", "Bedok", "Geylang", "Tampines", "Pasir Ris");
 
 select count(*) from GeneralDetails where Main_Region is NULL;
 select * from GeneralDetails;
@@ -128,9 +128,7 @@ select distinct(cca) from cca_offered where cca_category is null;
 
 select * from dsa_opportunities;
 
--- update dsa_opportunities
-ALTER TABLE dsa_opportunities ADD dsa_category varchar(50);
-select distinct dsa_cca from dsa_opportunities;
+
 -- update dsa_opportunities
 ALTER TABLE dsa_opportunities ADD dsa_category varchar(50);
 select distinct dsa_cca from dsa_opportunities;
@@ -236,3 +234,11 @@ select distinct(count(dsa_cca)) from dsa_opportunities where dsa_category is nul
 select distinct(dsa_cca) from dsa_opportunities where dsa_category is null;
 
 select * from dsa_opportunities;
+
+select count(*) from cca_offered;
+select count(distinct school_code) from cca_offered;
+
+select count(distinct school_code) from generaldetails;
+
+select * from cca_offered;
+
