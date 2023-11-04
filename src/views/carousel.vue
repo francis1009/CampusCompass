@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import VueCookies from 'vue-cookies';
+
 export default {
   data() {
     return {
@@ -103,6 +105,14 @@ export default {
       userResponses: [],
     };
   },
+  mounted() {
+    // Check if the user has answered the questions before
+    const userData = VueCookies.get('userData');
+    if (userData) {
+      this.userResponses = userData;
+      this.flow = this.scenarios.length - 1;
+    }
+  },
   methods: {
     handleOptionClick(option) {
       if (this.flow === 0 && option.text === 'No') {
@@ -117,6 +127,11 @@ export default {
       if (this.flow === this.scenarios.length - 2) {
         // Give enough time for the user to read the last scenario
         setTimeout(() => {
+          // Use VueCookies to store the user responses for 1 year
+          VueCookies.set('userData', this.userResponses, '1y');
+          // Check if the cookie is set
+          var myCookieValue = VueCookies.get('userData');
+          console.log('Retrieved Cookie:', myCookieValue);
           this.$emit('scrollToRecommend');
         }, 2000);
       }
@@ -124,6 +139,12 @@ export default {
       if (option.text === 'Click here to redo the question') {
         this.flow = 0;
         this.userResponses = [];
+
+        // Remove the 'userResponses' cookie when redoing the question
+        VueCookies.remove('userData');
+        // Check if the cookie is removed
+        var myCookieValue = VueCookies.get('userData');
+        console.log('Retrieved Cookie:', myCookieValue);
       }
       this.flow++;
     },
