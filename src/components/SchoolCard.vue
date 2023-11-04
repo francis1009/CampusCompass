@@ -1,11 +1,11 @@
 <template>
     <div>
     <!-- card -->
-    <div class="card" style="width: 18rem;">
-      <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+    <div class="card" style="width: 15rem; height: 23em; margin-left: 20px 20px;">
+      <img :src="schoolImageUrl" class="card-img-top" alt="School Image" style="height:13rem">
       <div class="card-body">
-        <h5 class="card-title">{{ school.name }}</h5>
-        <p class="card-text">{{ school.info }}</p>
+        <h5 class="card-title">{{ schoolName }}</h5>
+        <p class="card-text">{{ schoolAddress }}</p>
         <button @click="openDialog" class="btn">View more</button>
       </div>
     </div>
@@ -23,15 +23,38 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
     props: {
       school: {
-        type: Object,
+        type: Number,
         required: true,
-        default: () => ({ name: '', info: '', imageUrl: '', }),
-      }
+      } 
+    },
+    data() {
+        return {
+            schoolName: '',
+            schoolAddress: '',
+            schoolImageUrl: '',
+        };
+    },
+    created() {
+        this.fetchSchoolDetails();
     },
     methods: {
+        fetchSchoolDetails() {
+          console.error("benis");
+            axios.get(`http://localhost:5000/details/${this.school}`)
+                .then(response => {
+                    this.schoolName = response.data.School_Name;
+                    this.schoolAddress = response.data.School_Address;
+                    this.schoolImageUrl = response.data.School_Image_Source || this.schoolImageUrl;
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        },
         openDialog() {
             this.$refs.moreInfo.showModal();
         },

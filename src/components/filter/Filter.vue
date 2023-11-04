@@ -45,7 +45,7 @@
             </div>
             </div>
         </div>
-        <div>
+    <!--    <div>
             <label for="psle-slider">PSLE Score: {{ psle }}</label>
             <input
             id="psle-slider"
@@ -55,10 +55,10 @@
             v-model="psle"
             class="form-range"
             />
-        </div>
+        </div>-->
     </div>
     <div>
-        <button @click="applyFilters">Apply Filters</button>
+        <button @click="getSchoolsByCriteria">Apply Filters</button>
     </div>
 </template>
 
@@ -196,86 +196,59 @@
             }
         },
         mounted() {
-            //this.getAllSchoolInfo();
         },
         methods: {
-           /* async getAllSchoolInfo() {
-                axios.get('http://localhost:5000/details')
-                    .then(response => {
-                        console.log(response.data);
-                        for(var school in response.data) {
-                            const schoolInfo = {
-                                schoolName: response.data[school].School_Name,
-                                schoolID: response.data[school].School_Code,
-                                region: response.data[school].School_Region,
-                                subjects: await this.getSubjects(response.data[school].School_Code),
-                                ccas: await this.getCCAs(response.data[school].School_Code),
-                                specialEducations: await this.getSpecialEd(response.data[school].School_Code),
-                            };
-                            this.allSchoolInfo.push(schoolInfo);
+            async getSchoolsByCriteria() {
+                try  {
+                    
+                    const schoolsResponse = await axios.get('http://localhost:5000/details');
+                    const allSchools = schoolsResponse.data;
+            
+
+                    const areaPromises = this.selectedAreas.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/details/${school.School_Code}`).catch(e => e)) : [];
+                    const subjectPromises = this.selectedSubjects.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/subjects/${school.School_Code}`).catch(e => e)) : [];
+                    const ccaPromises = this.selectedCCAs.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/cca/${school.School_Code}`).catch(e => e)) : [];
+                    const dsaPromises = this.selectedDSAs.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/dsa/${school.School_Code}`).catch(e => e)) : [];
+                    const speEdPromises = this.selectedSpecialEducations.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/special_ed/${school.School_Code}`).catch(e => e)) : [];
+
+                    const [areas, subjects, ccas, dsas, speEds] = await Promise.all([
+                        Promise.all(areaPromises),
+                        Promise.all(subjectPromises),   
+                        Promise.all(ccaPromises),
+                        Promise.all(dsaPromises),
+                        Promise.all(speEdPromises)
+                    ]);
+
+
+                    for (let i = 0; i < allSchools.length; i++) {
+                        const school = allSchools[i];
+                        const hasSelectedRegion = this.selectedAreas.length === 0 || this.selectedAreas.includes(areas[i]?.data?.School_Region);
+                        const hasAllSelectedSubjects = this.selectedSubjects.length === 0 || this.selectedSubjects.every(subject => subjects[i]?.data?.Subjects_Offered.includes(subject));
+                        const hasAllSelectedCCAs = this.selectedCCAs.length === 0 || this.selectedCCAs.every(cca => ccas[i]?.data?.CCA_Offered.includes(cca));
+                        const hasAllSelectedDSAs = this.selectedDSAs.length === 0 || this.selectedDSAs.every(dsa => dsas[i]?.data?.DSA_CCA.includes(dsa));
+                        const hasAllSelectedSpeEd = this.selectedSpecialEducations.length === 0 || this.selectedSpecialEducations.every(se => speEds[i]?.data?.Special_Education_Support.includes(se));
+
+                        if (hasSelectedRegion && hasAllSelectedSubjects && hasAllSelectedCCAs && hasAllSelectedDSAs && hasAllSelectedSpeEd) {
+                            this.filteredSchools.push(school.School_Code);
                         }
-                    })
-                    .catch( error => {
-                        console.error(error);
-                    });
-            },
-            async getSubjects(schoolCode){
-                axios.get(`http://localhost:5000/subjects/${schoolCode}`)
-                    .then(response => {
-                        console.log(response.data);
-                        return response.data.Subjects_Offered;
-                    })
-                    .catch( error => {
-                        console.error(error);
-                    });
-            },
-            async getCCAs(schoolCode){
-                axios.get(`http://localhost:5000/cca/${schoolCode}`)
-                    .then(response => {
-                        console.log(response.data);
-                        return response.data.CCA_Offered;
-                    })
-                    .catch( error => {
-                        console.error(error);
-                    });
-            },
-            async getSpecialEd(schoolCode){
-                axios.get(`http://localhost:5000/special_ed/${schoolCode}`)
-                    .then(response => {
-                        console.log(response.data);
-                        return response.data.Special_Education_Support;
-                    })
-                    .catch( error => {
-                        console.error(error);
-                    });
-            },*/
-            applyFilters() {
-                // filter logic(?)
-                console.log("selected areas: "+this.selectedAreas);
-                console.log("selected subjects: "+this.selectedSubjects);
-                console.log("selected ccas: "+this.selectedCCAs);
-                console.log("selected dsas:"+this.selectedDSAs)
-                console.log("selected special educations: "+this.selectedSpecialEducations);
-                console.log("psle: "+this.psle);
-
-                this.filteredSchools = this.allSchoolInfo.filter(school => {
-                    const areaMatch = !this.selectedAreas.length || this.selectedAreas.includes(school.region);
-                    const subjectMatch = this.selectedSubjects.every(subject => school.subjects.includes(subject));
-                    const ccaMatch = this.selectedCCAs.every(cca => school.ccas.includes(cca));
-                    const specialEducationMatch = this.selectedSpecialEducations.every(se => school.specialEducations.includes(se));
-
-                    return areaMatch && subjectMatch && ccaMatch && specialEducationMatch;
+                    }
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+                console.log("filtered schools: "+this.filteredSchools);
+                this.$router.push({
+                    name: 'recommended', 
+                    query: { schools: JSON.stringify(this.filteredSchools) }
                 });
-                console.log("Filtered Schools: ", this.filteredSchools);
             },
         },
     };
 </script>
 
 <style scoped>
-.checkbox-list {
-  max-height: 150px;
-  max-width: 200px;
-  overflow-y: auto;
-}
+    .checkbox-list {
+        max-height: 200px;
+        max-width: 200px;
+        overflow-y: auto;
+    }
 </style>
