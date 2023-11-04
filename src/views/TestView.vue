@@ -7,15 +7,24 @@
         </li>
     
     </ul>
+    <RouterLink to="/test2">
+    <button @click="triggerMethod">
+        click
+    </button>
+    </RouterLink>
     </body>
 </template>
 
 <script>
 import axios from 'axios';
+import { RouterLink } from 'vue-router';
+import VueCookies from 'vue-cookies';
+
 export default{
     data() {
         return{
-            details: []
+            details: [],
+            placeholder: "Test"
         }
     },
     mounted() {
@@ -31,6 +40,10 @@ export default{
                 .catch( error => {
                 console.error(error);
     });
+        },
+        triggerMethod() {
+            VueCookies.set('myCookie', 'insanity', '1d');
+            //this.$router.push('/test2');
         }
     }
 }
