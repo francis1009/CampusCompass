@@ -23,7 +23,8 @@
 
   <h2>Chosen Schools</h2>
   <draggable v-model="selectedSchools" tag="ul" :itemKey="customKey" group="compare_school">
-    <template v-slot:item="{ element }">
+    <template v-slot:item="{ element }"  :move="handleMoveItem"
+        @end="handleDragEndItem">
       <li id="drag">
         <div class="school-item">
           <img :src="getSchoolLogo(element)" class="school-logo" alt="School Logo" />
@@ -33,16 +34,19 @@
       </li>
     </template>
   </draggable>
+  
   <div class="comparison-container">
     <div class="item-dropzone-area" style="height: 100vh;">
+
       <h3>Compare School 1</h3>
       <draggable v-model="school_to_compare1" :tag="'ul'" :itemKey="customKey" group="compare_school"
-        @change="getschooldetails1">
+        @change="getschooldetails1" :move="handleMoveItem"
+        @end="handleDragEndItem">
         <template v-slot:item="{ element }">
           <li id="drag">{{ element }}</li>
         </template>
       </draggable>
-      <div v-if="school_to_compare1.length > 0">
+      
         <!-- Content for Compare School 1 -->
         <div v-if="school_to_compare1.length > 0">
 
@@ -59,27 +63,19 @@
 
           </div>
         </div>
-        <ul>
-          <li v-for="attribute in sch1">
-            {{ attribute }}
-          </li>
-        </ul>
-        <div v-for="subject in subjects1">
-          <div v-bind:style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">
-            {{ subject }}
-          </div>
-        </div>
-      </div>
+       
+      
     </div>
     <div class="item-dropzone-area" style="height: 100vh;">
       <h3>Compare School 2</h3>
       <draggable v-model="school_to_compare2" :tag="'ul'" :itemKey="customKey" group="compare_school"
-        @change="getschooldetails2">
+        @change="getschooldetails2" :move="handleMoveItem"
+        @end="handleDragEndItem" >
         <template v-slot:item="{ element }">
           <li>{{ element }}</li>
         </template>
       </draggable>
-      <div v-if="school_to_compare2.length > 0">
+     
         <!-- Content for Compare School 2 -->
         <div v-if="school_to_compare2.length > 0">
 
@@ -95,17 +91,7 @@
             </div>
           </div>
         </div>
-        <ul>
-          <li v-for="attribute in sch2">
-            {{ attribute }}
-          </li>
-        </ul>
-        <div v-for="subject in subjects2">
-          <div v-bind:style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">
-            {{ subject }}
-          </div>
-        </div>
-      </div>
+        
     </div>
   </div>
 </template>
@@ -256,7 +242,9 @@ export default {
       sch1: {},
       sch2: {},
       subjects1: [],
-      subjects2: []
+      subjects2: [],
+      compare_value1: false,
+      compare_value2: false,
     };
   },
   computed: {
@@ -341,6 +329,7 @@ export default {
     getschooldetails1() {
       console.log(this.school_to_compare1);
       console.log(this.school_to_compare1[0]);
+      //this.compare_value1 = true; 
       for (var pair in this.SchoolandIDpairs) {
 
         if (this.SchoolandIDpairs[pair].schoolName == this.school_to_compare1[0]) {
@@ -374,6 +363,7 @@ export default {
     getschooldetails2() {
       console.log(this.school_to_compare2);
       console.log(this.school_to_compare2[0]);
+      //this.compare_value2 = true; 
       for (var pair in this.SchoolandIDpairs) {
 
         if (this.SchoolandIDpairs[pair].schoolName == this.school_to_compare2[0]) {
