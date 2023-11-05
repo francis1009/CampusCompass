@@ -1,28 +1,5 @@
 <template>
     <body>
-        <!--Ask why this does not work-->
-        <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample">
-                Link with href
-            </a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Button with data-target
-            </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-                keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-        </div>
-
-
-
-
-
-
         <div v-if="school">
             <img width=200 height=200 :src=school_image>
             <h2>general info</h2>
@@ -154,6 +131,41 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <div>
+            <iframe :src=minimapsrc height="500" width="800" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+            <input type="text" v-model="inputpostalcode" placeholder="please input postal code">
+
+        <button @click="updateminimapsrc">
+            update
+        </button>
+        </div>
+        
+
+        <div>
+            <h1>Routes</h1>
+            <input type="text" v-model="originpostal" placeholder="please input origin postal code">
+            <button @click="displayroutes">
+                display routes
+            </button>
+            <div v-if="route_data">
+                <div>Route</div>
+                <div v-for="leg in route_steps">
+                    
+                    <div v-if="leg.mode == 'BUS'">   
+                        <div>Take bus {{ leg.route }} from {{ leg.from.name }} to {{ leg.to.name }}</div>
+                    </div>
+                    <div v-else-if="leg.mode == 'SUBWAY'">
+                        <div>Take the {{ leg.route_long_name }} from {{ leg.from.stopCode }} to {{ leg.to.stopCode }}</div>
+                    </div>
+                    <div v-else-if="leg.mode == 'WALK'">
+                        <div>Walk from {{ leg.from.name }} to {{ leg.to.name }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </template>
 
@@ -183,6 +195,16 @@ export default {
             isCollapsedPSLE: false,
             isCollapsedElective: false,
             isCollapsedMap: false,
+            minimapsrc: "",
+            subset: "",
+            inputpostalcode: "",
+            originpostal: "",
+            originlat: "",
+            originlong:"",
+            destlat: "",
+            destlong: "",
+            route_data: {},
+            route_steps: []
 
 
 
@@ -199,6 +221,7 @@ export default {
         this.getpslescores();
         this.getelectives();
         this.getmap();
+        this.getminimapsource();
     }, // mounted
     // computed: {
     //     postal_code(){
@@ -346,6 +369,83 @@ export default {
                     console.error(error);
                 };
 
+        },
+        async getminimapsource() {
+            await this.GetSchoolDetails();
+            try {
+                this.minimapsrc = `https://www.onemap.gov.sg/amm/amm.html?mapStyle=Night&zoomLevel=15&marker=postalcode:${this.new_postal_code}!colour:red&popupWidth=200`
+                console.log(this.minimapsrc)    
+            }
+            catch(error) {
+    
+                    console.log("ONE MAP ERROR");
+                    console.error(error);
+                };  
+        }, 
+        updateminimapsrc() {
+            if (this.inputpostalcode.length != 6) {
+                alert("Please input a valid postal code");
+                return;
+            }
+            var length = this.minimapsrc.length;
+            this.subset = this.minimapsrc.slice(0, length-14);
+            console.log(this.subset);
+            this.minimapsrc = this.subset + `marker=postalcode:${this.inputpostalcode}!colour:red&popupWidth=200`;
+            console.log(this.minimapsrc);
+        },
+        async displayroutes() {
+            if (this.originpostal.length != 6) {
+                alert("Please input a valid postal code");
+                return;
+            }
+            await this.GetSchoolDetails();
+            try {
+                axios.get(`https://www.onemap.gov.sg/api/common/elastic/search?searchVal=${this.originpostal}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+                    .then(response => {
+                        console.log(response.data);
+                        this.originlat = response.data.results[0].LATITUDE;
+                        this.originlong = response.data.results[0].LONGITUDE;
+                        console.log(this.originlat);
+                        console.log(this.originlong);
+                        axios.get(`https://www.onemap.gov.sg/api/common/elastic/search?searchVal=${this.new_postal_code}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+                            .then(response => {
+                                console.log(response.data);
+                                this.destlat = response.data.results[0].LATITUDE;
+                                this.destlong = response.data.results[0].LONGITUDE;
+                                console.log(this.destlat);
+                                console.log(this.destlong);
+                                var current_date = new Date();
+                                console.log(current_date)
+                                var month = ("0" + (current_date.getMonth() + 1)).slice(-2);
+                                var day = ("0" + current_date.getDate()).slice(-2);
+                                var year = current_date.getFullYear();  
+                                var hours = current_date.getHours();
+                                var minutes = current_date.getMinutes();
+                                var seconds = current_date.getSeconds();
+                                console.log(month);
+                                console.log(day);
+                                axios.get(`https://www.onemap.gov.sg/api/public/routingsvc/route?start=${this.originlat}%2C${this.originlong}&end=${this.destlat}%2C${this.destlong}&routeType=pt&date=${month}-${day}-${year}&time=${hours}%3A${minutes}%3A${seconds}&mode=TRANSIT`, {
+                                            headers: {
+                                                "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjNmFlMDQwNDU5MjA5MjkyMGNlMTU3NzU4Mzg3Njc3YyIsImlzcyI6Imh0dHA6Ly9pbnRlcm5hbC1hbGItb20tcHJkZXppdC1pdC0xMjIzNjk4OTkyLmFwLXNvdXRoZWFzdC0xLmVsYi5hbWF6b25hd3MuY29tL2FwaS92Mi91c2VyL3Bhc3N3b3JkIiwiaWF0IjoxNjk5MTkzMDIyLCJleHAiOjE2OTk0NTIyMjIsIm5iZiI6MTY5OTE5MzAyMiwianRpIjoiQTY0TjJ1RXZOMmNxTzlPdiIsInVzZXJfaWQiOjExNTQsImZvcmV2ZXIiOmZhbHNlfQ.B_OzEzNfZnRldrr94HlxNLaBVJ3_khLYQpXZYjb6_Qo"
+                                            }
+                                        })
+                                    .then(response => {
+                                        console.log(response.data);
+                                        this.route_data = response.data;
+                                        console.log(this.route_data)
+                                        this.route_steps = response.data.plan.itineraries[0].legs;
+                                        console.log(this.route_steps)
+                                        
+                                    })
+                                
+                            })
+                    })
+            }
+            catch(error) {
+                console.log("ONE MAP ERROR");
+                console.error(error);
+            };
+        
         }
 
     } // methods
@@ -353,3 +453,5 @@ export default {
 
 </script>
 
+<style>
+</style>
