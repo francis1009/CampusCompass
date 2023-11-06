@@ -563,9 +563,15 @@ export default {
 </script>
 
 <style scoped>
-.container-fluid {
+
+  .container-fluid {
   padding: 20px;
+  width: 100%; /* Set the container to 100% width */
+  max-width: none; /* Remove any maximum width constraint */
+  margin-left: 0; /* Reset left margin */
+  margin-right: 0; /* Reset right margin */
 }
+
 
 .search-title {
   font-size: 24px;
@@ -642,6 +648,7 @@ export default {
 
 .comparison-container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -673,14 +680,10 @@ export default {
   border-bottom: 1px solid #ccc;
 }
 
-.comparison-box li:last-child {
-  border-bottom: none;
-}
 
-.comparison-box table {
-  border: 1px solid #ccc;
-  width: 100%;
-}
+
+
+
 
 .comparison-box th, .comparison-box td {
   text-align: center;
