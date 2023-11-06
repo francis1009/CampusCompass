@@ -59,7 +59,7 @@ export default {
           ],
         },
         {
-          question: "What subject are you/is your child interested in?",
+          question: "What subjects are you/is your child interested in?",
           options: [
             { text: 'Language', type: 'btn btn-custom' },
             { text: 'Math', type: 'btn btn-custom' },
