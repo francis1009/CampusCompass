@@ -11,15 +11,17 @@
     </div>
 
     <!-- dialog -->
-    <dialog ref="moreInfo" class="shadow-lg p-3 mb-5 bg-body rounded">
-      <form class="flex-fill d-flex flex-column" method="dialog">
-        <p class="flex-fill">{{ schoolName }}</p>
-        <iframe :src=map_source height="260" width="260" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" style="width: 260px; height: 260px;"></iframe>
-        <menu class="mt-auto d-flex justify-content-center">
-          <button @click="closeDialog" class="btn btn-secondary">Close</button>
-          <button @click="sendtoindivpage" class="btn btn-secondary">Link to School Page</button>
-        </menu>
-      </form>
+    <dialog ref="moreInfo" class="shadow-lg p-3 mb-5 bg-body rounded dialog-wrapper">
+      <div class="dialog">
+        <form class="flex-fill d-flex flex-column" method="dialog">
+          <p class="flex-fill">{{ schoolName }}</p>
+          <iframe :src=map_source height="260" width="260" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" style="width: 260px; height: 260px;"></iframe>
+          <menu class="mt-auto d-flex justify-content-center">
+            <button @click="closeDialog" class="btn btn-secondary">Close</button>
+            <button @click="sendtoindivpage" class="btn btn-secondary">Link to School Page</button>
+          </menu>
+        </form>
+      </div>
     </dialog>
   </div>
 </template>
@@ -77,7 +79,7 @@ export default {
 
 <style scoped>
 dialog {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -85,6 +87,15 @@ dialog {
     height: 90%;
     border: none;
     border-radius: 5px;
+}
+
+.dialog {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
