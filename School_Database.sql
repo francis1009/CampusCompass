@@ -43,7 +43,7 @@ create table Subjects_Offered (
 #drop table dsa_opportunities    
 create table dsa_opportunities (
 	school_code int not null,
-    dsa_cca varchar(100) not null,
+    dsa_cca varchar(150) not null,
     Primary Key (school_code, dsa_cca),
     constraint dsa_opportunities_fk1 foreign key (school_code) references generaldetails(school_code)
     );
@@ -51,7 +51,7 @@ create table dsa_opportunities (
 #drop table cca_offered
 create table cca_offered (
 	school_code int not null,
-    cca varchar(50),
+    cca varchar(150),
     Primary Key (school_code, cca),
     constraint cca_offered_fk1 foreign key (school_code) references generaldetails(school_code)
     );

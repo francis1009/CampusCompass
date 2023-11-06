@@ -1,141 +1,338 @@
 <template>
-  <div style="width:95vw">
-    <div class="search-box">
-      <h1 class="search-title">Search Your School</h1>
-      <div class="search-input">
-        <input type="text" v-model="search" placeholder="Search..." @input="showResults = search.length > 0" />
-      </div>
-      <div class="search-results" v-show="showResults">
-        <ul class="search-results-list">
-          <li v-for="(item, index) in filteredList" :key="index" @click="addSchoolFromSearch(item)">
-            <img :src="getSchoolLogo(item)" class="school-logo" alt="School Logo" />
-            <span>{{ item }}</span>
-          </li>
-        </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="search-title">Search Your School</h1>
+        <div class="search-box">
+          <div class="search-input">
+            <input
+              type="text"
+              class="form-control"
+              v-model="search"
+              placeholder="Search..."
+              @input="showResults = search.length > 0"
+            />
+          </div>
+          <div class="search-results" v-show="showResults">
+            <ul class="list-group">
+              <li
+                v-for="(item, index) in filteredList"
+                :key="index"
+                @click="addSchoolFromSearch(item)"
+                class="list-group-item list-group-item-action d-flex justify-content-start align-items-center"
+              >
+                <img :src="getSchoolLogo(item)" class="school-logo" alt="School Logo" />
+                <span class="ml-3">{{ item }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <h2>Chosen Schools</h2>
-
-<table class="chosen-schools-table">
-  <thead>
-    <!-- <tr v-if="selectedSchools.length > 0">
-      <th>School Logo</th>
-      <th>School Name</th>
-      <th></th>
-    </tr> -->
-  </thead>
-  <tbody>
-    <draggable v-model="selectedSchools" :options="{ animation: 150 }" :element="'tbody'" group="compare_school">
-          <template v-slot:item="{ element, index }">
-            <tr>
-              <td><img :src="getSchoolLogo(element)" class="school-logo" alt="School Logo" /></td>
-              <td>{{ element }}</td>
-              <td>
-                <button @click="removeSchool(index)"><font-awesome-icon icon="fa-solid fa-angle-double-left" /></button>
-              </td>
-            </tr>
-          </template>
-        </draggable>
-  </tbody>
-</table>
-
-  <!-- <div class="container fluid"></div>
-  <draggable v-model="selectedSchools" tag="ul" :itemKey="customKey" group="compare_school">
-    <template v-slot:item="{ element }" :move="handleMoveItem" @end="handleDragEndItem">
-      <div class="school-item">
-        <img :src="getSchoolLogo(element)" class="school-logo" alt="School Logo" />
-        {{ element }}
-        <button @click="removeSchool(element)"><font-awesome-icon icon="fa-solid fa-angle-double-left" /></button>
+    <div class="row mt-4">
+      <div class="col-12">
+        <h2>Chosen Schools</h2>
       </div>
-    </template>
-  </draggable>
-   -->
-  <div class="comparison-container">
-    <!-- Start of compare 1 -->
-    <div class="comparison-box">
-      <div class="item-dropzone-area col-lg-6 offset-lg-3 col-sm-12" style="height: 100vh;">
-        <h3 style="text-align: center;">Compare School 1</h3>
-        <draggable v-model="school_to_compare1" :tag="'ul'" :itemKey="customKey" group="compare_school"
-          @change="getschooldetails1" :move="handleMoveItem" @end="handleDragEndItem">
-          <template v-slot:item="{ element }">
-            <div id="drag">{{ element }}</div>
-          </template>
-        </draggable>
-        <!-- Content for Compare School 1 -->
-        <div v-if="school_to_compare1.length > 0">
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <table class="table chosen-schools-table">
+          <thead>
+            
+          </thead>
+          <tbody>
+            <draggable
+              v-model="selectedSchools"
+              :options="{ animation: 150 }"
+              :element="'tbody'"
+              group="compare_school"
+            >
+              <template v-slot:item="{ element, index }">
+                <tr>
+                  <td><img :src="getSchoolLogo(element)" class="school-logo" alt="School Logo" /></td>
+                  <td>{{ element }}</td>
+                  <td>
+                    <button @click="removeSchool(index)" class="btn btn-danger">
+                      <font-awesome-icon icon="fas fa-trash" />
+                    </button>
+                  </td>
+                </tr>
+              </template>
+            </draggable>
+          </tbody>
+        </table>
+      </div>
+    </div>
     
-     
-          <table>
+    <div class="row">
+      <div class="col-12">
+        <div class="comparison-container ">
+          <!-- Start of compare 1 -->
+          <div class="comparison-box ">
+            <div
+              class="item-dropzone-area"
+              style="height: 100vh;"
+            >
+              <h3>Compare School 1</h3>
+              <draggable
+                v-model="school_to_compare1"
+                :tag="'ul'"
+                :itemKey="customKey"
+                group="compare_school"
+                @change="getschooldetails1"
+              >
+                <template v-slot:item="{ element }">
+                  <div id="drag">{{ element }}</div>
+                </template>
+              </draggable>
+              <!-- Content for Compare School 1 -->
+              <div v-if="school_to_compare1.length > 0">
+                <div class="table-container">
+                  <table class="table table-bordered">
+                    <tbody>
+                      
+                      <tr>
+                        <td>Address</td>
+                        <td>{{ sch1.School_Address }}</td>
+                      </tr>
+                      <tr>
+                        <td>School Name</td>
+                        <td>{{ sch1.School_Name }}</td>
+                      </tr>
+                      <tr>
+                        <td>School Website</td>
+                        <td>
+                          <a
+                            :href="sch1.School_Website"
+                            target="_blank"
+                          >{{ sch1.School_Website }}</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="table-container">
+                  <table class="table chosen-schools-table header-table">
             <thead>
-              <tr>
-                <th>School Logo</th>
-                <th>Attribute</th>
-                <th>Value</th>
-              </tr>
+              <h4>Subjects Offered</h4>
             </thead>
-            <tbody>
-              <tr v-for="(value, attribute) in sch1">
-                <td><img :src="getSchoolLogo(school_to_compare1[0])" class="school-logo" alt="School Logo" /></td>
-                <td>{{ attribute }}</td>
-                <td>{{ value }}</td>
-              </tr>
-            </tbody>
           </table>
-          <h4>Subjects Offered</h4>
-          <ul>
-            <li v-for="subject in subjects1" :style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</li>
-          </ul>
-          <div class="compare_section">
-                <div>PSLE COP</div>
-                <div>IP Affiliated: {{ psle1.IP_Affiliation }}</div>
-                <div>IP Non-Afiiliated: {{ psle1.IP_NonAffiliation }}</div>
-                <div>Express Affiliated: {{ psle1.Express_Affiliation }}</div>
-                <div>Express Non-Affiliated: {{ psle1.Express_NonAffiliation }}</div>
-                <div>Normal(Academic) Affiliated: {{ psle1.NA_Affiliation }}</div>
-                <div>Normal(Academic) Non-Affiliated: {{ psle1.NA_NonAffiliation }}</div>
-                <div>Normal(Technical) Affiliated: {{ psle1.NT_Affiliation }}</div>
-                <div>Normal(Technial) Non-Affiliated: {{ psle1.NT_NonAffiliation }}</div>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
+                    <tbody>
+                      <tr v-for="subject in subjects1">
+                        <td>{{ subject }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+
+                <div class="table-container">
+                  
+                  <h4>PSLE Details</h4>
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th>Track</th>
+                        <th>Cut-off</th>
+                      </tr>
+                      <!-- Customize the PSLE details here -->
+                      <tr v-if="psle1.Express_Affiliation !== '-'">
+                        <td>Express Affiliated</td>
+                        <td>{{ psle1.Express_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.Express_NonAffiliation !== '-'">
+                        <td>Express Non-Affiliated</td>
+                        <td>{{ psle1.Express_NonAffiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.IP_Affiliation !== '-'">
+                        <td>IP Affiliated</td>
+                        <td>{{ psle1.IP_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.IP_NonAffiliation !== '-'">
+                        <td>IP Non-Affiliated</td>
+                        <td>{{ psle1.IP_NonAffiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.NA_Affiliation !== '-'">
+                        <td>Normal Academic Affiliated</td>
+                        <td>{{ psle1.NA_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.NA_NonAffiliation !== '-'">
+                        <td>Normal Academic Non-Affiliated</td>
+                        <td>{{ psle1.NA_NonAffiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.NT_Affiliation !== '-'">
+                        <td>Normal Technical Affiliated</td>
+                        <td>{{ psle1.NT_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle1.NT_NONAffiliation !== '-'">
+                        <td>Normal Technical Non-Affiliated</td>
+                        <td>{{ psle1.NT_NONAffiliation }}</td>
+                      </tr>
+                      <!-- Add more PSLE details as needed -->
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="table-container">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>CCA Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
+                    <tbody>
+                      <tr v-for="cca in cca1" :class="{ 'highlight-difference': sch1.CCA_Offered !== sch2.CCA_Offered }">
+                        <td>{{ cca }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-               
-          <div>CCAs Offered</div>
-          <div v-for="cca in cca1">
-            <div v-bind:style="{ color: cca2.includes(cca) ? 'green' : 'red' }">{{ cca }}</div>
+            </div>  
           </div>
+          <!-- End of compare 1 -->
+          
+          <!-- Start of compare 2 -->
+          <div class="comparison-box">
+            <div
+              class="item-dropzone-area"
+              style="height: 100vh;"
+            >
+              <h3 >Compare School 2</h3>
+              <draggable
+                v-model="school_to_compare2"
+                :tag="'ul'"
+                :itemKey="customKey"
+                group="compare_school"
+                @change="getschooldetails2"
+              >
+                <template v-slot:item="{ element }">
+                  <div id="drag">{{ element }}</div>
+                </template>
+              </draggable>
+              <!-- Content for Compare School 2 -->
+              <div v-if="school_to_compare2.length > 0">
+                <div class="table-container">
+                  <table class="table table-bordered">
+                    <tbody>
+                      
+                      <tr>
+                        <td>Address</td>
+                        <td>{{ sch2.School_Address }}</td>
+                      </tr>
+                      <tr>
+                        <td>School Name</td>
+                        <td>{{ sch2.School_Name }}</td>
+                      </tr>
+                      <tr>
+                        <td>School Website</td>
+                        <td>
+                          <a
+                            :href="sch2.School_Website"
+                            target="_blank"
+                          >{{ sch2.School_Website }}</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="table-container">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>Subjects Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
+                    <tbody>
+                      <tr v-for="subject in subjects1">
+                        <td>{{ subject }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+
+                <div class="table-container">
+                  <h4>PSLE Details</h4>
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th>Track</th>
+                        <th>Cut-off</th>
+                      </tr>
+                      <!-- Customize the PSLE details here -->
+                      <tr v-if="psle2.Express_Affiliation !== '-'">
+                        <td>Express Affiliated</td>
+                        <td>{{ psle2.Express_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.Express_NonAffiliation !== '-'">
+                        <td>Express Non-Affiliated</td>
+                        <td>{{ psle2.Express_NonAffiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.IP_Affiliation !== '-'">
+                        <td>IP Affiliated</td>
+                        <td>{{ psle2.IP_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.IP_NonAffiliation !== '-'">
+                        <td>IP Non-Affiliated</td>
+                        <td>{{ psle2.IP_NonAffiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.NA_Affiliation !== '-'">
+                        <td>Normal Academic Affiliated</td>
+                        <td>{{ psle2.NA_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.NA_NonAffiliation !== '-'">
+                        <td>Normal Academic Non-Affiliated</td>
+                        <td>{{ psle2.NA_NonAffiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.NT_Affiliation !== '-'">
+                        <td>Normal Technical Affiliated</td>
+                        <td>{{ psle2.NT_Affiliation }}</td>
+                      </tr>
+                      <tr v-if="psle2.NT_NONAffiliation !== '-'">
+                        <td>Normal Technical Non-Affiliated</td>
+                        <td>{{ psle2.NT_NONAffiliation }}</td>
+                      </tr>
+                      <!-- Add more PSLE details as needed -->
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="table-container">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>CCA Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
+                    <tbody>
+                      <tr v-for="cca in cca2">
+                        <td>{{ cca }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of compare 2 -->
         </div>
-       
-           
-     
-         
       </div>
     </div>
-    <!-- End of compare 1 -->
-    
-    <!-- Start of compare 2 -->
-    <div class="comparison-box">
-      <div class="item-dropzone-area col-lg-6 offset-lg-3 col-sm-12" style="height: 100vh;">
-        <h3 style="text-align: center;">Compare School 2</h3>
-        <draggable v-model="school_to_compare2" :tag="'ul'" :itemKey="customKey" group="compare_school"
-          @change="getschooldetails2" :move="handleMoveItem" @end="handleDragEndItem">
-          <template v-slot:item="{ element }">
-            <div id="drag">{{ element }}</div>
-          </template>
-        </draggable>
-        <!-- Content for Compare School 2 -->
-        <div v-if="school_to_compare2.length > 0">
-          <ul>
-            <li v-for="attribute in sch2">{{ attribute }}</li>
-          </ul>
-          <div v-for="subject in subjects2">
-            <div v-bind:style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of compare 2 -->
   </div>
 </template>
+
 
 
 
@@ -365,47 +562,151 @@ export default {
 </script>
 
 <style scoped>
-.comparison-container {
-  display: flex;
-  justify-content: space-between;
-
+.container-fluid {
+  padding: 20px;
 }
 
-.comparison-box {
-  flex: 1;
+.search-title {
+  font-size: 24px;
+  text-align: center;
+}
 
-  height: auto;
+.search-box {
+  text-align: center;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 16px;
 }
 
 .search-results {
   position: absolute;
   width: 100%;
-  max-height: 300px; /* Adjust the maximum height as needed */
-  overflow-y: auto; /* Enable vertical scrolling when needed */
+  max-height: 300px;
+  overflow-y: auto;
   background: #fff;
   border: 1px solid #ccc;
   border-top: 0;
 }
 
-.search-results-list {
+.search-results ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.search-results-list li {
-  padding: 5px 10px;
+.search-results li {
+  padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
 }
 
-.search-results-list li:last-child {
+.search-results li:last-child {
   border-bottom: none;
 }
+
 .school-logo {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
+
+.chosen-schools-table {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.chosen-schools-table th {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+.chosen-schools-table td {
+  text-align: center;
+  padding: 10px;
+}
+
+.comparison-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comparison-box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.comparison-box h3 {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 0;
+}
+
+.comparison-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-box li {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.comparison-box li:last-child {
+  border-bottom: none;
+}
+
+.comparison-box table {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.comparison-box th, .comparison-box td {
+  text-align: center;
+  padding: 10px;
+}
+.table-container {
+  overflow: auto;
+  max-height: 300px;
+}
+
+/* Style for the header table (fixed) */
+.header-table {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff; /* You can change the background color as needed */
+}
+
+/* Style for the scrolling table body */
+.table-scroll {
+  max-height: 100%;
+  overflow-y: auto;
+}
+.highlight-difference {
+    background-color: yellow; /* You can choose any color for highlighting */
+  }
+/* Add responsive styles for different screen sizes here */
 
 </style>

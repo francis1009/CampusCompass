@@ -34,6 +34,8 @@
 
 <script>
 
+import axios from 'axios';
+
 export default {
   data() {
     return {
@@ -90,7 +92,7 @@ export default {
         // Add more carousel items as needed
       ],
       userResponses: [],
-      selectedMainArea: [],
+      selectedAreas: [],
       selectedSubjects: [],
       selectedCCAs: [],
       filteredSchools: [],
@@ -278,8 +280,49 @@ export default {
         return;
       }
 
+      if (option.text === 'Click here to redo the question') {
+        this.flow = 0;
+        this.userResponses = [];
+        this.selectedAreas = [];
+        this.selectedSubjects = [];
+        this.selectedCCAs = [];
+        this.filteredSchools = [];
+      }
+
       if (this.flow === 1) {
-        this.selectedMainArea.push(option.text);
+        if (option.text === 'North') {
+          this.selectedAreas.push('Ang Mo Kio');
+          this.selectedAreas.push('Woodlands');
+          this.selectedAreas.push('Sembawang');
+          this.selectedAreas.push('Yishun');
+        } else if (option.text === 'Northeast') {
+          this.selectedAreas.push('Hougang');
+          this.selectedAreas.push('Punggol');
+          this.selectedAreas.push('Seng Kang');
+          this.selectedAreas.push('Serangoon');
+        } else if (option.text === 'Central') {
+          this.selectedAreas.push('Bukit Timah');
+          this.selectedAreas.push('Toa Payoh');
+          this.selectedAreas.push('Bukit Merah');
+          this.selectedAreas.push('Bishan');
+          this.selectedAreas.push('Queenstown');
+          this.selectedAreas.push('Marine Parade');
+          this.selectedAreas.push('Novena');
+          this.selectedAreas.push('Central');
+        } else if (option.text === 'West') {
+          this.selectedAreas.push('Jurong East');
+          this.selectedAreas.push('Clementi');
+          this.selectedAreas.push('Bukit Batok');
+          this.selectedAreas.push('Bukit Panjang');
+          this.selectedAreas.push('Choa Chu Kang');
+          this.selectedAreas.push('Jurong West');
+        } else if (option.text === 'East') {
+          this.selectedAreas.push('Kallang');
+          this.selectedAreas.push('Bedok');
+          this.selectedAreas.push('Geylang');
+          this.selectedAreas.push('Tampines');
+          this.selectedAreas.push('Pasir Ris');
+        }
       }
 
       if (this.flow === 2) {
@@ -302,8 +345,6 @@ export default {
         } else if (option.text === 'Art') {
           this.selectedSubjects.push('Art');
           this.selectedSubjects.push('Design & Technology');
-          this.selectedSubjects.push('Drama');
-          this.selectedSubjects.push('Music');
         }
       }
 
@@ -311,44 +352,68 @@ export default {
         if (option.text === 'Sports') {
           this.selectedCCAs.push('Basketball (Girls and Boys)');
           this.selectedCCAs.push('Badminton (Girls and Boys)');
-          this.selectedCCAs.push('Football (Girls and Boys)');
-          this.selectedCCAs.push('Table Tennis (Girls and Boys)');
         } else if (option.text === 'Arts') {
-          this.selectedCCAs.push('Arts and Crafts (Girls and Boys)');
           this.selectedCCAs.push('Concert Band (Girls and Boys)');
           this.selectedCCAs.push('Modern Dance (Girls and Boys)');
           this.selectedCCAs.push('English Drama (Girls and Boys)');
         } else if (option.text === 'Uniform Group') {
-          this.selectedCCAs.push('Boys\' Brigade (Boys)');
           this.selectedCCAs.push('St John Brigade (Girls and Boys)');
           this.selectedCCAs.push('National Police Cadet Corps (NPCC) (Girls and Boys)');
           this.selectedCCAs.push('National Cadet Corps (NCC) (Land) (Girls and Boys)');
         }
+
+        this.getSchoolsByCriteria();
       }
 
       if (this.flow === this.scenarios.length - 2) {
         // Give enough time for the user to read the last scenario
         setTimeout(() => {
-          // Use VueCookies to store the user responses for 1 year
-          VueCookies.set('userData', this.userResponses, '1y');
-          // Check if the cookie is set
-          var myCookieValue = VueCookies.get('userData');
-          console.log('Retrieved Cookie:', myCookieValue);
           this.$emit('scrollToRecommend');
         }, 4000);
       }
-
-      if (option.text === 'Click here to redo the question') {
-        this.flow = 0;
-        this.userResponses = [];
-
-        // Remove the 'userResponses' cookie when redoing the question
-        VueCookies.remove('userData');
-        // Check if the cookie is removed
-        var myCookieValue = VueCookies.get('userData');
-        console.log('Retrieved Cookie:', myCookieValue);
-      }
       this.flow++;
+    },
+    async getSchoolsByCriteria() {
+                this.filteredSchools = [];
+                this.$router.push({
+                    name: 'recommended', 
+                    query: { schoolsList: JSON.stringify([]) }
+                });
+                console.log("started");
+                try  {
+                    
+                    const schoolsResponse = await axios.get('http://localhost:5000/details');
+                    const allSchools = schoolsResponse.data;
+
+                    const areaPromises = this.selectedAreas.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/details/${school.School_Code}`).catch(e => e)) : [];
+                    const subjectPromises = this.selectedSubjects.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/subjects/${school.School_Code}`).catch(e => e)) : [];
+                    const ccaPromises = this.selectedCCAs.length !== 0 ? allSchools.map(school => axios.get(`http://localhost:5000/cca/${school.School_Code}`).catch(e => e)) : [];
+                    
+                    const [areas, subjects, ccas] = await Promise.all([
+                        Promise.all(areaPromises),
+                        Promise.all(subjectPromises),   
+                        Promise.all(ccaPromises),
+                    ]);
+
+                    for (let i = 0; i < allSchools.length; i++) {
+                      console.log(i)
+                        const school = allSchools[i];
+                        const hasSelectedRegion = this.selectedAreas.length === 0 || this.selectedAreas.includes(areas[i]?.data?.School_Region);
+                        const hasAllSelectedSubjects = this.selectedSubjects.length === 0 || this.selectedSubjects.every(subject => subjects[i]?.data?.Subjects_Offered.includes(subject));
+                        const hasAllSelectedCCAs = this.selectedCCAs.length === 0 || this.selectedCCAs.every(cca => ccas[i]?.data?.CCA_Offered.includes(cca));
+                        if (hasSelectedRegion && hasAllSelectedSubjects && hasAllSelectedCCAs) {
+                            this.filteredSchools.push(school.School_Code);
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+                console.log("filtered schools: " + this.filteredSchools);
+                this.loading=false;
+                this.$router.push({
+                    name: 'recommended', 
+                    query: { schoolsList: JSON.stringify(this.filteredSchools) }
+                });
     },
   },
 };

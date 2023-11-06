@@ -11,22 +11,22 @@
     <form>
         <div class="form-group">
         <div>
-        <div class="search-box">
-        <h1 class="search-title">Search Your School</h1>
-        <div class="search-input">
-            <input type="text" v-model="search" placeholder="Search..." class="form-control">
-            <!-- <button @click="AddSchool">Add</button> -->
-        </div>
-        <ul class="school-list">
-        <li v-for="(item, index) in filteredList" :key="index"  @click="SearchforSchool(item)">
-            <div class="school-info">
-            <img :src="getSchoolLogo(item)" class="school-logo" alt="School Logo" />
-            <div class="school-name" v-html="highlightSearchTerm(item)"></div>
+            <div class="search-box">
+            <h1 class="search-title">Search Your School</h1>
+            <div class="search-input">
+                <input type="text" v-model="search" placeholder="Search..." class="form-control">
+                <!-- <button @click="AddSchool">Add</button> -->
             </div>
-        </li>
-        </ul>
+            <ul class="school-list">
+            <li v-for="(item, index) in filteredList" :key="index"  @click="SearchforSchool(item)">
+                <div class="school-info">
+                <img :src="getSchoolLogo(item)" class="school-logo" alt="School Logo" />
+                <div class="school-name" v-html="highlightSearchTerm(item)"></div>
+                </div>
+            </li>
+            </ul>
+                </div>
             </div>
-        </div>
         </div>
     </form>
     <br /> <br />
@@ -78,10 +78,10 @@ export default {
     },
     computed: {
         filteredList() {
-            return this.schools.filter(item => {
-                return (this.search && item.toLowerCase().includes(this.search.toLowerCase()));
-            });
-        },
+      return this.schools.filter((item) => {
+        return this.search && item.toLowerCase().startsWith(this.search.toLowerCase());
+      });
+    },
     },
     mounted() {
         this.GetSchoolNames();

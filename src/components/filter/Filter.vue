@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="checkbox-list collapse" id="areaCollapse">
-                <div v-for="area in areas" :key="area">
+                <div v-for="area in areas" :key="area" :class="{'highlight': selectedAreas.includes(area)}">
                     <input type="checkbox" :value="area" v-model="selectedAreas">
                     {{ area }}
                 </div>
@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="checkbox-list collapse" id="subjectCollapse">
-            <div v-for="subject in subjects" :key="subject">
+            <div v-for="subject in subjects" :key="subject" :class="{'highlight': selectedSubjects.includes(subject)}">
                 <input type="checkbox" :value="subject" v-model="selectedSubjects">
                 {{ subject }}
             </div>
@@ -51,7 +51,7 @@
                 </a>
             </div>
             <div class="checkbox-list collapse" id="ccaCollapse">
-            <div v-for="cca in ccas" :key="cca">
+            <div v-for="cca in ccas" :key="cca" :class="{'highlight': selectedCCAs.includes(cca)}">
                 <input type="checkbox" :value="cca" v-model="selectedCCAs">
                 {{ cca }}
             </div>
@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="checkbox-list collapse" id="dsaCollapse">
-            <div v-for="dsa in dsas" :key="dsa">
+            <div v-for="dsa in dsas" :key="dsa" :class="{'highlight': selectedDSAs.includes(dsa)}">
                 <input type="checkbox" :value="dsa" v-model="selectedDSAs">
                 {{ dsa }}
             </div>
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="checkbox-list collapse" id="speEdCollapse">
-            <div v-for="se in specialEducations" :key="se">
+            <div v-for="se in specialEducations" :key="se" :class="{'highlight': selectedSpecialEducations.includes(se)}">
                 <input type="checkbox" :value="se" v-model="selectedSpecialEducations">
                 {{ se }}
             </div>
@@ -388,7 +388,7 @@
     }
     .filter-criteria {
         margin: 20px;
-        width: 250px;
+        width: 255px;
         height: 350px;
         position: relative;
     }
@@ -444,5 +444,8 @@
     .rotate-icon {
         transform: rotate(180deg);
         transition: transform 0.2s;
+    }
+    .highlight {
+        background-color: #e6f7ff; /* or any highlight color you prefer */
     }
 </style>

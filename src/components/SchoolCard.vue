@@ -103,6 +103,7 @@ export default {
         },
         openDialog() {
             this.$refs.moreInfo.showModal();
+            window.scrollTo(0, 0);
         },
         closeDialog() {
             this.$refs.moreInfo.close();
