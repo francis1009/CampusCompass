@@ -4,7 +4,7 @@
             <h1>{{ school.School_Name }}</h1>
             <img width=200 height=200 :src=school_image>
             <h2>general info</h2>
-            <table>
+            <table class="general_table">
                 <tr>
                     <td class="general_data">Address: {{ school.School_Address }}</td>
                     <td class="general_data">Postal Code: {{ school.School_Postal_Code }}</td>
@@ -168,7 +168,7 @@
                 </p>
                 <div :class="['collapse', { 'show': isCollapsedMap }]" id="collapseExampleMap">
                     <div class="dropdown_data">
-                    <h2>Map</h2>
+                    <h2 class="map">Map</h2>
                     <img :src=one_map alt="map" width="260" height="260"/>
                     </div>
                 </div>
@@ -251,6 +251,9 @@
     
 }
 
+.general_table {
+    margin-bottom: 20px;
+}
 .general_data {
     margin: 10px;
     padding: 10px;
@@ -261,6 +264,10 @@
     margin-left: 200px;
     border: 1px solid black;
     border-radius: 5%;
+}
+
+.map {
+    margin: auto;
 }
 
 </style>
