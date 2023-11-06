@@ -139,8 +139,8 @@
                 areasNorth: ['Ang Mo Kio', 'Woodlands', 'Sembawang', 'Yishun'],
                 areasNorthEast: ['Hougang', 'Punggol', 'Seng Kang','Serangoon'],
                 areasCentral:["Bukit Timah","Toa Payoh", "Bukit Merah", "Bishan", "Queenstown","Marine Parade","Novena", "Central"],
-                areasEast: ["Jurong East", "Clementi","Bukit Batok","Bukit Panjang","Choa Chu Kang","Jurong West"],
-                areasWest: ["Kallang", "Bedok", "Geylang", "Tampines", "Pasir Ris"],
+                areasWest: ["Jurong East", "Clementi","Bukit Batok","Bukit Panjang","Choa Chu Kang","Jurong West"],
+                areasEast: ["Kallang", "Bedok", "Geylang", "Tampines", "Pasir Ris"],
                 subjects: ['Additional Mathematics','Aesthetics(Art)','Aesthetics(Design & Technology)',
                     'Aesthetics(Food & Consumer Education)','Aesthetics(Music)','Applied Learning Programme',
                     'Appreciation of Chinese Culture','Art','Art & Design','Art (Ip)','Basic Chinese Language','Basic Malay Language',
@@ -355,10 +355,6 @@
 
     .checkbox-list::-webkit-scrollbar-thumb:hover {
         background-color: #555;
-    }
-
-    label {
-        font-size: 
     }
 
     .btn-green {
