@@ -55,7 +55,7 @@
   <div class="comparison-container">
     <!-- Start of compare 1 -->
     <div class="comparison-box">
-      <div class="item-dropzone-area" style="height: 100vh;">
+      <div class="item-dropzone-area col-lg-6 offset-lg-3 col-sm-12" style="height: 100vh;">
         <h3 style="text-align: center;">Compare School 1</h3>
         <draggable v-model="school_to_compare1" :tag="'ul'" :itemKey="customKey" group="compare_school"
           @change="getschooldetails1" :move="handleMoveItem" @end="handleDragEndItem">
@@ -65,34 +65,63 @@
         </draggable>
         <!-- Content for Compare School 1 -->
         <div v-if="school_to_compare1.length > 0">
+          <table>
+            <thead>
+              <tr>
+                <th>School Logo</th>
+                <th>Attribute</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(value, attribute) in sch1">
+                <td><img :src="getSchoolLogo(school_to_compare1[0])" class="school-logo" alt="School Logo" /></td>
+                <td>{{ attribute }}</td>
+                <td>{{ value }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Subjects Offered</h4>
           <ul>
-            <div v-for="attribute in sch1">{{ attribute }}</div>
+            <li v-for="subject in subjects1" :style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</li>
           </ul>
-          <div v-for="subject in subjects1">
-            <div v-bind:style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
-          </div>
         </div>
       </div>
     </div>
     <!-- End of compare 1 -->
+    
     <!-- Start of compare 2 -->
     <div class="comparison-box">
-      <div class="item-dropzone-area" style="height: 100vh;">
+      <div class="item-dropzone-area col-lg-6 offset-lg-3 col-sm-12" style="height: 100vh;">
         <h3 style="text-align: center;">Compare School 2</h3>
         <draggable v-model="school_to_compare2" :tag="'ul'" :itemKey="customKey" group="compare_school"
           @change="getschooldetails2" :move="handleMoveItem" @end="handleDragEndItem">
           <template v-slot:item="{ element }">
-            <li>{{ element }}</li>
+            <div id="drag">{{ element }}</div>
           </template>
         </draggable>
         <!-- Content for Compare School 2 -->
         <div v-if="school_to_compare2.length > 0">
+          <table>
+            <thead>
+              <tr>
+                <th>School Logo</th>
+                <th>Attribute</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(value, attribute) in sch2">
+                <td><img :src="getSchoolLogo(school_to_compare2[0])" class="school-logo" alt="School Logo" /></td>
+                <td>{{ attribute }}</td>
+                <td>{{ value }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Subjects Offered</h4>
           <ul>
-            <li v-for="attribute in sch2">{{ attribute }}</li>
+            <li v-for="subject in subjects2" :style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">{{ subject }}</li>
           </ul>
-          <div v-for="subject in subjects2">
-            <div v-bind:style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
-          </div>
         </div>
       </div>
     </div>
@@ -289,12 +318,12 @@ export default {
 .comparison-container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+
 }
 
 .comparison-box {
   flex: 1;
-  border: 1px solid black;
+
   height: auto;
 }
 
