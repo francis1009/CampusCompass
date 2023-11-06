@@ -136,11 +136,6 @@
                     'Bukit Timah','Central','Choa Chu Kang','Clementi','Geylang','Hougang','Jurong East',
                     'Jurong West','Kallang','Marine Parade','Novena','Pasir Ris','Punggol','Queenstown',
                     'Sembawang','Seng Kang','Serangoon','Tampines','Toa Payoh','Woodlands','Yishun'],
-                areasNorth: ['Ang Mo Kio', 'Woodlands', 'Sembawang', 'Yishun'],
-                areasNorthEast: ['Hougang', 'Punggol', 'Seng Kang','Serangoon'],
-                areasCentral:["Bukit Timah","Toa Payoh", "Bukit Merah", "Bishan", "Queenstown","Marine Parade","Novena", "Central"],
-                areasEast: ["Jurong East", "Clementi","Bukit Batok","Bukit Panjang","Choa Chu Kang","Jurong West"],
-                areasWest: ["Kallang", "Bedok", "Geylang", "Tampines", "Pasir Ris"],
                 subjects: ['Additional Mathematics','Aesthetics(Art)','Aesthetics(Design & Technology)',
                     'Aesthetics(Food & Consumer Education)','Aesthetics(Music)','Applied Learning Programme',
                     'Appreciation of Chinese Culture','Art','Art & Design','Art (Ip)','Basic Chinese Language','Basic Malay Language',
@@ -159,7 +154,7 @@
                     'Badminton (Girls)','Band - Military (Girls and Boys)','Basketball (Girls and Boys)','Basketball (Boys)',
                     'Basketball (Girls)','Biological Science (Girls and Boys)','Bowling (Boys)','Bowling (Girls)','Boys\' Brigade (Boys)','Canoeing (Girls and Boys)',
                     'Canoeing (Boys)','Canoeing (Girls)','Chinese Calligraphy and Brush Paiting (Girls and Boys)','Chinese Chess (Boys)','Chinese Chess (Girls and Boys)',
-                    'Chinese Culture and Language (Girls)','Chinese Dance (Girls and Boys)','Chinese Dance (Girls and Boys)','Chinese Drama (Girls and Boys)',
+                    'Chinese Culture and Language (Girls)','Chinese Dance (Girls and Boys)','Chinese Drama (Girls and Boys)',
                     'Chinese Drama (Girls)','Chinese Drums (Girls and Boys)','Chinese Language, Drama and Debating (Girls)','Chinese Orchestra (Boys)',
                     'Chinese Orchestra (Girls and Boys)','Chinese Orchestra (Girls)','Choir (Boys)','Choir (Girls and Boys)','Choir (Girls)','Community Service (Girls and Boys)',
                     'Community Service (Rotary-Sponsored) (Girls and Boys)','Concert Band (Boys)','Concert Band (Girls and Boys)','Concert Band (Girls)',
@@ -184,7 +179,7 @@
                     'National Cadet Corps (NCC) (Air) (Girls and Boys)','National Cadet Corps (NCC) (Land) (Boys)','National Cadet Corps (NCC) (Land) (Girls and Boys)',
                     'National Cadet Corps (NCC) (Land) (Girls)','National Cadet Corps (NCC) (Sea) (Boys)','National Cadet Corps (NCC) (Sea) (Girls and Boys)',
                     'National Cadet Corps (NCC) (Sea) (Girls)','National Civil Defence Cadet Corps (NCDCC) (Boys)','National Civil Defence Cadet Corps (NCDCC) (Girls',
-                    'National Civil Defence Cadet Corps (NCDCC) (Girls)','National Police Cadet Corps (NPCC) (Boys)','National Police Cadet Corps (NPCC) (Girls and Boys',
+                    'National Civil Defence Cadet Corps (NCDCC) (Girls)','National Police Cadet Corps (NPCC) (Boys)','National Police Cadet Corps (NPCC) (Girls and Boys)',
                     'National Police Cadet Corps (NPCC) (Girls)','National Police Cadet Corps (NPCC) (Sea) (Girls and Boys)','Netball (Girls)',
                     'Outdoor Adventure (Girls and Boys)','Percussion Ensemble (Girls and Boys)', 'Photography (Boys)', 'Photography (Girls and Boys)', 'Photography (Girls)',
                     'Physical Science (Boys)', 'Physical Science (Girls and Boys)', 'Publication (Boys)', 'Red Cross Youth (Girls and Boys)', 'Red Cross Youth (Girls)',
@@ -355,10 +350,6 @@
 
     .checkbox-list::-webkit-scrollbar-thumb:hover {
         background-color: #555;
-    }
-
-    label {
-        font-size: 
     }
 
     .btn-green {
