@@ -1,0 +1,257 @@
+/* Nav Bar */
+.navbar-bg {
+    background-color: #769ABE;
+}
+
+.bg-row { 
+    color: #ffffff; 
+    background-color: #E46F44 !important;
+    border-color: #FFFFFF; 
+} 
+
+/* Button Color */
+.btn-bg { 
+    color: #ffffff; 
+    background-color: #E46F44 !important;
+    border-color: #FFFFFF; 
+} 
+
+/* Button Color */
+.btn-blue { 
+    color: #ffffff; 
+    background-color: #769ABE !important;
+    border-color: #FFFFFF; 
+} 
+
+/* Scrolling Effect */
+.parallax {
+/* The image used */
+background-image: url('../img/headerbg.jpg');
+
+/* Full height */
+height: 80vh; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Text Color */
+.text-orange {
+    color: #E8AA9B !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #DCD5DC !important;
+    color: black !important;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+  
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+#test {
+    margin-left: 400px;
+    margin-top: 90px;
+}
+
+
+
+
+.featured{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+/*Home page cards*/
+@media screen and (min-width: 769px){
+    .cards-wrapper{
+        display: flex;
+    }
+
+    .card{
+        margin: 0.5em;
+    }
+
+    .image-wrapper{
+        height: 12.5vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .card:not(:first-child){
+        display:none;
+    }
+
+    .carousel-item{
+        padding: 0 100px;
+    }
+}
+
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*Home Page Carousel*/
+.carousel-item{
+    padding: 0 180px;
+}
+
+.righter {
+    float: right;
+}
+
+
+
+/* Slider Filter */
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  /* Register & Login Page */
+  #content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid lightgray;
+    padding: 4rem 4rem;
+    border-radius: 5px;
+    background: #fefefe;
+  }
+
+  .container {
+    width: 400px;
+    max-width: 95%;
+  }
+
+
+
+
+
+/* Google Login Button */
+.login-with-google-btn {
+    transition: background-color .3s, box-shadow .3s;
+      
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    
+}
+
+.login-with-google-btn:hover{
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+
+
+
+
+/* itinerary table styles */
+.dayStyle{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.headStyle{
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.activityStyle{
+    padding-bottom: 10px;
+}
+
+
+

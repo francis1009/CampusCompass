@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <title>TriPPlanner | My Trips</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-bg text-white">
+        <div class="container-fluid">
+            <div class="d-flex">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mx-3 text-white text-bold" href="../index.html" >
+                    <img src="../img/logo.png" width="80" height="80" alt="">TriPPlanner
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills pill-color">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="browse.html">Browse Itineraries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="plantrip.html">Plan Trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="mytrips.html">My Trips</a>
+                    </li>
+                </ul>
+
+                
+                
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="login.html" role="button" class="btn btn-success px-3 mb-1 me-2" aria-controls="#picker-editor" id="loginPage">Login</a>
+                <a href="register.html" role ="button" class="btn btn-light mb-1 me-lg-3" aria-controls="#picker-editor" id="registerPage">Register</a>
+                <span class="px-3" id="loginUser"></span>
+                <a role="button" class="btn btn-bg mb-1 me-lg-3 text-white" aria-controls="#picker-editor" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Container -->
+    <div class="container-flex bg-image" style="background-image: url(../img/sunset.jpg); height: 50vh;"> 
+        <section class="container pt-5">
+            <section class="mb-10 text-center text-md-start"> 
+                <div class="row align-items-center"> 
+                    <div class="col-md-6 mb-4 mb-md-0"> 
+                        <h2 class="mb-4 display-3 fw-bold ls-tight"> 
+                        <span class="text-orange">My Planned</span> <br> <span class="text-white">Trips</span> 
+                        </h2>
+                    </div> 
+                </div> 
+            </section>
+        </section>
+    </div>
+
+
+    <div class="container-fluid">
+        <!-- <h1 class="text-center my-5">My Planned Trips</h1> -->
+
+        <div class="accordion accordion-flush pt-5" id="accordionFlushExample">
+
+            <!-- ACCORDION ITEMS FOR EACH TRIP -->
+
+        </div>
+
+        <hr>
+        
+        <table id="plans"></table>
+    </div>
+
+
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+    import { getDatabase, ref, onValue, set, update, get, push, child, remove } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBTz07CsUuC8llduTdGo_e81mWjQcdw8oI",
+        authDomain: "wad2-tripplanner.firebaseapp.com",
+        projectId: "wad2-tripplanner",
+        storageBucket: "wad2-tripplanner.appspot.com",
+        messagingSenderId: "1078917579599",
+        appId: "1:1078917579599:web:d59344d7b81a0cb1e97b3a",
+        databaseURL: "https://wad2-tripplanner-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // connect to the realtime database
+    const db = getDatabase(app);
+
+
+
+
+    /* AUTHENTICATION CODE: START */
+    import { getAuth, onAuthStateChanged, signInWithPopup, signOut, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js";
+
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+    var loginUser = false; // Current Logged In User, false if not logged in.
+
+    // when authentication status changed 
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            // User is signed in, see docs for a list of available properties 
+            // https://firebase.google.com/docs/reference/js/firebase.User
+
+            const uid = user.uid;
+            // ... 
+            loginUser = user;
+            
+
+            document.getElementById('loginPage').style.display = "none"
+            document.getElementById('registerPage').style.display = "none"
+            document.getElementById('loginUser').innerText = `Current User: ${user.email}`;
+
+
+            //GET EACH ITINERARY UNDER CURRENT USER
+            onValue(ref(db, 'AllItineraries/' + uid), (snapshot) => {
+
+                // console.log(snapshot.val())
+                var counter = 1
+
+
+                for (let itinerary_key in snapshot.val()) {
+                    var itinerary_obj = snapshot.val()[itinerary_key]
+                    var itinerary = itinerary_obj.itinerary
+
+                    //console.log(itinerary_key)
+                    //console.log(itinerary_obj)
+                    //console.log(itinerary)
+
+
+                    // NEW ACCORDION HERE
+                    document.getElementById("accordionFlushExample").innerHTML += 
+                    `
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush${counter}" aria-expanded="false">
+                                ${itinerary_obj.ItineraryName}
+                            </button>
+                        </h2>
+                        <div id="flush${counter}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" id="trip${counter}">
+                                <button class="btn btn-danger my-3" id="deleteTrip${counter}" value="${itinerary_key}">Delete</button>
+                                <a class="btn btn-blue" href="plantrip.html?key=${itinerary_key}" role="button">Update</a>
+                            </div>
+                        </div>
+                    </div>
+                    `
+
+                    var accord = document.getElementById(`trip${counter}`)
+
+                    for (let day in itinerary) {
+                        let day_activities = itinerary[day]
+
+                        //console.log(day_activities)   // this logs every activity in the current day
+
+                        //NEW DAY TABLE HERE
+                        let tripContainer = document.createElement("div")
+                        tripContainer.setAttribute("class", "container")
+                        accord.appendChild(tripContainer)
+
+                        let dayRow = document.createElement("div")
+                        dayRow.setAttribute("class", "row bg-row dayStyle")
+                        tripContainer.appendChild(dayRow)
+
+                        let dayCol = document.createElement("div")
+                        dayCol.setAttribute("class", "col-12")
+                        dayCol.appendChild(document.createTextNode(day))
+                        dayRow.appendChild(dayCol)
+
+
+
+                        let headerRow = document.createElement("div")
+                        headerRow.setAttribute("class", "row headStyle bg-light text-center")
+                        tripContainer.appendChild(headerRow)
+
+                        let headerItem1 = document.createElement("div")
+                        headerItem1.setAttribute("class", "col-2")
+                        headerItem1.appendChild(document.createTextNode("Time"))
+
+                        let headerItem2 = document.createElement("div")
+                        headerItem2.setAttribute("class", "col-5")
+                        headerItem2.appendChild(document.createTextNode("Activity"))
+
+                        let headerItem3 = document.createElement("div")
+                        headerItem3.setAttribute("class", "col-5")
+                        headerItem3.appendChild(document.createTextNode("Address"))
+
+                        headerRow.appendChild(headerItem1)
+                        headerRow.appendChild(headerItem2)
+                        headerRow.appendChild(headerItem3)
+                        
+
+
+
+
+                        for (let activity in day_activities) {
+                            //console.log(day_activities[activity])     //this logs every activity in the list of activities in the current day
+                            
+
+                            //NEW ROW FOR ACTIVITY HERE
+
+                            let activityRow = document.createElement("div")
+                            activityRow.setAttribute("class", "row activityStyle bg-light text-center border-bottom")
+                            tripContainer.appendChild(activityRow)
+
+
+                            let activityItem1 = document.createElement("div")
+                            activityItem1.setAttribute("class", "col-2 py-1")
+                            activityItem1.appendChild(document.createTextNode(day_activities[activity].time))
+
+                            let activityItem2 = document.createElement("div")
+                            activityItem2.setAttribute("class", "col-5 py-1")
+                            activityItem2.appendChild(document.createTextNode(day_activities[activity].act_name))
+
+                            let activityItem3 = document.createElement("div")
+                            activityItem3.setAttribute("class", "col-5 py-1")
+                            activityItem3.appendChild(document.createTextNode(day_activities[activity].address))
+
+                            activityRow.appendChild(activityItem1)
+                            activityRow.appendChild(activityItem2)
+                            activityRow.appendChild(activityItem3)
+
+
+                            //let sep = document.createElement("hr")
+                            //sep.setAttribute("class", "bg-light")
+                            //tripContainer.appendChild(sep)
+                            
+                            
+                        }
+
+                    }
+
+                    counter += 1;
+                }
+
+                
+                
+                //DELETE TRIP FUNCTION
+                for(let i = 1; i < counter; i++){
+                    //console.log(i)
+                    function deleteTrip(){
+                        remove(ref(db, "AllItineraries/" + uid + "/" + document.getElementById(`deleteTrip${i}`).value))
+                            .then(() => {
+                                
+                            })
+                            .catch((error) => {
+                                
+                            })
+
+
+                        remove(ref(db, "ItinerariesCatalog/" + document.getElementById(`deleteTrip${i}`).value))
+                            .then(() => {
+                                alert("Trip Deleted Successfully!")
+                                location.reload()
+                            })
+                            .catch((error) => {
+                                alert("Unsuccessful, Error: " + error)
+                            })    
+                    }
+
+                    let deleteBtn = document.getElementById(`deleteTrip${i}`)
+                    deleteBtn.addEventListener('click', deleteTrip)
+                }
+
+
+                //if no trips in snapshot, display
+                if(snapshot.val() == null){
+                    document.getElementById("accordionFlushExample").innerHTML = `<h2 class="text-center pt-5">You have no planned trips!</h2>`
+                }
+
+            },
+                {onlyOnce: true}
+            )
+
+
+        } else {
+            // User is signed out 
+            // ... 
+            loginUser = false;
+            
+            document.getElementById("accordionFlushExample").innerHTML = `<h2 class="text-center pt-5">Please Login to View!</h2>`
+            document.getElementById('logoutBtn').style.display = "none"
+        }
+    });
+
+
+
+    // logout 
+    document.getElementById('logoutBtn').addEventListener('click', function () {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            loginUser = false;
+            location.href = "../index.html"
+
+        }).catch((error) => {
+            // An error happened. 
+            console.log(error);
+        });
+    }); /* AUTHENTICATION CODE: END */
+
+
+
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</html>
