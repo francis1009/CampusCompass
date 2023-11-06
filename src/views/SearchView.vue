@@ -157,6 +157,18 @@ export default {
         margin-right: 100px;
         margin-top: 50px;
     }
+    .school-list {
+        width: 100%; 
+        z-index: 10; 
+        max-height: 300px;
+        overflow-y: auto;
+        top: 100%; 
+        left: 0;
+        margin: 0; 
+        padding: 0; 
+        border: 1px solid #ccc;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
     .school-list li {
         list-style-type: none; 
     }
