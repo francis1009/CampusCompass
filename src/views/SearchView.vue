@@ -78,10 +78,10 @@ export default {
     },
     computed: {
         filteredList() {
-            return this.schools.filter(item => {
-                return (this.search && item.toLowerCase().includes(this.search.toLowerCase()));
-            });
-        },
+      return this.schools.filter((item) => {
+        return this.search && item.toLowerCase().startsWith(this.search.toLowerCase());
+      });
+    },
     },
     mounted() {
         this.GetSchoolNames();
