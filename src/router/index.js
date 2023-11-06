@@ -48,6 +48,11 @@ const router = createRouter({
       path: '/filter',
       name: 'filter',
       component: () => import('../views/FilterView.vue')
+    },
+    {
+      path: '/viewschools',
+      name: 'viewSchools',
+      component: () => import('../views/ViewAllSchools.vue')
     }
   ]
 })

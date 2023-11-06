@@ -1,26 +1,66 @@
-<template>
-    <body>
-        <div v-if="school">
+<template class="background_green">
+   
+        <div class="background_green" v-if="school">
+            <div class="d-flex justify-content-center" >
             <h1>{{ school.School_Name }}</h1>
-            <img width=200 height=200 :src=school_image>
-            <h2>general info</h2>
-            <table class="general_table">
-                <tr>
-                    <td class="general_data">Address: {{ school.School_Address }}</td>
-                    <td class="general_data">Postal Code: {{ school.School_Postal_Code }}</td>
-                    <td class="general_data">Region: {{ school.School_Region }}</td>
-                </tr>
-                <tr>
-                    <td class="general_data">School Mode: {{ school.School_Mode }}</td>
-                    <td class="general_data">School Nature: {{ school.School_Nature }}</td>
-                    <td class="general_data">School Type: {{ school.School_Type }}</td>
-                </tr>
-                <tr>
-                    <td class="general_data">School Website: <a :href=school_website_src>{{ school.School_Website }}</a></td>
-                    <td class="general_data">School Email: {{ school.School_Email }}</td>
-                    <td class="general_data">School Number: {{ school.School_Number }}</td>
-                </tr>
-            </table>
+            </div>
+            <div class="container d-flex justify-content-center">
+            <div class="row">
+            <div class="col-sm-3">
+                <div class="container text-center"><img class="img-fluid" width=360 height=60 :src=school_image></div>
+            
+            </div>
+            <div class="col-sm-9">
+                <div>
+                       Region: {{ school.School_Region }}
+                </div>
+                <div>
+                       Address: {{ school.School_Address }}
+                </div>
+                <div>
+                       Postal Code: {{ school.School_Postal_Code }}
+                    </div>
+                <div>
+                        School Code: {{ school.School_Code }}
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="background_green">
+            <div class="container d-flex justify-content-center"><h2 class="mb-5">General Information</h2></div>
+            
+            <div class="container d-flex justify-content-center">
+            
+                <h3 class="mb-4">School Characteristics</h3>
+            </div>
+            <div class="container d-flex justify-content-center">
+            <div class="col-lg-4 bubble">
+                <b>School Mode:</b> {{ school.School_Mode }}
+            </div>
+            <div class="col-lg-4 bubble">
+                <b>School Nature:</b> {{ school.School_Nature }}
+            </div>
+            <div class="col-lg-4 bubble">
+                <b>School Type:</b> {{ school.School_Type }}
+            </div>
+            </div>
+            <div class="container d-flex justify-content-center mt-4">
+            
+            <h3 class="mb-4">School Contact Information</h3>
+        </div>
+        <div class="container d-flex justify-content-center">
+        <div class="col-lg-4">
+            <b>School Phone Number:</b> {{ school.School_Number }}
+        </div>
+        <div class="col-lg-4">
+            <b>School Email:</b> {{ school.School_Email }}
+        </div>
+        <div class="col-lg-4">
+            <b>School Website:</b> <a :href="schoolwebsitesrc">{{ school.School_Website }}</a>
+        </div>
+        </div>
             <!--<ul>
                 <li>{{ school.School_Name }}</li>
                 <li>{{ school.School_Address }}</li>
@@ -28,17 +68,60 @@
                 <li>{{ school.School_Postal_Code }}</li>
             </ul>-->
         </div>
+        <hr>
+        <div class="background_green">
+        <div class="d-flex justify-content-center">
+            <h1>Location</h1>
+        </div>
+            <div>
+            <div class="d-flex justify-content-center">
+            <iframe :src=minimapsrc height="500" width="800" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" style="width: 451.333px; height: 451.333px;"></iframe>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center">
+            <h1>Find the Quickest Route to your House</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="text" v-model="originpostal" placeholder="Please input origin postal code">
+            <button class="btn-success" @click="displayroutes">
+                display routes
+            </button>
+        </div>
+            <div class="d-flex justify-content-center">
+            <div v-if="route_data">
+                <div v-for="leg in route_steps">
+                    
+                    <div v-if="leg.mode == 'BUS'">   
+                        <div>Take bus {{ leg.route }} from {{ leg.from.name }} to {{ leg.to.name }}</div>
+                    </div>
+                    <div v-else-if="leg.mode == 'SUBWAY'">
+                        <div>Take the {{ leg.route_long_name }} from {{ leg.from.stopCode }} to {{ leg.to.stopCode }}</div>
+                    </div>
+                    <div v-else-if="leg.mode == 'WALK'">
+                        <div>Walk from {{ leg.from.name }} to {{ leg.to.name }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <hr>
+        <div class="background_green">
+        <div class="d-flex justify-content-center">
+            <h1>School Offerings</h1>
+        </div>
 
-
-
+        <div class="text-center">
         <div class="row">
-        <div class="col-sm-6" v-if="subjects">
+        <div class="col-12 mt-4" v-if="subjects">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapseSubjects" role="button" aria-expanded="isCollapsedSubjects"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapseSubjects" role="button" aria-expanded="isCollapsedSubjects"
                     aria-controls="collapseExampleSubjects">
                     Subjects
                 </a>
             </p>
+        </div>
             <div :class="['collapse', { 'show': isCollapsedSubjects }]" id="collapseExampleSubjects">
                 <ul class="dropdown_data">
                     <li v-for="subject of subjects">
@@ -49,13 +132,15 @@
         </div>
 
 
-        <div class="col-sm-6" v-if="dsa">
+        <div class="col-12mt-4 " v-if="dsa">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapseDSA" role="button" aria-expanded="isCollapsedDSA"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapseDSA" role="button" aria-expanded="isCollapsedDSA"
                     aria-controls="collapseExampleDSA">
                     DSA
                 </a>
             </p>
+        </div>
             <div :class="['collapse', { 'show': isCollapsedDSA }]" id="collapseExampleDSA">
                 <ul class="dropdown_data">
                     <li v-for="dsa of dsa">
@@ -66,13 +151,15 @@
         </div>
 
 
-        <div class="col-sm-6" v-if="cca">
+        <div class="col-12 mt-4" v-if="cca">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapseCCA" role="button" aria-expanded="isCollapsedCCA"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapseCCA" role="button" aria-expanded="isCollapsedCCA"
                     aria-controls="collapseExampleCCA">
                     CCA
                 </a>
             </p>
+        </div>
             <div :class="['collapse', { 'show': isCollapsedCCA }]" id="collapseExampleCCA">
                 <ul class="dropdown_data">
                     <li v-for="cca of cca">
@@ -81,13 +168,16 @@
                 </ul>
             </div>
         </div>
-        <div class="col-sm-6" v-if="affiliations">
+        <div class="col-12 mt-4" v-if="affiliations">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapseAffiliations" role="button"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapseAffiliations" role="button"
                     aria-expanded="isCollapsedAffiliations" aria-controls="collapseExampleAffiliations">
                     Affiliated Schools
                 </a>
             </p>
+        </div>
+        <div v-if="affiliations.length > 0">
             <div :class="['collapse', { 'show': isCollapsedAffiliations }]" id="collapseExampleAffiliations">
                 <ul class="dropdown_data">
                     <li v-for="affiliation of affiliations">
@@ -96,17 +186,31 @@
                 </ul>
             </div>
         </div>
+        <div v-else>
+            <div>
+                <div :class="['collapse', { 'show': isCollapsedAffiliations }]" id="collapseExampleAffiliations">
+                <ul class="dropdown_data">
+                    No Affiliated Schools :(
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
-    <div>
+    </div>
+    <div class="text-center">
     <div class="row">
-        <div class="col-sm-6" v-if="psle">
+        <div class="col-12 mt-4 text-center" v-if="psle">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapsePSLE" role="button" aria-expanded="isCollapsedPSLE"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapsePSLE" role="button" aria-expanded="isCollapsedPSLE"
                     aria-controls="collapseExamplePSLE">
                     PSLE scores
                 </a>
             </p>
+        </div>
             <div :class="['collapse', { 'show': isCollapsedPSLE }]" id="collapseExamplePSLE">
+                <div class="d-flex justify-content-center">
                 <table class="psle_table">
                     <tr>
                         <th class="psle_table_data">Standard</th>
@@ -134,6 +238,7 @@
                         <td class="psle_table_data">{{ psle.NT_NonAffiliation }}</td>
                     </tr>
                 </table>
+                </div>
                 <!--<ul>
                     <li>IP: {{ psle.IP_NonAffiliation }}</li>
                     <li>Express: {{ psle.Express_NonAffiliation }}</li>
@@ -142,13 +247,15 @@
                 </ul>-->
             </div>
         </div>
-        <div class="col-sm-6" v-if="electives">
+        <div class="col-12 mt-4" v-if="electives">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapseElective" role="button" aria-expanded="isCollapsedElective"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapseElective" role="button" aria-expanded="isCollapsedElective"
                     aria-controls="collapseExampleElective">
                     Electives
                 </a>
             </p>
+        </div>
             <div :class="['collapse', { 'show': isCollapsedElective }]" id="collapseExampleElective">
                 <ul class="dropdown_data" v-for="elective of electives">
                     <li v-for="elective_desc of elective">
@@ -159,7 +266,7 @@
             </div>
         </div>
         
-            <div  class="col-sm-6" v-if="one_map">
+            <!--<div  class="col-12 mt-4" v-if="one_map">
                 <p class="dropdown">
                     <a class="btn btn-success" @click="toggleCollapseMap" role="button" aria-expanded="isCollapsedMap"
                         aria-controls="collapseExampleMap">
@@ -172,20 +279,31 @@
                     <img :src=one_map alt="map" width="260" height="260"/>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6" v-if="special_ed">
+            </div>-->
+            <div class="col-12 mt-4" v-if="special_ed">
+            <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success" @click="toggleCollapseSpecialEd" role="button" aria-expanded="isCollapsedSpecialEd"
+                <a class="btn btn-success btn-responsive" @click="toggleCollapseSpecialEd" role="button" aria-expanded="isCollapsedSpecialEd"
                     aria-controls="specialedcondition">
                     Special Education Programmes
                 </a>
             </p>
+            </div>
+            <div v-if="special_ed.length > 0">
             <div :class="['collapse', { 'show': isCollapsedSpecialEd }]" id="collapseExampleSpecialEd">
                 <ul class="dropdown_data">
                     <li v-for="specialed of special_ed">
                         {{ specialed }}
                     </li>
                 </ul>
+            </div>
+            </div>
+            <div v-else>
+                <div :class="['collapse', { 'show': isCollapsedSpecialEd }]" id="collapseExampleSpecialEd">
+                <ul class="dropdown_data">
+                    No Special Education Programmes :(
+                </ul>
+            </div>
             </div>
             <!--<div :class="['collapse', {'show': isCollapsedSpecialEd}]" id="collapseSpecialEdError">
                 no special ed programmes
@@ -194,52 +312,36 @@
         
     </div>
     </div>
-
-        <div>
-            <div>
-            <iframe :src=minimapsrc height="500" width="800" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" style="width: 451.333px; height: 451.333px;"></iframe>
-            </div>
-        </div>
+</div>
+     
+        
     
-        <div>
-            <h1>Find the Quickest Route</h1>
-            <input type="text" v-model="originpostal" placeholder="please input origin postal code">
-            <button @click="displayroutes">
-                display routes
-            </button>
-            <div v-if="route_data">
-                <div v-for="leg in route_steps">
-                    
-                    <div v-if="leg.mode == 'BUS'">   
-                        <div>Take bus {{ leg.route }} from {{ leg.from.name }} to {{ leg.to.name }}</div>
-                    </div>
-                    <div v-else-if="leg.mode == 'SUBWAY'">
-                        <div>Take the {{ leg.route_long_name }} from {{ leg.from.stopCode }} to {{ leg.to.stopCode }}</div>
-                    </div>
-                    <div v-else-if="leg.mode == 'WALK'">
-                        <div>Walk from {{ leg.from.name }} to {{ leg.to.name }}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
 </template>
 <style scoped>
 .dropdown {
     display: flex;
     position: relative;
-    margin-left: 90px;
+    
 }
 
 .btn {
-    width: 250px;
-    margin-left: 100px;
+    width: 600px;
+    height: 50px;
+    
 }
+
+ul {
+    list-style-type: none;
+}
+/*.btn-responsive {
+    width: 100%; 
+    max-width: 600px;
+    white-space: normal; 
+}*/
 
 .psle_table {
     border-color: green;
     border-style: solid;
-    margin-left: 200px;
 }
 
 .psle_table_data {
@@ -251,6 +353,11 @@
     
 }
 
+hr {
+  border: none; /* Remove the default border */
+  height: 2px; /* Set the height to simulate the line */
+  background-color: #50ad82; /* Set your desired background color */
+}
 .general_table {
     margin-bottom: 20px;
 }
@@ -260,12 +367,32 @@
     border: 1px solid black;
 }
 
+li:hover {
+    background-color: rgb(92, 186, 171);
+}
 .dropdown_data {
-    margin-left: 200px;
+    
     border: 1px solid black;
     border-radius: 5%;
+    text-align:center;
+    width: 400px;
+    margin: auto;
+    padding: 5px;
 }
 
+.bubble {
+    border: 1px solid black;
+    border-radius: 25%;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    margin: 20px;
+    background-color: #ade3ca;
+}
+
+/*.background_green {
+    background-color: #ade3ca;
+}*/
 .map {
     margin: auto;
 }
