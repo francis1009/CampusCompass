@@ -65,32 +65,8 @@
         </draggable>
         <!-- Content for Compare School 1 -->
         <div v-if="school_to_compare1.length > 0">
-            <div class="compare_section">
-                <div>PSLE COP</div>
-                <div>IP Affiliated: {{ psle1.IP_Affiliation }}</div>
-                <div>IP Non-Afiiliated: {{ psle1.IP_NonAffiliation }}</div>
-                <div>Express Affiliated: {{ psle1.Express_Affiliation }}</div>
-                <div>Express Non-Affiliated: {{ psle1.Express_NonAffiliation }}</div>
-                <div>Normal(Academic) Affiliated: {{ psle1.NA_Affiliation }}</div>
-                <div>Normal(Academic) Non-Affiliated: {{ psle1.NA_NonAffiliation }}</div>
-                <div>Normal(Technical) Affiliated: {{ psle1.NT_Affiliation }}</div>
-                <div>Normal(Technial) Non-Affiliated: {{ psle1.NT_NonAffiliation }}</div>
-            </div>
-            <br>
-            <div class="compare_section">
-          <div>Subjects Offered</div>
-          <div v-for="subject in subjects1">
-            <div v-bind:style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
-          </div>
-        </div>
-        <br>
-        <div class="compare_section">
-            
-          <div>CCAs Offered</div>
-          <div v-for="cca in cca1">
-            <div v-bind:style="{ color: cca2.includes(cca) ? 'green' : 'red' }">{{ cca }}</div>
-          </div>
-        </div>
+    
+     
           <table>
             <thead>
               <tr>
@@ -111,7 +87,27 @@
           <ul>
             <li v-for="subject in subjects1" :style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</li>
           </ul>
+          <div class="compare_section">
+                <div>PSLE COP</div>
+                <div>IP Affiliated: {{ psle1.IP_Affiliation }}</div>
+                <div>IP Non-Afiiliated: {{ psle1.IP_NonAffiliation }}</div>
+                <div>Express Affiliated: {{ psle1.Express_Affiliation }}</div>
+                <div>Express Non-Affiliated: {{ psle1.Express_NonAffiliation }}</div>
+                <div>Normal(Academic) Affiliated: {{ psle1.NA_Affiliation }}</div>
+                <div>Normal(Academic) Non-Affiliated: {{ psle1.NA_NonAffiliation }}</div>
+                <div>Normal(Technical) Affiliated: {{ psle1.NT_Affiliation }}</div>
+                <div>Normal(Technial) Non-Affiliated: {{ psle1.NT_NonAffiliation }}</div>
+            </div>
+               
+          <div>CCAs Offered</div>
+          <div v-for="cca in cca1">
+            <div v-bind:style="{ color: cca2.includes(cca) ? 'green' : 'red' }">{{ cca }}</div>
+          </div>
         </div>
+       
+           
+     
+         
       </div>
     </div>
     <!-- End of compare 1 -->
@@ -410,14 +406,6 @@ export default {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-}
-.compare_section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid green;
-  border-radius: 5%;
-
 }
 
 </style>
