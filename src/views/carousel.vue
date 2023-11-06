@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-container">
     <!-- Background Carousel -->
-    <div id="carouselBackground" class="carousel slide" data-bs-ride="carousel" :data-bs-interval="5000">
+    <div id="carouselBackground" class="carousel slide">
       <div class="carousel-inner">
         <div v-for="(carousel, index) in carousels" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
           <img :src="carousel.image" class="d-block w-100 image">
@@ -90,11 +90,6 @@ export default {
         },
       ],
       carousels: [
-        {
-          image: 'src/assets/CHS.jpg',
-          school: 'Catholic High School',
-          description: 'Boys School is a messy place. Everyday got fighting',
-        },
         {
           image: 'src/assets/NYGH.jpg',
           school: 'Nan Yang Girls School',
