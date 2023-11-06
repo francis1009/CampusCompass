@@ -362,6 +362,9 @@
         color: white;
         margin: 20px
     }
+    .btn-black:hover {
+        background-color: #8bb092;
+    }
     .loading-text {
         text-align: center;
         margin: 20px;
