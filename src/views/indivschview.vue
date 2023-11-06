@@ -102,6 +102,11 @@
                         <div>Walk from {{ leg.from.name }} to {{ leg.to.name }}</div>
                     </div>
                 </div>
+                <br>
+                <div>
+                    <div>Estimated time: {{ Math.round(route_duration) }} minutes</div>
+                    <div>Total fare: ${{ route_fare }}</div>
+                </div>
             </div>
         </div>
         </div>
@@ -435,7 +440,10 @@ export default {
             destlong: "",
             route_data: {},
             route_steps: [],
-            schoolwebsitesrc: ""
+            schoolwebsitesrc: "",
+            total_route_details: {},
+            route_fare: "",
+            route_duration: "",
 
 
 
@@ -664,7 +672,11 @@ export default {
                                         console.log(response.data);
                                         this.route_data = response.data;
                                         console.log(this.route_data)
+                                        this.total_route_details = response.data.plan.itineraries[0];
                                         this.route_steps = response.data.plan.itineraries[0].legs;
+                                        
+                                        this.route_fare = response.data.plan.itineraries[0].fare;
+                                        this.route_duration = response.data.plan.itineraries[0].duration/60;
                                         console.log(this.route_steps)
                                         
                                     })

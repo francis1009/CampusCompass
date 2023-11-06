@@ -68,6 +68,7 @@
     
     <div class="row">
       <div class="col-12">
+        
         <div class="comparison-container ">
           <!-- Start of compare 1 -->
           <div class="comparison-box ">
@@ -688,6 +689,9 @@ export default {
 .table-container {
   overflow: auto;
   max-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width as needed */
+  grid-gap: 10px; /* Adjust the gap between tables as needed */
 }
 
 /* Style for the header table (fixed) */
@@ -708,5 +712,21 @@ export default {
     background-color: yellow; /* You can choose any color for highlighting */
   }
 /* Add responsive styles for different screen sizes here */
+
+.comparison-container {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.comparison-box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  max-width: calc(50% - 20px); /* Adjust the width as needed */
+}
 
 </style>
