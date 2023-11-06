@@ -11,14 +11,14 @@
     </div>
 
     <!-- dialog -->
-    <dialog ref="moreInfo" class="shadow-lg p-3 mb-5 bg-body rounded">
+    <dialog ref="moreInfo" class="dialog-wrapper shadow-lg p-3 mb-5 bg-body rounded">
       <div class="dialog">
         <div class="dialog-content">
-          <div class="school-logo">
-            <img :src="schoolImageUrl" alt="School Image" style="height: 13rem">
-          </div>
-          <div class="school-details">
-            <p class="school-name">{{ schoolName }}</p>
+          <h3 class="school-name">{{ schoolName }}</h3>
+          <div class=" d-flex school-details">
+            <div class="school-logo">
+              <img :src="schoolImageUrl" alt="School Image" style="max-width: 12rem; max-height:12rem; margin-right:50px">
+            </div>
             <div class="school-info">
               <div>
                 <label>Region:</label>
@@ -43,9 +43,10 @@
             </div>
           </div>
         </div>
-        <iframe :src="map_source" height="260" width="260" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen" style="width: 260px; height: 260px;"></iframe>
+        <iframe :src="map_source" height="260" width="260" scrolling="no" frameborder="0" 
+          allowfullscreen="allowfullscreen" style="width: 260px; height: 260px; margin-top:20px"></iframe>
         <menu class="mt-auto d-flex justify-content-center">
-          <button @click="closeDialog" class="btn btn-secondary">Close</button>
+          <button @click="closeDialog" class="btn btn-secondary" style="margin-right:50px">Close</button>
           <button @click="sendtoindivpage" class="btn btn-secondary">Link to School Page</button>
         </menu>
       </div>
@@ -103,7 +104,6 @@ export default {
         },
         openDialog() {
             this.$refs.moreInfo.showModal();
-            window.scrollTo(0, 0);
         },
         closeDialog() {
             this.$refs.moreInfo.close();
@@ -116,17 +116,31 @@ export default {
 </script>
 
 <style scoped>
-dialog {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 90%;
-    border: none;
-    border-radius: 5px;
+.dialog-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 90%;
+  border: none;
+  border-radius: 5px;
 }
-
+.dialog {
+    width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.school-details{
+  height:200px;
+}
+.school-name{
+  text-align:center;
+  margin-bottom:20px;
+}
 .btn {
   background-color: #50ad82;
   color: white;
