@@ -8,7 +8,6 @@ const router = createRouter({
       path: '/',
       name: 'recommended',
       component: () => import('../views/Recommended.vue'),
-      props: (route) => ({ schools: route.query.schools ? JSON.parse(route.query.schools) : [] })
     },
     {
       path: '/about',
@@ -37,7 +36,8 @@ const router = createRouter({
     {
       path: '/search',
       name: 'search',
-      component: () => import('../views/SearchView.vue')
+      component: () => import('../views/SearchView.vue'),
+      props: (route) => ({ schoolsList: route.query.schoolsList ? JSON.parse(route.query.schoolsList) : [] })
     },
     {
       path: '/compare',

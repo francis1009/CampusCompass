@@ -1,10 +1,19 @@
 <template>
+    <div class="filter-wrapper">
+    <h2>
+        Filter
+        <font-awesome-icon :icon="['fas', 'filter']" />
+    </h2>
     <div class="d-flex container">
         <div class="filter-criteria">
             <div>
-                <a class="btn" data-bs-toggle="collapse" data-bs-target="#areaCollapse" role="button" aria-expanded="false" aria-controls="areaCollapse"
-                    style="border-radius:20px">
-                    Areas
+                <a class="btn btn-filter" data-bs-toggle="collapse" data-bs-target="#areaCollapse" role="button" 
+                    aria-expanded="false" aria-controls="areaCollapse"
+                    style="border-radius:20px;" 
+                    :class="{'btn-black': !collapses.area, 'btn-green': collapses.area}" 
+                    @click="toggleCollapse('area')">
+                    Areas  
+                    <font-awesome-icon :icon="['fas', 'angle-up']" :class="{'rotate-icon': collapses.area}"/>
                 </a>
             </div>
             <div class="checkbox-list collapse" id="areaCollapse">
@@ -16,9 +25,12 @@
         </div>
         <div class="filter-criteria">
             <div>
-                <a class="btn" data-bs-toggle="collapse" data-bs-target="#subjectCollapse" role="button" aria-expanded="false" aria-controls="subjectCollapse"
-                    style="border-radius:20px">
-                    Subjects
+                <a class="btn btn-filter" data-bs-toggle="collapse" data-bs-target="#subjectCollapse" role="button" aria-expanded="false" aria-controls="subjectCollapse"
+                    style="border-radius:20px" 
+                    :class="{'btn-black': !collapses.subject, 'btn-green': collapses.subject}" 
+                    @click="toggleCollapse('subject')">
+                    Subjects  
+                    <font-awesome-icon :icon="['fas', 'angle-up']" :class="{'rotate-icon': collapses.subject}"/>
                 </a>
             </div>
             <div class="checkbox-list collapse" id="subjectCollapse">
@@ -30,9 +42,12 @@
         </div>
         <div class="filter-criteria">
             <div>
-                <a class="btn" data-bs-toggle="collapse" data-bs-target="#ccaCollapse" role="button" aria-expanded="false" aria-controls="ccaCollapse"
-                    style="border-radius:20px">
-                    CCA
+                <a class="btn btn-filter" data-bs-toggle="collapse" data-bs-target="#ccaCollapse" role="button" aria-expanded="false" aria-controls="ccaCollapse"
+                    style="border-radius:20px" 
+                    :class="{'btn-black': !collapses.cca, 'btn-green': collapses.cca}" 
+                    @click="toggleCollapse('cca')">
+                    CCA  
+                    <font-awesome-icon :icon="['fas', 'angle-up']" :class="{'rotate-icon': collapses.cca}"/>
                 </a>
             </div>
             <div class="checkbox-list collapse" id="ccaCollapse">
@@ -44,9 +59,12 @@
         </div>
         <div class="filter-criteria">
             <div>
-                <a class="btn" data-bs-toggle="collapse" data-bs-target="#dsaCollapse" role="button" aria-expanded="false" aria-controls="dsaCollapse"
-                    style="border-radius:20px">
-                    DSA
+                <a class="btn btn-filter" data-bs-toggle="collapse" data-bs-target="#dsaCollapse" role="button" aria-expanded="false" aria-controls="dsaCollapse"
+                    style="border-radius:20px" 
+                    :class="{'btn-black': !collapses.dsa, 'btn-green': collapses.dsa}"
+                     @click="toggleCollapse('dsa')">
+                    DSA  
+                    <font-awesome-icon :icon="['fas', 'angle-up']" :class="{'rotate-icon': collapses.dsa}"/>
                 </a>
             </div>
             <div class="checkbox-list collapse" id="dsaCollapse">
@@ -58,9 +76,12 @@
         </div>
         <div class="filter-criteria">
             <div>
-                <a class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#speEdCollapse" role="button" aria-expanded="false" aria-controls="speEdCollapse"
-                    style="border-radius:20px">
-                    Special Education
+                <a class="btn btn-filter" data-bs-toggle="collapse" data-bs-target="#speEdCollapse" role="button" aria-expanded="false" aria-controls="speEdCollapse"
+                    style="border-radius:20px" 
+                    :class="{'btn-black': !collapses.speEd, 'btn-green': collapses.speEd}" 
+                    @click="toggleCollapse('speEd')">
+                    Special Education  
+                    <font-awesome-icon :icon="['fas', 'angle-up']" :class="{'rotate-icon': collapses.speEd}"/>
                 </a>
             </div>
             <div class="checkbox-list collapse" id="speEdCollapse">
@@ -84,11 +105,12 @@
     </div>
     <div>
         <center>
-            <button @click="getSchoolsByCriteria" class="btn">Apply Filters</button>
+            <button @click="getSchoolsByCriteria" class="btn btn-secondary">Apply Filters</button>
         </center>
     </div>
     <div v-if="loading" class="loading-text">Filters are being applied...</div>
     <div v-if="noSchools" class="noSchools-text">No schools match your filters, please try something else :(</div>
+    </div>
 </template>
 
 <script>
@@ -101,6 +123,13 @@
             return{
                 loading: false,
                 noSchools: false,
+                collapses: {
+                    area: false,
+                    subject: false,
+                    cca: false,
+                    dsa: false,
+                    speEd: false
+                },
                 allSchoolInfo: [],
                 mainAreas: ['North', 'North-East', 'Central', 'East', 'West'],
                 areas: ['Ang Mo Kio','Bedok','Bishan','Bukit Batok','Bukit Merah','Bukit Panjang',
@@ -229,7 +258,18 @@
         mounted() {
         },
         methods: {
+            toggleCollapse(section) {
+                this.collapses[section] = !this.collapses[section];
+                
+            },
             async getSchoolsByCriteria() {
+                this.noSchools = false;
+                this.filteredSchools = [];
+                this.$router.push({
+                    name: 'search', 
+                    query: { schoolsList: JSON.stringify([]) }
+                });
+                console.log("started");
                 this.loading = true;
                 try  {
                     
@@ -273,8 +313,8 @@
                     this.noSchools = true;
                 }
                 this.$router.push({
-                    name: 'recommended', 
-                    query: { schools: JSON.stringify(this.filteredSchools) }
+                    name: 'search', 
+                    query: { schoolsList: JSON.stringify(this.filteredSchools) }
                 });
             },
         },
@@ -282,16 +322,25 @@
 </script>
 
 <style scoped>
+    h2{
+        margin-bottom: 30px;
+    }
     .filter-criteria {
         margin: 20px;
-        width: 200px;
-        height: 250px;
+        width: 250px;
+        height: 350px;
+        position: relative;
     }
     .checkbox-list {
-        max-height: 200px;
+        max-height: 225px;
         overflow-y: auto;
+        
     }
-
+    .filter-wrapper {
+        margin-left: 150px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+    }
     .checkbox-list::-webkit-scrollbar-track,
     .checkbox-list::-webkit-scrollbar {
         width: 10px; 
@@ -312,13 +361,28 @@
         font-size: 
     }
 
-    .btn {
+    .btn-green {
         background-color: #50ad82;
+        color: white;
+        margin: 20px
+    }
+    .btn-black {
+        background-color: #4d4d4d;
         color: white;
         margin: 20px
     }
     .loading-text {
         text-align: center;
         margin: 20px;
+    }
+    .collapse-icon {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        transition: 0.2s linear;
+    }
+    .rotate-icon {
+        transform: rotate(180deg);
+        transition: transform 0.2s;
     }
 </style>

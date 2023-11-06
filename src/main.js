@@ -18,10 +18,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faTable, faSquarePollVertical, faHeart, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faTable, faSquarePollVertical, faHeart, faAngleDoubleLeft, faAngleUp, faFilter } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faTable, faSquarePollVertical, faHeart, faAngleDoubleLeft)
+library.add(faTable, faSquarePollVertical, faHeart, faAngleDoubleLeft, faAngleUp, faFilter)
 
 
 
