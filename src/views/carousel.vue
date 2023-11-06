@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import VueCookies from 'vue-cookies';
 
 export default {
   data() {
@@ -58,7 +57,7 @@ export default {
           ],
         },
         {
-          question: "What subject is your child interested in?",
+          question: "What subject are you/is your child interested in?",
           options: [
             { text: 'Language', type: 'btn btn-custom' },
             { text: 'Math', type: 'btn btn-custom' },
@@ -69,7 +68,7 @@ export default {
           ],
         },
         {
-          question: "What hobbies does your child interested in?",
+          question: "What hobbies are you/is your child interested in?",
           options: [
             { text: 'Sports', type: 'btn btn-custom' },
             { text: 'Arts', type: 'btn btn-custom' },
@@ -87,13 +86,11 @@ export default {
       carousels: [
         {
           image: 'src/assets/NYGH.jpg',
-          school: 'Nan Yang Girls School',
-          description: 'Girls School',
         },
         // Add more carousel items as needed
       ],
       userResponses: [],
-      selectedArea: [],
+      selectedMainArea: [],
       selectedSubjects: [],
       selectedCCAs: [],
       filteredSchools: []
@@ -101,21 +98,60 @@ export default {
   },
   mounted() {
     // Check if the user has answered the questions before
-    const userData = VueCookies.get('userData');
-    if (userData) {
-      this.userResponses = userData;
-      this.flow = this.scenarios.length - 1;
-    }
   },
   methods: {
     handleOptionClick(option) {
       if (this.flow === 0 && option.text === 'No') {
-        this.$emit('scrollToRecommend');
+        this.$router.push('/search');
         return;
       }
 
-      if (this.flow !== 0) {
-        this.userResponses.push(option.text);
+      if (this.flow === 1) {
+        this.selectedMainArea.push(option.text);
+      }
+
+      if (this.flow === 2) {
+        if (option.text === 'Language') {
+          this.selectedSubjects.push('English Language');
+          this.selectedSubjects.push('Chinese Language');
+          this.selectedSubjects.push('Malay Language');
+          this.selectedSubjects.push('Tamil Language');
+        } else if (option.text === 'Math') {
+          this.selectedSubjects.push('Additional Mathematics');
+          this.selectedSubjects.push('Mathematics');
+        } else if (option.text === 'Science') {
+          this.selectedSubjects.push('Biology');
+          this.selectedSubjects.push('Chemistry');
+          this.selectedSubjects.push('Physics');
+        } else if (option.text === 'Humanities') {
+          this.selectedSubjects.push('Geography');
+          this.selectedSubjects.push('History');
+          this.selectedSubjects.push('Literature in English');
+        } else if (option.text === 'Art') {
+          this.selectedSubjects.push('Art');
+          this.selectedSubjects.push('Design & Technology');
+          this.selectedSubjects.push('Drama');
+          this.selectedSubjects.push('Music');
+        }
+      }
+
+      if (this.flow === 3) {
+        if (option.text === 'Sports') {
+          this.selectedCCAs.push('Basketball (Girls and Boys)');
+          this.selectedCCAs.push('Badminton (Girls and Boys)');
+          this.selectedCCAs.push('Football (Girls and Boys)');
+          this.selectedCCAs.push('Table Tennis (Girls and Boys)');
+        } else if (option.text === 'Arts') {
+          this.selectedCCAs.push('Arts and Crafts (Girls and Boys)');
+          this.selectedCCAs.push('Concert Band (Girls and Boys)');
+          this.selectedCCAs.push('Modern Dance (Girls and Boys)');
+          this.selectedCCAs.push('English Drama (Girls and Boys)');
+        } else if (option.text === 'Uniform Group') {
+          this.selectedCCAs.push('Boys\' Brigade (Boys)');
+          this.selectedCCAs.push('St John Brigade (Girls and Boys)');
+          this.selectedCCAs.push('National Police Cadet Corps (NPCC) (Girls and Boys)');
+          this.selectedCCAs.push('National Cadet Corps (NCC) (Land) (Girls and Boys)');
+        }
       }
 
       if (this.flow === this.scenarios.length - 2) {
@@ -127,7 +163,7 @@ export default {
           var myCookieValue = VueCookies.get('userData');
           console.log('Retrieved Cookie:', myCookieValue);
           this.$emit('scrollToRecommend');
-        }, 2000);
+        }, 4000);
       }
 
       if (option.text === 'Click here to redo the question') {
