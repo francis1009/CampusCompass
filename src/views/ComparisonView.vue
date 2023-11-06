@@ -65,6 +65,32 @@
         </draggable>
         <!-- Content for Compare School 1 -->
         <div v-if="school_to_compare1.length > 0">
+            <div class="compare_section">
+                <div>PSLE COP</div>
+                <div>IP Affiliated: {{ psle1.IP_Affiliation }}</div>
+                <div>IP Non-Afiiliated: {{ psle1.IP_NonAffiliation }}</div>
+                <div>Express Affiliated: {{ psle1.Express_Affiliation }}</div>
+                <div>Express Non-Affiliated: {{ psle1.Express_NonAffiliation }}</div>
+                <div>Normal(Academic) Affiliated: {{ psle1.NA_Affiliation }}</div>
+                <div>Normal(Academic) Non-Affiliated: {{ psle1.NA_NonAffiliation }}</div>
+                <div>Normal(Technical) Affiliated: {{ psle1.NT_Affiliation }}</div>
+                <div>Normal(Technial) Non-Affiliated: {{ psle1.NT_NonAffiliation }}</div>
+            </div>
+            <br>
+            <div class="compare_section">
+          <div>Subjects Offered</div>
+          <div v-for="subject in subjects1">
+            <div v-bind:style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
+          </div>
+        </div>
+        <br>
+        <div class="compare_section">
+            
+          <div>CCAs Offered</div>
+          <div v-for="cca in cca1">
+            <div v-bind:style="{ color: cca2.includes(cca) ? 'green' : 'red' }">{{ cca }}</div>
+          </div>
+        </div>
           <table>
             <thead>
               <tr>
@@ -102,26 +128,12 @@
         </draggable>
         <!-- Content for Compare School 2 -->
         <div v-if="school_to_compare2.length > 0">
-          <table>
-            <thead>
-              <tr>
-                <th>School Logo</th>
-                <th>Attribute</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(value, attribute) in sch2">
-                <td><img :src="getSchoolLogo(school_to_compare2[0])" class="school-logo" alt="School Logo" /></td>
-                <td>{{ attribute }}</td>
-                <td>{{ value }}</td>
-              </tr>
-            </tbody>
-          </table>
-          <h4>Subjects Offered</h4>
           <ul>
-            <li v-for="subject in subjects2" :style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">{{ subject }}</li>
+            <li v-for="attribute in sch2">{{ attribute }}</li>
           </ul>
+          <div v-for="subject in subjects2">
+            <div v-bind:style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -156,6 +168,10 @@ export default {
       sch2: {},
       subjects1: [],
       subjects2: [],
+        cca1: [],
+        psle1: {},
+        cca2: [],
+        psle2: {},
       compare_value1: false,
       compare_value2: false,
       showResults: false,
@@ -273,7 +289,25 @@ export default {
         .catch(error => {
           console.error(error);
         });
-
+      axios.get('http://localhost:5000/cca/' + this.sch1id)
+        .then(response => {
+            console.log(response.data);
+            this.cca1 = response.data.CCA_Offered;
+            console.log(this.cca1);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+     axios.get('http://localhost:5000/psle/' + this.sch1id)
+        .then(response => {
+            console.log(response.data);
+            this.psle1 = response.data;
+            console.log(this.psle1);
+        })
+        .catch(error => {
+            console.error(error);
+            
+        });
     },
     getschooldetails2() {
       console.log(this.school_to_compare2);
@@ -307,7 +341,27 @@ export default {
         .catch(error => {
           console.error(error);
         });
+        axios.get('http://localhost:5000/cca/' + this.sch2id)
+        .then(response => {
+            console.log(response.data);
+            this.cca2 = response.data.CCA_Offered;
+            console.log(this.cca2);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+     axios.get('http://localhost:5000/psle/' + this.sch2id)
+        .then(response => {
+            console.log(response.data);
+            this.psle2 = response.data;
+            console.log(this.psle2);
+        })
+        .catch(error => {
+            console.error(error);
+            
+        });
 
+        
     }
   },
 
@@ -356,6 +410,14 @@ export default {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+}
+.compare_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5%;
+
 }
 
 </style>
