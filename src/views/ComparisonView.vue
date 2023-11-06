@@ -115,8 +115,13 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>Subjects Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>Subjects Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
                       <tr v-for="subject in subjects1">
                         <td>{{ subject }}</td>
@@ -124,8 +129,10 @@
                     </tbody>
                   </table>
                 </div>
+                </div>
 
                 <div class="table-container">
+                  
                   <h4>PSLE Details</h4>
                   <table class="table table-bordered">
                     <tbody>
@@ -172,10 +179,15 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>CCA Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>CCA Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
-                      <tr v-for="cca in cca1">
+                      <tr v-for="cca in cca1" :class="{ 'highlight-difference': sch1.CCA_Offered !== sch2.CCA_Offered }">
                         <td>{{ cca }}</td>
                       </tr>
                     </tbody>
@@ -183,6 +195,7 @@
                 </div>
               </div>
             </div>
+            </div>  
           </div>
           <!-- End of compare 1 -->
           
@@ -232,14 +245,20 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>Subjects Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>Subjects Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
-                      <tr v-for="subject in subjects2" >
+                      <tr v-for="subject in subjects1">
                         <td>{{ subject }}</td>
                       </tr>
                     </tbody>
                   </table>
+                </div>
                 </div>
 
                 <div class="table-container">
@@ -289,8 +308,13 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>CCA Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>CCA Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
                       <tr v-for="cca in cca2">
                         <td>{{ cca }}</td>
@@ -298,6 +322,7 @@
                     </tbody>
                   </table>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -661,8 +686,23 @@ export default {
   padding: 10px;
 }
 .table-container {
-  overflow: auto; /* Add a scrollbar when content overflows */
-  max-height: 300px; /* Set the maximum height for the container */
+  overflow: auto;
+  max-height: 300px;
+}
+
+/* Style for the header table (fixed) */
+.header-table {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff; /* You can change the background color as needed */
+}
+
+/* Style for the scrolling table body */
+.table-scroll {
+  max-height: 100%;
+  overflow-y: auto;
 }
 .highlight-difference {
     background-color: yellow; /* You can choose any color for highlighting */
