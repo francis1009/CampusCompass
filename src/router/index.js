@@ -8,6 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'recommended',
       component: () => import('../views/Recommended.vue'),
+      props: (route) => ({ schoolsList: route.query.schoolsList ? JSON.parse(route.query.schoolsList) : [] })
     },
     {
       path: '/about',

@@ -5,13 +5,13 @@
         <h1 ref="recommend" id="recommend" >These are your recommended schools:</h1>
         <br />
         <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-            <div class="col" v-for="(school, index) in schools" :key="index">
-            <SchoolCard :school="school" />
+                <div class="col" v-for="(school, index) in schools" :key="index">
+                <SchoolCard :school="school" />
+                </div>
+
             </div>
-
-        </div>
         </div>
   </div>
 </template>
@@ -20,15 +20,17 @@
 import SchoolCard from "../components/SchoolCard.vue";
 import carousel from "./carousel.vue";
 import Filter from "../components/filter/Filter.vue";
+import { RouterLink } from 'vue-router';
 
 export default {
     components: {
         SchoolCard,
         carousel,
-        Filter
+        Filter,
+        RouterLink
     },
     props: {
-        schools: {
+        schoolsList: {
             type: Array,
             required: false,
             default: () => []
@@ -39,6 +41,10 @@ export default {
         //     name: 'recommended', 
         //     query: { schools: JSON.stringify([]) }
         // });
+        this.$router.push({
+            name: 'recommended', 
+            query: { schoolsList: JSON.stringify([]) }
+        });
     },
     methods: {
         // Scroll to the recommend section if user clicks no or finished all questions

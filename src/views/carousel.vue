@@ -78,15 +78,6 @@ export default {
           ],
         },
         {
-          question: "Which schools' range of PSLE scores are you interested in?",
-          options: [
-            { text: '4-10', type: 'btn btn-custom' },
-            { text: '11-17', type: 'btn btn-custom' },
-            { text: '18-24', type: 'btn btn-custom' },
-            { text: '25-32', type: 'btn btn-custom' },
-          ],
-        },
-        {
           question: "Thank you!",
           options: [
             { text: 'Click here to redo the question', type: 'btn btn-custom' },
@@ -102,6 +93,10 @@ export default {
         // Add more carousel items as needed
       ],
       userResponses: [],
+      selectedArea: [],
+      selectedSubjects: [],
+      selectedCCAs: [],
+      filteredSchools: []
     };
   },
   mounted() {
@@ -174,7 +169,7 @@ export default {
   background-color: #253028;
   color: #fff;
   border: 1px solid #253028;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 20px;
   margin: 10px;
   font-size: 20px;
