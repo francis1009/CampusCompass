@@ -60,8 +60,12 @@ export default {
         {
           question: "What subject is your child interested in?",
           options: [
-            { text: 'Option A', type: 'btn btn-custom' },
-            { text: 'Option B', type: 'btn btn-custom' },
+            { text: 'Language', type: 'btn btn-custom' },
+            { text: 'Math', type: 'btn btn-custom' },
+            { text: 'Science', type: 'btn btn-custom' },
+            { text: 'Humanities', type: 'btn btn-custom' },
+            { text: 'Art', type: 'btn btn-custom' },
+            { text: 'Others', type: 'btn btn-custom' },
           ],
         },
         {
@@ -155,13 +159,26 @@ export default {
 .carousel-item {
   position: relative;
   text-align: center; /* Center-align the content within each carousel item */
+  height: 100vh;
 }
 
 .image {
   width: 100%;
   height: auto;
   opacity: 0.1;
+  object-fit: cover;
   /* height: 500px; Limit the height of the image */
+}
+
+.btn-custom {
+  background-color: #253028;
+  color: #fff;
+  border: 1px solid #253028;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .content {
@@ -173,7 +190,7 @@ export default {
 }
 
 .question {
-  font-size: 24px;
+  font-size: 56px;
   color: #253028;
   font-weight: bold;
 }
