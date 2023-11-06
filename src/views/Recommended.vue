@@ -1,8 +1,6 @@
 <template>
     <start/>
     <carousel @scrollToRecommend="scrollToRecommend" />
-    <br /> <br />
-    <Filter />
     <div class="album py-5 bg-white">
         <h1 ref="recommend" id="recommend" >These are your recommended schools:</h1>
         <br />
