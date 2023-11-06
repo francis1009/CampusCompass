@@ -11,13 +11,13 @@
         <SidebarLink to="/" icon="heart">
             Recommender
         </SidebarLink>
-        <SidebarLink to="/viewschools" icon="table">
+        <SidebarLink to="/search" icon="table">
             View Schools
         </SidebarLink>
         <SidebarLink to="/compare" icon="square-poll-vertical">
             Compare
         </SidebarLink>
-        
+     
         <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar">
             <font-awesome-icon icon="fa-solid fa-angle-double-left" />
         </span>
