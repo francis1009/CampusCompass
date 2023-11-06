@@ -56,7 +56,7 @@
     <!-- Start of compare 1 -->
     <div class="comparison-box">
       <div class="item-dropzone-area" style="height: 100vh;">
-        <h3>Compare School 1</h3>
+        <h3 style="text-align: center;">Compare School 1</h3>
         <draggable v-model="school_to_compare1" :tag="'ul'" :itemKey="customKey" group="compare_school"
           @change="getschooldetails1" :move="handleMoveItem" @end="handleDragEndItem">
           <template v-slot:item="{ element }">
@@ -78,7 +78,7 @@
     <!-- Start of compare 2 -->
     <div class="comparison-box">
       <div class="item-dropzone-area" style="height: 100vh;">
-        <h3>Compare School 2</h3>
+        <h3 style="text-align: center;">Compare School 2</h3>
         <draggable v-model="school_to_compare2" :tag="'ul'" :itemKey="customKey" group="compare_school"
           @change="getschooldetails2" :move="handleMoveItem" @end="handleDragEndItem">
           <template v-slot:item="{ element }">
@@ -295,6 +295,7 @@ export default {
 .comparison-box {
   flex: 1;
   border: 1px solid black;
+  height: auto;
 }
 
 .search-results {
