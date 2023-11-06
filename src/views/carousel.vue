@@ -166,7 +166,7 @@ export default {
   width: 100%;
   height: auto;
   opacity: 0.1;
-  height: 500px; /* Limit the height of the image */
+  /* height: 500px; Limit the height of the image */
 }
 
 .content {
