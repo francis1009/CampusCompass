@@ -369,7 +369,7 @@ export default {
         // Give enough time for the user to read the last scenario
         setTimeout(() => {
           this.$emit('scrollToRecommend');
-        }, 4000);
+        }, 10000);
       }
       this.flow++;
     },

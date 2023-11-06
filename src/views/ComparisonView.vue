@@ -68,6 +68,7 @@
     
     <div class="row">
       <div class="col-12">
+        
         <div class="comparison-container ">
           <!-- Start of compare 1 -->
           <div class="comparison-box ">
@@ -115,8 +116,13 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>Subjects Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>Subjects Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
                       <tr v-for="subject in subjects1">
                         <td>{{ subject }}</td>
@@ -124,8 +130,10 @@
                     </tbody>
                   </table>
                 </div>
+                </div>
 
                 <div class="table-container">
+                  
                   <h4>PSLE Details</h4>
                   <table class="table table-bordered">
                     <tbody>
@@ -172,10 +180,15 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>CCA Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>CCA Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
-                      <tr v-for="cca in cca1">
+                      <tr v-for="cca in cca1" :class="{ 'highlight-difference': sch1.CCA_Offered !== sch2.CCA_Offered }">
                         <td>{{ cca }}</td>
                       </tr>
                     </tbody>
@@ -183,6 +196,7 @@
                 </div>
               </div>
             </div>
+            </div>  
           </div>
           <!-- End of compare 1 -->
           
@@ -232,14 +246,20 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>Subjects Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>Subjects Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
-                      <tr v-for="subject in subjects2" >
+                      <tr v-for="subject in subjects1">
                         <td>{{ subject }}</td>
                       </tr>
                     </tbody>
                   </table>
+                </div>
                 </div>
 
                 <div class="table-container">
@@ -289,8 +309,13 @@
                 </div>
 
                 <div class="table-container">
-                  <h4>CCA Offered</h4>
-                  <table class="table table-bordered">
+                  <table class="table chosen-schools-table header-table">
+            <thead>
+              <h4>CCA Offered</h4>
+            </thead>
+          </table>
+          <div class="table-scroll">
+                  <table class="table chosen-schools-table">
                     <tbody>
                       <tr v-for="cca in cca2">
                         <td>{{ cca }}</td>
@@ -298,6 +323,7 @@
                     </tbody>
                   </table>
                 </div>
+              </div>
               </div>
             </div>
           </div>
@@ -661,12 +687,46 @@ export default {
   padding: 10px;
 }
 .table-container {
-  overflow: auto; /* Add a scrollbar when content overflows */
-  max-height: 300px; /* Set the maximum height for the container */
+  overflow: auto;
+  max-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width as needed */
+  grid-gap: 10px; /* Adjust the gap between tables as needed */
+}
+
+/* Style for the header table (fixed) */
+.header-table {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff; /* You can change the background color as needed */
+}
+
+/* Style for the scrolling table body */
+.table-scroll {
+  max-height: 100%;
+  overflow-y: auto;
 }
 .highlight-difference {
     background-color: yellow; /* You can choose any color for highlighting */
   }
 /* Add responsive styles for different screen sizes here */
+
+.comparison-container {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.comparison-box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  max-width: calc(50% - 20px); /* Adjust the width as needed */
+}
 
 </style>
