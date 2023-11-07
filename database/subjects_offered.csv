@@ -1,0 +1,4140 @@
+School_Code,Subject_Offered,subject_category
+3072,"Basic Chinese Language",Language
+3072,"Computer Applications",Science
+3072,"Design & Technology",Science
+3072,"Elements of Business Skills",Others
+3072,"English Language",Language
+3072,Mathematics,Math
+3072,"Basic Malay Language",Language
+3072,Science,Science
+3072,"Social Studies",Humanities
+3072,"Additional Mathematics",Math
+3072,Art,Art
+3072,"Chinese Language",Language
+3072,"Food & Consumer Education",Others
+3072,Geography,Humanities
+3072,History,Humanities
+3072,"Literature in English",Humanities
+3072,"Malay Language",Language
+3072,"Nutrition and Food Science",Science
+3072,"Principles of Accounts",Math
+3072,"Science (Chem, Bio)",Science
+3072,"Science (Phy, Chem)",Science
+3072,"Humanities (Ss, Geography)",Humanities
+3072,"Humanities (Ss, History)",Humanities
+3072,Chemistry,Science
+3072,Computing,Science
+3072,"Higher Chinese Language",Language
+3072,"Higher Malay Language",Language
+3072,Physics,Science
+3072,"Humanities (Ss, Literature in Malay)",Humanities
+3072,Music,Art
+3072,"Physical Education",Others
+3201,"Music Preparatory Course",Art
+3201,"Computer Applications",Science
+3201,"Design & Technology",Science
+3201,"Social Studies",Humanities
+3201,Art,Art
+3201,History,Humanities
+3201,"Literature in English",Humanities
+3201,"Principles of Accounts",Math
+3201,"Science (Chem, Bio)",Science
+3201,"Science (Phy, Chem)",Science
+3201,"Humanities (Ss, Geography)",Humanities
+3201,"Humanities (Ss, History)",Humanities
+3201,"Additional Mathematics",Math
+3201,Biology,Science
+3201,Chemistry,Science
+3201,"Chinese Language",Language
+3201,"English Language",Language
+3201,"Higher Chinese Language",Language
+3201,"Higher Malay Language",Language
+3201,Mathematics,Math
+3201,"Malay Language",Language
+3201,Music,Art
+3201,Physics,Science
+3201,"Tamil Language",Language
+3201,"Physical Education",Others
+3001,"Food & Consumer Education",Others
+3001,"Basic Chinese Language",Language
+3001,"Computer Applications",Science
+3001,"English Language",Language
+3001,Mathematics,Math
+3001,"Basic Malay Language",Language
+3001,"Mobile Robotics",Science
+3001,Science,Science
+3001,"Social Studies",Humanities
+3001,"Basic Tamil Language",Language
+3001,"Additional Mathematics",Math
+3001,Art,Art
+3001,"Chinese Language",Language
+3001,"Design & Technology",Science
+3001,"Malay Language",Language
+3001,"Principles of Accounts",Math
+3001,"Science (Phy, Chem)",Science
+3001,"Humanities (Ss, Geography)",Humanities
+3001,"Humanities (Ss, History)",Humanities
+3001,"Tamil Language",Language
+3001,Biology,Science
+3001,Chemistry,Science
+3001,Geography,Humanities
+3001,"Higher Chinese Language",Language
+3001,"Higher Malay Language",Language
+3001,"Higher Tamil Language",Language
+3001,"Literature in English",Humanities
+3001,Physics,Science
+3001,"Humanities (Ss, Literature in English)",Humanities
+3001,"Humanities (Ss, Literature in Malay)",Humanities
+3001,Music,Art
+3001,"Physical Education",Others
+3026,Art,Art
+3026,"Design & Technology",Science
+3026,"Food & Consumer Education",Others
+3026,"Computer Applications",Science
+3026,"Elements of Business Skills",Others
+3026,"Smart Electrical Technology",Science
+3026,"Additional Mathematics",Math
+3026,"Science (Phy, Chem)",Science
+3026,Biology,Science
+3026,Chemistry,Science
+3026,"Chinese Language",Language
+3026,"English Language",Language
+3026,Geography,Humanities
+3026,"Higher Chinese Language",Language
+3026,History,Humanities
+3026,"Literature in English",Humanities
+3026,Mathematics,Math
+3026,"Malay Language",Language
+3026,Music,Art
+3026,Physics,Science
+3026,"Science (Chem, Bio)",Science
+3026,"Humanities (Ss, Geography)",Humanities
+3026,"Humanities (Ss, History)",Humanities
+3026,"Humanities (Ss, Literature in English)",Humanities
+7101,"Appreciation of Chinese Culture",Humanities
+7101,"Additional Mathematics",Math
+7101,Art,Art
+7101,Biology,Science
+7101,Chemistry,Science
+7101,"Chinese Language",Language
+7101,"English Language",Language
+7101,Geography,Humanities
+7101,"Higher Chinese Language",Language
+7101,"Higher Music",Art
+7101,History,Humanities
+7101,"Literature in Chinese",Humanities
+7101,"Literature in English",Humanities
+7101,Mathematics,Math
+7101,"Malay Language (Special Programme)",Language
+7101,Music,Art
+7101,Physics,Science
+7101,"Humanities (Ss, Geography)",Humanities
+7101,"Humanities (Ss, History)",Humanities
+7101,"Humanities (Ss, Literature in Chinese)",Humanities
+7101,"Humanities (Ss, Literature in English)",Humanities
+7101,"Physical Education",Others
+7032,Art,Art
+7032,"Chinese Language Syllabus B",Language
+7032,"Design & Technology",Science
+7032,"Food & Consumer Education",Others
+7032,"Basic Chinese Language",Language
+7032,"Computer Applications",Science
+7032,"Elements of Business Skills",Others
+7032,"English Language",Language
+7032,Mathematics,Math
+7032,"Basic Malay Language",Language
+7032,"Mobile Robotics",Science
+7032,Science,Science
+7032,"Social Studies",Humanities
+7032,"Basic Tamil Language",Language
+7032,"Additional Mathematics",Math
+7032,"Chinese Language",Language
+7032,Geography,Humanities
+7032,History,Humanities
+7032,"Literature in English",Humanities
+7032,"Malay Language",Language
+7032,"Nutrition and Food Science",Science
+7032,"Principles of Accounts",Math
+7032,"Science (Phy, Chem)",Science
+7032,"Humanities (Ss, Geography)",Humanities
+7032,"Humanities (Ss, History)",Humanities
+7032,"Humanities (Ss, Literature in English)",Humanities
+7032,"Tamil Language",Language
+7032,Biology,Science
+7032,Chemistry,Science
+7032,Computing,Science
+7032,Physics,Science
+7032,"Science (Chem, Bio)",Science
+7032,"Malay Language Syllabus B",Language
+7032,Music,Art
+7032,"Physical Education",Others
+7032,"Tamil Language Syllabus B",Language
+7001,"Chinese Language Syllabus B",Language
+7001,"Additional Mathematics",Math
+7001,Biology,Science
+7001,Chemistry,Science
+7001,"Chinese Language",Language
+7001,"English Language",Language
+7001,Geography,Humanities
+7001,"Higher Chinese Language",Language
+7001,"Higher Music",Art
+7001,History,Humanities
+7001,"Higher Malay Language",Language
+7001,"Higher Tamil Language",Language
+7001,"Literature in English",Humanities
+7001,Mathematics,Math
+7001,"Malay Language",Language
+7001,"Malay Language (Special Programme)",Language
+7001,Physics,Science
+7001,"Humanities (Ss, Geography)",Humanities
+7001,"Humanities (Ss, History)",Humanities
+7001,"Humanities (Ss, Literature in English)",Humanities
+7001,"Tamil Language",Language
+7001,"Malay Language Syllabus B",Language
+7001,Music,Art
+7002,Art,Art
+7002,"Chinese Language Syllabus B",Language
+7002,"Design & Technology",Science
+7002,"Food & Consumer Education",Others
+7002,"Basic Chinese Language",Language
+7002,"Computer Applications",Science
+7002,"Elements of Business Skills",Others
+7002,Mathematics,Math
+7002,"Basic Malay Language",Language
+7002,Science,Science
+7002,"Social Studies",Humanities
+7002,"Chinese Language",Language
+7002,Geography,Humanities
+7002,History,Humanities
+7002,"Literature in English",Humanities
+7002,"Malay Language",Language
+7002,"Science (Chem, Bio)",Science
+7002,"Science (Phy, Chem)",Science
+7002,"Humanities (Ss, Geography)",Humanities
+7002,"Humanities (Ss, History)",Humanities
+7002,"Additional Mathematics",Math
+7002,Biology,Science
+7002,Chemistry,Science
+7002,"English Language",Language
+7002,"Higher Chinese Language",Language
+7002,Physics,Science
+7002,"Humanities (Ss, Literature in English)",Humanities
+7002,Music,Art
+7804,"Mathematics B",Math
+7804,"Mathematics C",Math
+7804,"Infocom Technology",Science
+7804,"Montfort Development Program",Others
+7804,"Performing Arts",Art
+7804,"Sip: Basic Baking Skills",Others
+3002,"Applied Learning Programme",Others
+3002,"Chinese Language Syllabus B",Language
+3002,Art,Art
+3002,"Basic Chinese Language",Language
+3002,"Computer Applications",Science
+3002,"Design & Technology",Science
+3002,"Elements of Business Skills",Others
+3002,"English Language",Language
+3002,"Food & Consumer Education",Others
+3002,Mathematics,Math
+3002,"Basic Malay Language",Language
+3002,Music,Art
+3002,"Mobile Robotics",Science
+3002,Science,Science
+3002,"Social Studies",Humanities
+3002,"Basic Tamil Language",Language
+3002,"Chinese Language",Language
+3002,Geography,Humanities
+3002,History,Humanities
+3002,"Literature in English",Humanities
+3002,"Malay Language",Language
+3002,"Nutrition and Food Science",Science
+3002,"Principles of Accounts",Math
+3002,"Science (Chem, Bio)",Science
+3002,"Science (Phy, Chem)",Science
+3002,"Humanities (Ss, Geography)",Humanities
+3002,"Humanities (Ss, History)",Humanities
+3002,"Tamil Language",Language
+3002,"Additional Mathematics",Math
+3002,Biology,Science
+3002,Chemistry,Science
+3002,"Higher Chinese Language",Language
+3002,Physics,Science
+3002,"Malay Language Syllabus B",Language
+3002,"Physical Education",Others
+3002,"Tamil Language Syllabus B",Language
+3003,"Chinese Language Syllabus B",Language
+3003,"Basic Chinese Language",Language
+3003,"Computer Applications",Science
+3003,"Design & Technology",Science
+3003,"Elements of Business Skills",Others
+3003,"English Language",Language
+3003,"Smart Electrical Technology",Science
+3003,"Food & Consumer Education",Others
+3003,Mathematics,Math
+3003,"Basic Malay Language",Language
+3003,"Nutrition and Food Science",Science
+3003,Science,Science
+3003,"Basic Tamil Language",Language
+3003,"Additional Mathematics",Math
+3003,Art,Art
+3003,Geography,Humanities
+3003,"Literature in English",Humanities
+3003,"Malay Language",Language
+3003,"Principles of Accounts",Math
+3003,"Science (Chem, Bio)",Science
+3003,"Science (Phy, Chem)",Science
+3003,"Humanities (Ss, Geography)",Humanities
+3003,"Humanities (Ss, History)",Humanities
+3003,"Tamil Language",Language
+3003,Biology,Science
+3003,Chemistry,Science
+3003,"Chinese Language",Language
+3003,"Higher Chinese Language",Language
+3003,"Higher Malay Language",Language
+3003,"Higher Tamil Language",Language
+3003,Physics,Science
+3003,Music,Art
+3003,"Physical Education",Others
+3003,"Tamil Language Syllabus B",Language
+3069,Art,Art
+3069,"Design & Technology",Science
+3069,"Food & Consumer Education",Others
+3069,"Basic Chinese Language",Language
+3069,"Computer Applications",Science
+3069,"Elements of Business Skills",Others
+3069,"English Language",Language
+3069,"Smart Electrical Technology",Science
+3069,Mathematics,Math
+3069,"Basic Malay Language",Language
+3069,Science,Science
+3069,"Social Studies",Humanities
+3069,"Basic Tamil Language",Language
+3069,"Additional Mathematics",Math
+3069,"Chinese Language",Language
+3069,"Malay Language",Language
+3069,"Nutrition and Food Science",Science
+3069,"Principles of Accounts",Math
+3069,"Science (Chem, Bio)",Science
+3069,"Science (Phy, Bio)",Science
+3069,"Science (Phy, Chem)",Science
+3069,"Humanities (Ss, Geography)",Humanities
+3069,"Humanities (Ss, History)",Humanities
+3069,"Humanities (Ss, Literature in English)",Humanities
+3069,"Tamil Language",Language
+3069,Biology,Science
+3069,Chemistry,Science
+3069,"Exercise & Sports Science",Others
+3069,Geography,Humanities
+3069,History,Humanities
+3069,Physics,Science
+3069,Music,Art
+3069,"Physical Education",Others
+3027,"Basic Chinese Language",Language
+3027,"Computer Applications",Science
+3027,"Design & Technology",Science
+3027,"Elements of Business Skills",Others
+3027,"English Language",Language
+3027,"Food & Consumer Education",Others
+3027,Mathematics,Math
+3027,"Basic Malay Language",Language
+3027,Science,Science
+3027,"Social Studies",Humanities
+3027,"Additional Mathematics",Math
+3027,Art,Art
+3027,"Chinese Language",Language
+3027,"Malay Language",Language
+3027,"Nutrition and Food Science",Science
+3027,"Principles of Accounts",Math
+3027,"Science (Chem, Bio)",Science
+3027,"Science (Phy, Chem)",Science
+3027,"Humanities (Ss, Geography)",Humanities
+3027,"Humanities (Ss, History)",Humanities
+3027,Biology,Science
+3027,Chemistry,Science
+3027,Geography,Humanities
+3027,"Higher Chinese Language",Language
+3027,History,Humanities
+3027,"Literature in English",Humanities
+3027,Physics,Science
+3027,Music,Art
+3027,"Physical Education",Others
+3225,"Chinese Language Syllabus B",Language
+3225,"Computer Applications",Science
+3225,"Additional Mathematics",Math
+3225,Art,Art
+3225,"Chinese Language",Language
+3225,"Design & Technology",Science
+3225,"English Language",Language
+3225,"Food & Consumer Education",Others
+3225,Geography,Humanities
+3225,History,Humanities
+3225,"Literature in English",Humanities
+3225,Mathematics,Math
+3225,"Malay Language",Language
+3225,"Nutrition and Food Science",Science
+3225,"Principles of Accounts",Math
+3225,Science,Science
+3225,"Science (Chem, Bio)",Science
+3225,"Science (Phy, Chem)",Science
+3225,"Humanities (Ss, Geography)",Humanities
+3225,"Tamil Language",Language
+3225,Biology,Science
+3225,Chemistry,Science
+3225,"Higher Chinese Language",Language
+3225,"Higher Malay Language",Language
+3225,Physics,Science
+3225,"Humanities (Ss, History)",Humanities
+3225,"Humanities (Ss, Literature in English)",Humanities
+3225,"Malay Language Syllabus B",Language
+3225,Music,Art
+3225,"Physical Education",Others
+3225,"Tamil Language Syllabus B",Language
+3021,Art,Art
+3021,"Basic Chinese Language",Language
+3021,"Computer Applications",Science
+3021,"Design & Technology",Science
+3021,"Elements of Business Skills",Others
+3021,"English Language",Language
+3021,"Food & Consumer Education",Others
+3021,Mathematics,Math
+3021,"Basic Malay Language",Language
+3021,Science,Science
+3021,"Social Studies",Humanities
+3021,"Basic Tamil Language",Language
+3021,"Chinese Language",Language
+3021,Geography,Humanities
+3021,History,Humanities
+3021,"Literature in English",Humanities
+3021,"Malay Language",Language
+3021,"Nutrition and Food Science",Science
+3021,"Principles of Accounts",Math
+3021,"Science (Phy, Chem)",Science
+3021,"Humanities (Ss, Geography)",Humanities
+3021,"Humanities (Ss, History)",Humanities
+3021,"Tamil Language",Language
+3021,"Additional Mathematics",Math
+3021,Biology,Science
+3021,Chemistry,Science
+3021,"Higher Chinese Language",Language
+3021,"Higher Tamil Language",Language
+3021,Physics,Science
+3021,"Science (Chem, Bio)",Science
+3224,"Chinese Language Syllabus B",Language
+3224,Art,Art
+3224,"Basic Chinese Language",Language
+3224,"Computer Applications",Science
+3224,"Design & Technology",Science
+3224,"Elements of Business Skills",Others
+3224,"English Language",Language
+3224,"Food & Consumer Education",Others
+3224,Mathematics,Math
+3224,"Basic Malay Language",Language
+3224,Science,Science
+3224,"Social Studies",Humanities
+3224,"Basic Tamil Language",Language
+3224,"Additional Mathematics",Math
+3224,"Chinese Language",Language
+3224,Geography,Humanities
+3224,History,Humanities
+3224,"Literature in English",Humanities
+3224,"Malay Language",Language
+3224,"Nutrition and Food Science",Science
+3224,"Principles of Accounts",Math
+3224,"Science (Chem, Bio)",Science
+3224,"Science (Phy, Chem)",Science
+3224,"Humanities (Ss, Geography)",Humanities
+3224,"Humanities (Ss, History)",Humanities
+3224,"Humanities (Ss, Literature in English)",Humanities
+3224,"Tamil Language",Language
+3224,Biology,Science
+3224,Chemistry,Science
+3224,Computing,Science
+3224,"Exercise & Sports Science",Others
+3224,"Higher Chinese Language",Language
+3224,Physics,Science
+3224,Music,Art
+3224,"Physical Education",Others
+3043,Art,Art
+3043,"Design & Technology",Science
+3043,"Food & Consumer Education",Others
+3043,"Basic Chinese Language",Language
+3043,"Computer Applications",Science
+3043,"Elements of Business Skills",Others
+3043,"English Language",Language
+3043,Mathematics,Math
+3043,"Basic Malay Language",Language
+3043,Science,Science
+3043,"Social Studies",Humanities
+3043,"Basic Tamil Language",Language
+3043,"Additional Mathematics",Math
+3043,"Chinese Language",Language
+3043,Geography,Humanities
+3043,History,Humanities
+3043,"Literature in English",Humanities
+3043,"Malay Language",Language
+3043,"Nutrition and Food Science",Science
+3043,"Science (Chem, Bio)",Science
+3043,"Science (Phy, Chem)",Science
+3043,"Humanities (Ss, Geography)",Humanities
+3043,"Humanities (Ss, History)",Humanities
+3043,"Humanities (Ss, Literature in English)",Humanities
+3043,"Tamil Language",Language
+3043,Biology,Science
+3043,Chemistry,Science
+3043,"Higher Chinese Language",Language
+3043,"Higher Malay Language",Language
+3043,"Higher Tamil Language",Language
+3043,Physics,Science
+3043,Music,Art
+3043,"Physical Education",Others
+3202,"Basic Chinese Language",Language
+3202,"Computer Applications",Science
+3202,"English Language",Language
+3202,Mathematics,Math
+3202,"Basic Malay Language",Language
+3202,Science,Science
+3202,"Basic Tamil Language",Language
+3202,Art,Art
+3202,"Chinese Language",Language
+3202,Geography,Humanities
+3202,History,Humanities
+3202,"Malay Language",Language
+3202,"Principles of Accounts",Math
+3202,"Science (Chem, Bio)",Science
+3202,"Science (Phy, Chem)",Science
+3202,"Humanities (Ss, Geography)",Humanities
+3202,"Humanities (Ss, History)",Humanities
+3202,"Tamil Language",Language
+3202,"Additional Mathematics",Math
+3202,Biology,Science
+3202,Chemistry,Science
+3202,"Literature in English",Humanities
+3202,Physics,Science
+3202,Music,Art
+3202,"Physical Education",Others
+3044,"Applied Learning Programme",Others
+3044,"Basic Chinese Language",Language
+3044,"Computer Applications",Science
+3044,"Design & Technology",Science
+3044,"Elements of Business Skills",Others
+3044,"English Language",Language
+3044,"Food & Consumer Education",Others
+3044,Mathematics,Math
+3044,"Basic Malay Language",Language
+3044,Science,Science
+3044,"Basic Tamil Language",Language
+3044,"Additional Mathematics",Math
+3044,Art,Art
+3044,"Chinese Language",Language
+3044,"Malay Language",Language
+3044,"Nutrition and Food Science",Science
+3044,"Principles of Accounts",Math
+3044,"Science (Phy, Chem)",Science
+3044,"Humanities (Ss, Geography)",Humanities
+3044,"Humanities (Ss, History)",Humanities
+3044,"Tamil Language",Language
+3044,Biology,Science
+3044,Chemistry,Science
+3044,Geography,Humanities
+3044,"Higher Chinese Language",Language
+3044,"Literature in English",Humanities
+3044,"Malay Language (Special Programme)",Language
+3044,Physics,Science
+3044,Music,Art
+3044,"Physical Education",Others
+3203,"Chinese Language Syllabus B",Language
+3203,Art,Art
+3203,"Basic Chinese Language",Language
+3203,"Computer Applications",Science
+3203,"Design & Technology",Science
+3203,"Elements of Business Skills",Others
+3203,"English Language",Language
+3203,"Food & Consumer Education",Others
+3203,Mathematics,Math
+3203,"Basic Malay Language",Language
+3203,Science,Science
+3203,"Social Studies",Humanities
+3203,"Basic Tamil Language",Language
+3203,"Additional Mathematics",Math
+3203,"Chinese Language",Language
+3203,Geography,Humanities
+3203,History,Humanities
+3203,"Literature in English",Humanities
+3203,"Malay Language",Language
+3203,"Nutrition and Food Science",Science
+3203,"Principles of Accounts",Math
+3203,"Science (Chem, Bio)",Science
+3203,"Science (Phy, Bio)",Science
+3203,"Science (Phy, Chem)",Science
+3203,"Humanities (Ss, Geography)",Humanities
+3203,"Humanities (Ss, History)",Humanities
+3203,"Tamil Language",Language
+3203,Biology,Science
+3203,Chemistry,Science
+3203,Physics,Science
+3203,Music,Art
+3204,"Chinese Language Syllabus B",Language
+3204,Art,Art
+3204,"Basic Chinese Language",Language
+3204,"Computer Applications",Science
+3204,"Design & Technology",Science
+3204,"Elements of Business Skills",Others
+3204,"English Language",Language
+3204,Mathematics,Math
+3204,"Basic Malay Language",Language
+3204,"Social Studies",Humanities
+3204,"Additional Mathematics",Math
+3204,"Chinese Language",Language
+3204,"Malay Language",Language
+3204,"Principles of Accounts",Math
+3204,"Science (Chem, Bio)",Science
+3204,"Science (Phy, Chem)",Science
+3204,"Humanities (Ss, Geography)",Humanities
+3204,"Humanities (Ss, History)",Humanities
+3204,"Humanities (Ss, Literature in English)",Humanities
+3204,Biology,Science
+3204,Chemistry,Science
+3204,Geography,Humanities
+3204,"Higher Chinese Language",Language
+3204,"Higher Art",Art
+3204,History,Humanities
+3204,"Higher Malay Language",Language
+3204,"Literature in English",Humanities
+3204,Physics,Science
+3204,"Humanities (Ss, Literature in Chinese)",Humanities
+3204,"Humanities (Ss, Literature in Malay)",Humanities
+3204,"Malay Language Syllabus B",Language
+3040,"Chinese Language Syllabus B",Language
+3040,Art,Art
+3040,"Basic Chinese Language",Language
+3040,"Computer Applications",Science
+3040,"Design & Technology",Science
+3040,"Elements of Business Skills",Others
+3040,"English Language",Language
+3040,"Food & Consumer Education",Others
+3040,Mathematics,Math
+3040,"Basic Malay Language",Language
+3040,Science,Science
+3040,"Social Studies",Humanities
+3040,"Basic Tamil Language",Language
+3040,"Additional Mathematics",Math
+3040,Geography,Humanities
+3040,History,Humanities
+3040,"Literature in English",Humanities
+3040,"Malay Language",Language
+3040,"Nutrition and Food Science",Science
+3040,"Principles of Accounts",Math
+3040,"Science (Chem, Bio)",Science
+3040,"Science (Phy, Chem)",Science
+3040,"Humanities (Ss, Geography)",Humanities
+3040,"Humanities (Ss, History)",Humanities
+3040,"Humanities (Ss, Literature in English)",Humanities
+3040,"Tamil Language",Language
+3040,Biology,Science
+3040,Chemistry,Science
+3040,"Chinese Language",Language
+3040,Computing,Science
+3040,"Higher Chinese Language",Language
+3040,"Higher Malay Language",Language
+3040,"Higher Tamil Language",Language
+3040,Music,Art
+3040,Physics,Science
+3040,"Malay Language Syllabus B",Language
+3040,"Tamil Language Syllabus B",Language
+3621,Art,Art
+3621,"Chinese Language Syllabus B",Language
+3621,"Basic Chinese Language",Language
+3621,"Computer Applications",Science
+3621,"Design & Technology",Science
+3621,"English Language",Language
+3621,"Food & Consumer Education",Others
+3621,Mathematics,Math
+3621,"Basic Malay Language",Language
+3621,Science,Science
+3621,"Social Studies",Humanities
+3621,"Chinese Language",Language
+3621,"Malay Language",Language
+3621,"Nutrition and Food Science",Science
+3621,"Science (Phy, Chem)",Science
+3621,"Humanities (Ss, Geography)",Humanities
+3621,"Additional Mathematics",Math
+3621,Biology,Science
+3621,Chemistry,Science
+3621,Geography,Humanities
+3621,"Literature in English",Humanities
+3621,Physics,Science
+3621,"Science (Chem, Bio)",Science
+3621,"Humanities (Ss, History)",Humanities
+3621,Music,Art
+3621,"Physical Education",Others
+7102,Art,Art
+7102,"Design & Technology",Science
+7102,"Food & Consumer Education",Others
+7102,"Art (Ip)",Art
+7102,"Appreciation of Chinese Culture",Humanities
+7102,"Additional Mathematics",Math
+7102,Biology,Science
+7102,Chemistry,Science
+7102,"Chinese Language",Language
+7102,"English Language",Language
+7102,"Exercise & Sports Science",Others
+7102,Geography,Humanities
+7102,"Higher Chinese Language",Language
+7102,"Higher Music",Art
+7102,History,Humanities
+7102,"Literature in Chinese",Humanities
+7102,"Literature in English",Humanities
+7102,Mathematics,Math
+7102,Music,Art
+7102,Physics,Science
+7102,Science,Science
+7102,"Humanities (Ss, Geography)",Humanities
+7102,"Humanities (Ss, History)",Humanities
+7102,"Humanities (Ss, Literature in English)",Humanities
+7102,"Physical Education",Others
+3004,"Regional Studies Programme",Humanities
+3004,"Additional Mathematics",Math
+3004,Art,Art
+3004,Biology,Science
+3004,Chemistry,Science
+3004,"Chinese Language",Language
+3004,"Chinese Language (Special Programme)",Language
+3004,"Design & Technology",Science
+3004,"English Language",Language
+3004,"Food & Consumer Education",Others
+3004,Geography,Humanities
+3004,"Higher Chinese Language",Language
+3004,History,Humanities
+3004,"Higher Malay Language",Language
+3004,"Higher Tamil Language",Language
+3004,"Literature in English",Humanities
+3004,Mathematics,Math
+3004,"Malay Language",Language
+3004,"Malay Language (Special Programme)",Language
+3004,Physics,Science
+3004,Science,Science
+3004,"Science (Chem, Bio)",Science
+3004,"Science (Phy, Chem)",Science
+3004,"Humanities (Ss, Geography)",Humanities
+3004,"Humanities (Ss, History)",Humanities
+3004,"Tamil Language",Language
+3004,"Physical Education",Others
+3402,"Computer Applications",Science
+3402,"Design & Technology",Science
+3402,"English Language",Language
+3402,"Food & Consumer Education",Others
+3402,Mathematics,Math
+3402,Science,Science
+3402,"Social Studies",Humanities
+3402,"Additional Mathematics",Math
+3402,Art,Art
+3402,"Chinese Language",Language
+3402,"Malay Language",Language
+3402,"Nutrition and Food Science",Science
+3402,"Principles of Accounts",Math
+3402,"Science (Chem, Bio)",Science
+3402,"Science (Phy, Chem)",Science
+3402,"Humanities (Ss, Geography)",Humanities
+3402,"Humanities (Ss, History)",Humanities
+3402,"Tamil Language",Language
+3402,Biology,Science
+3402,Chemistry,Science
+3402,"Chinese Language (Special Programme)",Language
+3402,"Literature in English",Humanities
+3402,Physics,Science
+3402,Music,Art
+3402,"Physical Education",Others
+7008,"Chinese Language Syllabus B",Language
+7008,"Basic Chinese Language",Language
+7008,"Computer Applications",Science
+7008,"Elements of Business Skills",Others
+7008,"English Language",Language
+7008,Mathematics,Math
+7008,"Basic Malay Language",Language
+7008,Science,Science
+7008,"Social Studies",Humanities
+7008,"Additional Mathematics",Math
+7008,Art,Art
+7008,"Chinese Language",Language
+7008,Geography,Humanities
+7008,History,Humanities
+7008,"Literature in English",Humanities
+7008,"Malay Language",Language
+7008,"Principles of Accounts",Math
+7008,"Science (Chem, Bio)",Science
+7008,"Humanities (Ss, Geography)",Humanities
+7008,"Humanities (Ss, Literature in English)",Humanities
+7008,Biology,Science
+7008,Chemistry,Science
+7008,Drama,Art
+7008,"Higher Chinese Language",Language
+7008,Physics,Science
+7008,"Humanities (Ss, History)",Humanities
+7004,Drama,Art
+7004,Art,Art
+7004,"Chinese Language Syllabus B",Language
+7004,"Design & Technology",Science
+7004,"Food & Consumer Education",Others
+7004,"Basic Chinese Language",Language
+7004,"Computer Applications",Science
+7004,"Elements of Business Skills",Others
+7004,"English Language",Language
+7004,Mathematics,Math
+7004,"Basic Malay Language",Language
+7004,Science,Science
+7004,"Basic Tamil Language",Language
+7004,"Chinese Language",Language
+7004,"Malay Language",Language
+7004,"Principles of Accounts",Math
+7004,"Science (Phy, Chem)",Science
+7004,"Humanities (Ss, Geography)",Humanities
+7004,"Humanities (Ss, History)",Humanities
+7004,"Humanities (Ss, Literature in English)",Humanities
+7004,"Tamil Language",Language
+7004,"Additional Mathematics",Math
+7004,Biology,Science
+7004,Chemistry,Science
+7004,Geography,Humanities
+7004,"Higher Chinese Language",Language
+7004,"Higher Art",Art
+7004,History,Humanities
+7004,"Literature in English",Humanities
+7004,Physics,Science
+7019,Art,Art
+7019,"Food & Consumer Education",Others
+7019,"Basic Chinese Language",Language
+7019,"Computer Applications",Science
+7019,"Elements of Business Skills",Others
+7019,"English Language",Language
+7019,Mathematics,Math
+7019,"Basic Malay Language",Language
+7019,Science,Science
+7019,"Basic Tamil Language",Language
+7019,"Additional Mathematics",Math
+7019,"Chinese Language",Language
+7019,"Literature in English",Humanities
+7019,"Malay Language",Language
+7019,"Science (Chem, Bio)",Science
+7019,"Science (Phy, Chem)",Science
+7019,"Humanities (Ss, Geography)",Humanities
+7019,"Humanities (Ss, History)",Humanities
+7019,"Tamil Language",Language
+7019,Biology,Science
+7019,Chemistry,Science
+7019,Geography,Humanities
+7019,"Higher Chinese Language",Language
+7019,Physics,Science
+7019,"Physical Education",Others
+7118,"Aesthetics(Design & Technology)",Art
+7118,Aesthetics(Music),Art
+7118,Aesthetics(Art),Art
+7118,"Aesthetics(Food & Consumer Education)",Art
+7118,Art,Art
+7118,"Appreciation of Chinese Culture",Humanities
+7118,"Additional Mathematics",Math
+7118,Biology,Science
+7118,Chemistry,Science
+7118,"Chinese Language",Language
+7118,"Design & Technology",Science
+7118,"English Language",Language
+7118,"Exercise & Sports Science",Others
+7118,"Food & Consumer Education",Others
+7118,Geography,Humanities
+7118,"Higher Chinese Language",Language
+7118,"Higher Music",Art
+7118,History,Humanities
+7118,"Literature in Chinese",Humanities
+7118,"Literature in English",Humanities
+7118,Mathematics,Math
+7118,Physics,Science
+7118,Science,Science
+7118,"Humanities (Ss, Geography)",Humanities
+7118,"Humanities (Ss, History)",Humanities
+7118,"Humanities (Ss, Literature in Chinese)",Humanities
+7118,"Humanities (Ss, Literature in English)",Humanities
+7118,Music,Art
+7118,"Physical Education",Others
+7023,Art,Art
+7023,"Design & Technology",Science
+7023,"Food & Consumer Education",Others
+7023,"Basic Chinese Language",Language
+7023,"Computer Applications",Science
+7023,"Elements of Business Skills",Others
+7023,"English Language",Language
+7023,Mathematics,Math
+7023,"Basic Malay Language",Language
+7023,Music,Art
+7023,Science,Science
+7023,"Social Studies",Humanities
+7023,"Basic Tamil Language",Language
+7023,"Additional Mathematics",Math
+7023,"Chinese Language",Language
+7023,"Literature in English",Humanities
+7023,"Malay Language",Language
+7023,"Principles of Accounts",Math
+7023,"Science (Chem, Bio)",Science
+7023,"Science (Phy, Chem)",Science
+7023,"Humanities (Ss, Geography)",Humanities
+7023,"Humanities (Ss, History)",Humanities
+7023,"Tamil Language",Language
+7023,Biology,Science
+7023,Chemistry,Science
+7023,"Exercise & Sports Science",Others
+7023,Geography,Humanities
+7023,"Higher Chinese Language",Language
+7023,History,Humanities
+7023,"Nutrition and Food Science",Science
+7023,Physics,Science
+7023,"Humanities (Ss, Literature in English)",Humanities
+7023,"Physical Education",Others
+7025,"Design & Technology",Science
+7025,"Food & Consumer Education",Others
+7025,"Basic Chinese Language",Language
+7025,"Computer Applications",Science
+7025,"Elements of Business Skills",Others
+7025,"English Language",Language
+7025,Mathematics,Math
+7025,"Basic Malay Language",Language
+7025,Science,Science
+7025,"Social Studies",Humanities
+7025,"Basic Tamil Language",Language
+7025,"Additional Mathematics",Math
+7025,Art,Art
+7025,"Chinese Language",Language
+7025,"Malay Language",Language
+7025,"Principles of Accounts",Math
+7025,"Science (Phy, Chem)",Science
+7025,"Humanities (Ss, Geography)",Humanities
+7025,"Humanities (Ss, History)",Humanities
+7025,"Tamil Language",Language
+7025,Biology,Science
+7025,Chemistry,Science
+7025,"Higher Chinese Language",Language
+7025,"Literature in English",Humanities
+7025,"Nutrition and Food Science",Science
+7025,Physics,Science
+7025,"Science (Chem, Bio)",Science
+7025,Music,Art
+7025,"Physical Education",Others
+3055,Art,Art
+3055,"Chinese Language Syllabus B",Language
+3055,"Design & Technology",Science
+3055,"Food & Consumer Education",Others
+3055,"Basic Chinese Language",Language
+3055,"Computer Applications",Science
+3055,"Elements of Business Skills",Others
+3055,"English Language",Language
+3055,Mathematics,Math
+3055,"Basic Malay Language",Language
+3055,"Mobile Robotics",Science
+3055,Science,Science
+3055,"Social Studies",Humanities
+3055,"Basic Tamil Language",Language
+3055,"Additional Mathematics",Math
+3055,"Chinese Language",Language
+3055,Geography,Humanities
+3055,History,Humanities
+3055,"Literature in English",Humanities
+3055,"Malay Language",Language
+3055,"Nutrition and Food Science",Science
+3055,"Principles of Accounts",Math
+3055,"Science (Chem, Bio)",Science
+3055,"Science (Phy, Chem)",Science
+3055,"Humanities (Ss, Geography)",Humanities
+3055,"Humanities (Ss, History)",Humanities
+3055,"Tamil Language",Language
+3055,Biology,Science
+3055,Chemistry,Science
+3055,"Higher Chinese Language",Language
+3055,"Higher Malay Language",Language
+3055,"Higher Tamil Language",Language
+3055,Physics,Science
+3055,"Humanities (Ss, Literature in English)",Humanities
+3055,Music,Art
+3055,"Physical Education",Others
+7104,"Appreciation of Chinese Culture",Humanities
+7104,"Additional Mathematics",Math
+7104,Art,Art
+7104,Biology,Science
+7104,Chemistry,Science
+7104,"Chinese Language",Language
+7104,"English Language",Language
+7104,Geography,Humanities
+7104,"Higher Chinese Language",Language
+7104,"Higher Art",Art
+7104,"Higher Music",Art
+7104,History,Humanities
+7104,"Literature in Chinese",Humanities
+7104,"Literature in English",Humanities
+7104,Mathematics,Math
+7104,"Malay Language (Special Programme)",Language
+7104,Music,Art
+7104,Physics,Science
+7104,Science,Science
+7104,"Humanities (Ss, Geography)",Humanities
+7104,"Humanities (Ss, History)",Humanities
+7104,"Humanities (Ss, Literature in Chinese)",Humanities
+7104,"Humanities (Ss, Literature in English)",Humanities
+7104,"Physical Education",Others
+7105,Art,Art
+7105,"Basic Chinese Language",Language
+7105,"Computer Applications",Science
+7105,"Design & Technology",Science
+7105,"Elements of Business Skills",Others
+7105,"English Language",Language
+7105,Mathematics,Math
+7105,"Basic Malay Language",Language
+7105,Science,Science
+7105,"Social Studies",Humanities
+7105,"Additional Mathematics",Math
+7105,"Chinese Language",Language
+7105,"Malay Language",Language
+7105,"Nutrition and Food Science",Science
+7105,"Principles of Accounts",Math
+7105,"Science (Chem, Bio)",Science
+7105,"Science (Phy, Chem)",Science
+7105,"Humanities (Ss, Geography)",Humanities
+7105,"Humanities (Ss, History)",Humanities
+7105,Biology,Science
+7105,Chemistry,Science
+7105,Computing,Science
+7105,"Higher Chinese Language",Language
+7105,"Literature in English",Humanities
+7105,Music,Art
+7105,Physics,Science
+7105,"Physical Education",Others
+3029,Cce,Others
+3029,Via,Others
+3029,Art,Art
+3029,"Chinese Language Syllabus B",Language
+3029,"Design & Technology",Science
+3029,"Food & Consumer Education",Others
+3029,"Basic Chinese Language",Language
+3029,"Computer Applications",Science
+3029,"Elements of Business Skills",Others
+3029,"English Language",Language
+3029,Mathematics,Math
+3029,"Basic Malay Language",Language
+3029,Music,Art
+3029,Science,Science
+3029,"Social Studies",Humanities
+3029,"Basic Tamil Language",Language
+3029,"Additional Mathematics",Math
+3029,"Chinese Language",Language
+3029,"Literature in English",Humanities
+3029,"Malay Language",Language
+3029,"Principles of Accounts",Math
+3029,"Science (Chem, Bio)",Science
+3029,"Science (Phy, Chem)",Science
+3029,"Humanities (Ss, Geography)",Humanities
+3029,"Humanities (Ss, History)",Humanities
+3029,"Tamil Language",Language
+3029,Biology,Science
+3029,Chemistry,Science
+3029,"Chinese Language (Special Programme)",Language
+3029,Computing,Science
+3029,Geography,Humanities
+3029,"Higher Chinese Language",Language
+3029,History,Humanities
+3029,"Higher Malay Language",Language
+3029,"Higher Tamil Language",Language
+3029,Physics,Science
+3029,"Physical Education",Others
+3012,"Stem Elective",Science
+3012,"Design Elective",Others
+3012,"Chinese Language Syllabus B",Language
+3012,Art,Art
+3012,"Basic Chinese Language",Language
+3012,"Computer Applications",Science
+3012,"English Language",Language
+3012,Mathematics,Math
+3012,"Basic Malay Language",Language
+3012,Music,Art
+3012,Science,Science
+3012,"Social Studies",Humanities
+3012,"Basic Tamil Language",Language
+3012,"Chinese Language",Language
+3012,"Design & Technology",Science
+3012,Geography,Humanities
+3012,"Literature in English",Humanities
+3012,"Malay Language",Language
+3012,"Science (Phy, Chem)",Science
+3012,"Humanities (Ss, History)",Humanities
+3012,"Additional Mathematics",Math
+3012,Biology,Science
+3012,Chemistry,Science
+3012,Computing,Science
+3012,"Higher Chinese Language",Language
+3012,"Higher Malay Language",Language
+3012,"Higher Tamil Language",Language
+3012,"Literature in Tamil",Humanities
+3012,Physics,Science
+3012,"Humanities (Ss, Literature in Tamil)",Humanities
+3012,"Tamil Language",Language
+3012,"Physical Education",Others
+3622,"Chinese Language Syllabus B",Language
+3622,Art,Art
+3622,"Basic Chinese Language",Language
+3622,"Computer Applications",Science
+3622,"Design & Technology",Science
+3622,"English Language",Language
+3622,Mathematics,Math
+3622,"Basic Malay Language",Language
+3622,Science,Science
+3622,"Social Studies",Humanities
+3622,"Additional Mathematics",Math
+3622,"Chinese Language",Language
+3622,"Malay Language",Language
+3622,"Nutrition and Food Science",Science
+3622,"Science (Chem, Bio)",Science
+3622,"Science (Phy, Chem)",Science
+3622,"Humanities (Ss, Geography)",Humanities
+3622,"Humanities (Ss, History)",Humanities
+3622,Biology,Science
+3622,Chemistry,Science
+3622,Electronics,Science
+3622,Geography,Humanities
+3622,History,Humanities
+3622,Physics,Science
+3622,"Project Work",Others
+3622,"Humanities (Ss, Literature in English)",Humanities
+3622,"Physical Education",Others
+3005,"Design & Technology",Science
+3005,"Food & Consumer Education",Others
+3005,"Lower Secondary Computer Education Programme",Science
+3005,Art,Art
+3005,"Additional Mathematics",Math
+3005,Biology,Science
+3005,Chemistry,Science
+3005,"Chinese Language",Language
+3005,"Chinese Language (Special Programme)",Language
+3005,"English Language",Language
+3005,Geography,Humanities
+3005,"Higher Chinese Language",Language
+3005,"Higher Music",Art
+3005,History,Humanities
+3005,"Higher Malay Language",Language
+3005,"Higher Tamil Language",Language
+3005,"Literature in English",Humanities
+3005,Mathematics,Math
+3005,"Malay Language",Language
+3005,"Malay Language (Special Programme)",Language
+3005,Music,Art
+3005,Physics,Science
+3005,Science,Science
+3005,"Humanities (Ss, Geography)",Humanities
+3005,"Humanities (Ss, History)",Humanities
+3005,"Humanities (Ss, Literature in English)",Humanities
+3005,"Tamil Language",Language
+3005,"Physical Education",Others
+7806,"Performing Arts",Art
+7806,"Visual Arts",Art
+7806,"Fabulous Merchandise Display",Others
+7806,"Input To Output",Others
+7806,"Let's Get Connected",Others
+7806,"Passion To Serve",Others
+7806,"Wheels of Wonder",Others
+7806,"Every Crestan Can Code",Others
+7806,"Link Up the World",Others
+7806,"Culinary & Restaurant Operations",Others
+7806,"Internet of Things Applications",Science
+7806,"Mechanical Design & Automation",Science
+7806,"Mobile Web Applications",Science
+7806,"Retail & E-Commerce",Others
+7806,"Basic Chinese Language",Language
+7806,"English Language",Language
+7806,Mathematics,Math
+7806,"Basic Malay Language",Language
+7806,Science,Science
+7806,"Basic Tamil Language",Language
+7806,"Chinese Language",Language
+7806,"Malay Language",Language
+7806,"Physical Education",Others
+3056,"Character and Citizenship Education",Others
+3056,"Applied Learning Programme",Others
+3056,"Chinese Language Syllabus B",Language
+3056,Art,Art
+3056,"Basic Chinese Language",Language
+3056,"Computer Applications",Science
+3056,"Design & Technology",Science
+3056,"English Language",Language
+3056,"Food & Consumer Education",Others
+3056,Mathematics,Math
+3056,"Basic Malay Language",Language
+3056,"Retail Operations",Others
+3056,Science,Science
+3056,"Social Studies",Humanities
+3056,"Chinese Language",Language
+3056,Geography,Humanities
+3056,History,Humanities
+3056,"Literature in English",Humanities
+3056,"Malay Language",Language
+3056,"Nutrition and Food Science",Science
+3056,"Principles of Accounts",Math
+3056,"Science (Phy, Chem)",Science
+3056,"Humanities (Ss, Geography)",Humanities
+3056,"Humanities (Ss, History)",Humanities
+3056,"Additional Mathematics",Math
+3056,Chemistry,Science
+3056,Physics,Science
+3056,Music,Art
+3056,"Physical Education",Others
+3228,"Character and Citizenship Education",Others
+3228,"Drama in Curriculum",Art
+3228,Art,Art
+3228,"Chinese Language Syllabus B",Language
+3228,"Design & Technology",Science
+3228,"Food & Consumer Education",Others
+3228,"Basic Chinese Language",Language
+3228,"Computer Applications",Science
+3228,"Elements of Business Skills",Others
+3228,"English Language",Language
+3228,Mathematics,Math
+3228,"Basic Malay Language",Language
+3228,Science,Science
+3228,"Social Studies",Humanities
+3228,"Basic Tamil Language",Language
+3228,"Chinese Language",Language
+3228,"Malay Language",Language
+3228,"Nutrition and Food Science",Science
+3228,"Principles of Accounts",Math
+3228,"Science (Phy, Chem)",Science
+3228,"Humanities (Ss, Geography)",Humanities
+3228,"Humanities (Ss, History)",Humanities
+3228,"Tamil Language",Language
+3228,"Additional Mathematics",Math
+3228,Biology,Science
+3228,Chemistry,Science
+3228,Drama,Art
+3228,Geography,Humanities
+3228,"Higher Chinese Language",Language
+3228,Physics,Science
+3228,"Project Work",Others
+3228,"Science (Phy, Bio)",Science
+3228,"Humanities (Ss, Literature in English)",Humanities
+3228,"Physical Education",Others
+3503,"Character and Citizenship Education",Others
+3503,Art,Art
+3503,"Basic Chinese Language",Language
+3503,"Computer Applications",Science
+3503,"Design & Technology",Science
+3503,"Elements of Business Skills",Others
+3503,"English Language",Language
+3503,"Food & Consumer Education",Others
+3503,Mathematics,Math
+3503,"Basic Malay Language",Language
+3503,Science,Science
+3503,"Social Studies",Humanities
+3503,"Additional Mathematics",Math
+3503,"Chinese Language",Language
+3503,Geography,Humanities
+3503,History,Humanities
+3503,"Literature in English",Humanities
+3503,"Malay Language",Language
+3503,"Nutrition and Food Science",Science
+3503,"Principles of Accounts",Math
+3503,"Science (Chem, Bio)",Science
+3503,"Science (Phy, Chem)",Science
+3503,"Humanities (Ss, Geography)",Humanities
+3503,"Humanities (Ss, History)",Humanities
+3503,Biology,Science
+3503,Chemistry,Science
+3503,Physics,Science
+3503,Music,Art
+3101,"Art (Special Programme)",Art
+3101,"Conversational Malay Programme",Language
+3101,"Life Skills Programme",Others
+3101,Geography,Humanities
+3101,History,Humanities
+3101,"Mathematics 1",Math
+3101,"D1 Mathematics 2",Math
+3101,"Active Citizenry Education",Others
+3101,"D1 Geography",Humanities
+3101,"D1 History",Humanities
+3101,"D1 Literature in English",Humanities
+3101,"D1 Literature in Chinese",Humanities
+3101,"D2 Geography",Humanities
+3101,"D2 History",Humanities
+3101,"D2 Literature in English",Humanities
+3101,"D2 Literature in Chinese",Humanities
+3101,"D2 Mathematics 2",Math
+3101,"D2 Biology",Science
+3101,"D2 Chemistry",Science
+3101,"D2 Physics",Science
+3101,"Appreciation of Chinese Culture",Humanities
+3101,Art,Art
+3101,"Chinese Language",Language
+3101,"English Language",Language
+3101,"Higher Chinese Language",Language
+3101,"Higher Music",Art
+3101,"Malay Language (Special Programme)",Language
+3207,"S1 Stemviadt",Science
+3207,Art,Art
+3207,"Basic Chinese Language",Language
+3207,"Computer Applications",Science
+3207,"Design & Technology",Science
+3207,"Elements of Business Skills",Others
+3207,"English Language",Language
+3207,"Food & Consumer Education",Others
+3207,Mathematics,Math
+3207,"Basic Malay Language",Language
+3207,Science,Science
+3207,"Social Studies",Humanities
+3207,"Basic Tamil Language",Language
+3207,"Additional Mathematics",Math
+3207,"Chinese Language",Language
+3207,Geography,Humanities
+3207,History,Humanities
+3207,"Literature in English",Humanities
+3207,"Malay Language",Language
+3207,"Nutrition and Food Science",Science
+3207,"Principles of Accounts",Math
+3207,"Science (Chem, Bio)",Science
+3207,"Science (Phy, Bio)",Science
+3207,"Science (Phy, Chem)",Science
+3207,"Humanities (Ss, Geography)",Humanities
+3207,"Humanities (Ss, History)",Humanities
+3207,"Tamil Language",Language
+3207,Biology,Science
+3207,Chemistry,Science
+3207,"Exercise & Sports Science",Others
+3207,"Higher Chinese Language",Language
+3207,"Higher Malay Language",Language
+3207,"Higher Tamil Language",Language
+3207,Physics,Science
+3207,Music,Art
+3207,"Physical Education",Others
+3609,"Chinese Language Syllabus B",Language
+3609,Art,Art
+3609,"Basic Chinese Language",Language
+3609,"Computer Applications",Science
+3609,"Design & Technology",Science
+3609,"Elements of Business Skills",Others
+3609,"English Language",Language
+3609,"Food & Consumer Education",Others
+3609,Mathematics,Math
+3609,"Basic Malay Language",Language
+3609,Music,Art
+3609,Science,Science
+3609,"Social Studies",Humanities
+3609,"Basic Tamil Language",Language
+3609,"Additional Mathematics",Math
+3609,"Chinese Language",Language
+3609,Geography,Humanities
+3609,History,Humanities
+3609,"Literature in English",Humanities
+3609,"Malay Language",Language
+3609,"Nutrition and Food Science",Science
+3609,"Principles of Accounts",Math
+3609,"Science (Chem, Bio)",Science
+3609,"Science (Phy, Chem)",Science
+3609,"Humanities (Ss, Geography)",Humanities
+3609,"Humanities (Ss, History)",Humanities
+3609,"Humanities (Ss, Literature in English)",Humanities
+3609,"Tamil Language",Language
+3609,Biology,Science
+3609,Chemistry,Science
+3609,"Higher Chinese Language",Language
+3609,"Higher Malay Language",Language
+3609,Physics,Science
+3609,"Malay Language Syllabus B",Language
+3609,"Physical Education",Others
+3075,Art,Art
+3075,"Design & Technology",Science
+3075,"Food & Consumer Education",Others
+3075,"Basic Chinese Language",Language
+3075,"Computer Applications",Science
+3075,"Elements of Business Skills",Others
+3075,"English Language",Language
+3075,Mathematics,Math
+3075,"Basic Malay Language",Language
+3075,Science,Science
+3075,"Social Studies",Humanities
+3075,"Additional Mathematics",Math
+3075,"Chinese Language",Language
+3075,"Malay Language",Language
+3075,"Nutrition and Food Science",Science
+3075,"Science (Chem, Bio)",Science
+3075,"Science (Phy, Chem)",Science
+3075,"Humanities (Ss, Geography)",Humanities
+3075,"Humanities (Ss, History)",Humanities
+3075,"Humanities (Ss, Literature in English)",Humanities
+3075,Biology,Science
+3075,Chemistry,Science
+3075,Geography,Humanities
+3075,"Higher Chinese Language",Language
+3075,History,Humanities
+3075,"Higher Malay Language",Language
+3075,"Literature in English",Humanities
+3075,Physics,Science
+3075,Music,Art
+3623,Art,Art
+3623,"Design & Technology",Science
+3623,"Food & Consumer Education",Others
+3623,"Computer Applications",Science
+3623,"Elements of Business Skills",Others
+3623,Science,Science
+3623,"Literature in English",Humanities
+3623,"Principles of Accounts",Math
+3623,"Science (Phy, Chem)",Science
+3623,"Humanities (Ss, Geography)",Humanities
+3623,"Humanities (Ss, History)",Humanities
+3623,"Additional Mathematics",Math
+3623,Biology,Science
+3623,Chemistry,Science
+3623,"Chinese Language",Language
+3623,"English Language",Language
+3623,"Higher Chinese Language",Language
+3623,"Higher Malay Language",Language
+3623,Mathematics,Math
+3623,"Malay Language",Language
+3623,Physics,Science
+3623,"Science (Phy, Bio)",Science
+3623,Music,Art
+3623,"Physical Education",Others
+7309,"Chinese Language Syllabus B",Language
+7309,"Basic Chinese Language",Language
+7309,"Computer Applications",Science
+7309,"Design & Technology",Science
+7309,"English Language",Language
+7309,"Food & Consumer Education",Others
+7309,Mathematics,Math
+7309,"Basic Malay Language",Language
+7309,Science,Science
+7309,"Social Studies",Humanities
+7309,"Chinese Language",Language
+7309,"Malay Language",Language
+7309,"Humanities (Ss, Geography)",Humanities
+7309,"Humanities (Ss, History)",Humanities
+7309,"Additional Mathematics",Math
+7309,Art,Art
+7309,Biology,Science
+7309,Chemistry,Science
+7309,Geography,Humanities
+7309,"Higher Chinese Language",Language
+7309,History,Humanities
+7309,"Literature in English",Humanities
+7309,Physics,Science
+7309,"Science (Phy, Chem)",Science
+7309,"Malay Language Syllabus B",Language
+7309,Music,Art
+7309,"Physical Education",Others
+3024,"Chinese Language Syllabus B",Language
+3024,"Computer Applications",Science
+3024,"Elements of Business Skills",Others
+3024,Science,Science
+3024,"Social Studies",Humanities
+3024,"Literature in English",Humanities
+3024,"Science (Phy, Chem)",Science
+3024,"Humanities (Ss, Geography)",Humanities
+3024,"Humanities (Ss, History)",Humanities
+3024,"Humanities (Ss, Literature in English)",Humanities
+3024,"Additional Mathematics",Math
+3024,Biology,Science
+3024,Chemistry,Science
+3024,"Chinese Language",Language
+3024,"English Language",Language
+3024,"Higher Chinese Language",Language
+3024,Mathematics,Math
+3024,"Malay Language",Language
+3024,Physics,Science
+3024,"Science (Chem, Bio)",Science
+3024,"Tamil Language",Language
+3024,"Physical Education",Others
+3614,Art,Art
+3614,"Basic Chinese Language",Language
+3614,"Computer Applications",Science
+3614,"Design & Technology",Science
+3614,"Elements of Business Skills",Others
+3614,"English Language",Language
+3614,"Food & Consumer Education",Others
+3614,Mathematics,Math
+3614,"Basic Malay Language",Language
+3614,"Nutrition and Food Science",Science
+3614,Science,Science
+3614,"Social Studies",Humanities
+3614,"Additional Mathematics",Math
+3614,"Chinese Language",Language
+3614,"Malay Language",Language
+3614,"Principles of Accounts",Math
+3614,"Science (Phy, Chem)",Science
+3614,"Humanities (Ss, Geography)",Humanities
+3614,"Humanities (Ss, History)",Humanities
+3614,Biology,Science
+3614,Chemistry,Science
+3614,Geography,Humanities
+3614,"Higher Chinese Language",Language
+3614,History,Humanities
+3614,"Literature in English",Humanities
+3614,Physics,Science
+3614,Music,Art
+3614,"Physical Education",Others
+3006,Art,Art
+3006,"Design & Technology",Science
+3006,"Food & Consumer Education",Others
+3006,"Basic Chinese Language",Language
+3006,"Computer Applications",Science
+3006,"Elements of Business Skills",Others
+3006,"English Language",Language
+3006,Mathematics,Math
+3006,"Basic Malay Language",Language
+3006,"Mobile Robotics",Science
+3006,Science,Science
+3006,"Social Studies",Humanities
+3006,"Basic Tamil Language",Language
+3006,"Additional Mathematics",Math
+3006,"Chinese Language",Language
+3006,"Malay Language",Language
+3006,"Principles of Accounts",Math
+3006,"Science (Chem, Bio)",Science
+3006,"Science (Phy, Chem)",Science
+3006,"Humanities (Ss, Geography)",Humanities
+3006,"Humanities (Ss, History)",Humanities
+3006,"Tamil Language",Language
+3006,Biology,Science
+3006,Chemistry,Science
+3006,Geography,Humanities
+3006,"Higher Chinese Language",Language
+3006,History,Humanities
+3006,"Higher Malay Language",Language
+3006,"Literature in English",Humanities
+3006,Physics,Science
+3006,Music,Art
+3006,"Physical Education",Others
+7005,"Basic Chinese Language",Language
+7005,"Computer Applications",Science
+7005,"Elements of Business Skills",Others
+7005,"English Language",Language
+7005,Mathematics,Math
+7005,"Basic Malay Language",Language
+7005,Science,Science
+7005,"Chinese Language",Language
+7005,Geography,Humanities
+7005,History,Humanities
+7005,"Literature in English",Humanities
+7005,"Malay Language",Language
+7005,"Principles of Accounts",Math
+7005,"Science (Chem, Bio)",Science
+7005,"Science (Phy, Chem)",Science
+7005,"Humanities (Ss, Geography)",Humanities
+7005,"Humanities (Ss, History)",Humanities
+7005,"Humanities (Ss, Literature in English)",Humanities
+7005,"Additional Mathematics",Math
+7005,Art,Art
+7005,Biology,Science
+7005,Chemistry,Science
+7005,"Design & Technology",Science
+7005,"Exercise & Sports Science",Others
+7005,"Food & Consumer Education",Others
+7005,"Higher Chinese Language",Language
+7005,Physics,Science
+3074,Art,Art
+3074,"Design & Technology",Science
+3074,"Food & Consumer Education",Others
+3074,"Basic Chinese Language",Language
+3074,"Computer Applications",Science
+3074,"Elements of Business Skills",Others
+3074,"English Language",Language
+3074,"Smart Electrical Technology",Science
+3074,Mathematics,Math
+3074,"Basic Malay Language",Language
+3074,Science,Science
+3074,"Social Studies",Humanities
+3074,"Additional Mathematics",Math
+3074,"Chinese Language",Language
+3074,Geography,Humanities
+3074,History,Humanities
+3074,"Malay Language",Language
+3074,"Principles of Accounts",Math
+3074,"Science (Phy, Chem)",Science
+3074,"Humanities (Ss, Geography)",Humanities
+3074,"Humanities (Ss, History)",Humanities
+3074,Biology,Science
+3074,Chemistry,Science
+3074,"Literature in English",Humanities
+3074,Physics,Science
+3074,"Science (Chem, Bio)",Science
+3074,Music,Art
+3074,"Physical Education",Others
+3051,"Chinese Language Syllabus B",Language
+3051,Art,Art
+3051,"Basic Chinese Language",Language
+3051,"Computer Applications",Science
+3051,"Design & Technology",Science
+3051,"Elements of Business Skills",Others
+3051,"English Language",Language
+3051,"Food & Consumer Education",Others
+3051,Mathematics,Math
+3051,"Basic Malay Language",Language
+3051,Science,Science
+3051,"Social Studies",Humanities
+3051,"Basic Tamil Language",Language
+3051,"Additional Mathematics",Math
+3051,"Chinese Language",Language
+3051,History,Humanities
+3051,"Literature in English",Humanities
+3051,"Malay Language",Language
+3051,"Nutrition and Food Science",Science
+3051,"Principles of Accounts",Math
+3051,"Science (Phy, Chem)",Science
+3051,"Humanities (Ss, Geography)",Humanities
+3051,"Humanities (Ss, History)",Humanities
+3051,"Tamil Language",Language
+3051,Biology,Science
+3051,Chemistry,Science
+3051,Geography,Humanities
+3051,"Higher Chinese Language",Language
+3051,"Higher Tamil Language",Language
+3051,Physics,Science
+3051,"Science (Chem, Bio)",Science
+3051,Music,Art
+3051,"Physical Education",Others
+3238,"Chinese Language Syllabus B",Language
+3238,Art,Art
+3238,"Basic Chinese Language",Language
+3238,"Computer Applications",Science
+3238,"Design & Technology",Science
+3238,"Elements of Business Skills",Others
+3238,"English Language",Language
+3238,"Food & Consumer Education",Others
+3238,Mathematics,Math
+3238,"Basic Malay Language",Language
+3238,Science,Science
+3238,"Social Studies",Humanities
+3238,"Basic Tamil Language",Language
+3238,"Additional Mathematics",Math
+3238,"Chinese Language",Language
+3238,Geography,Humanities
+3238,History,Humanities
+3238,"Literature in English",Humanities
+3238,"Malay Language",Language
+3238,"Nutrition and Food Science",Science
+3238,"Principles of Accounts",Math
+3238,"Science (Chem, Bio)",Science
+3238,"Science (Phy, Bio)",Science
+3238,"Science (Phy, Chem)",Science
+3238,"Humanities (Ss, Geography)",Humanities
+3238,"Humanities (Ss, History)",Humanities
+3238,"Tamil Language",Language
+3238,Biology,Science
+3238,Chemistry,Science
+3238,Computing,Science
+3238,"Higher Chinese Language",Language
+3238,Physics,Science
+3238,"Humanities (Ss, Literature in English)",Humanities
+3238,Music,Art
+3238,"Physical Education",Others
+7031,"Character & Citizenship Education",Others
+7031,"Chinese Language Syllabus B",Language
+7031,Art,Art
+7031,"Basic Chinese Language",Language
+7031,"Computer Applications",Science
+7031,"Elements of Business Skills",Others
+7031,"English Language",Language
+7031,"Food & Consumer Education",Others
+7031,Mathematics,Math
+7031,"Basic Malay Language",Language
+7031,Music,Art
+7031,Science,Science
+7031,"Social Studies",Humanities
+7031,"Additional Mathematics",Math
+7031,"Chinese Language",Language
+7031,"Design & Technology",Science
+7031,Geography,Humanities
+7031,History,Humanities
+7031,"Literature in English",Humanities
+7031,"Malay Language",Language
+7031,"Nutrition and Food Science",Science
+7031,"Principles of Accounts",Math
+7031,"Science (Chem, Bio)",Science
+7031,"Science (Phy, Chem)",Science
+7031,"Humanities (Ss, Geography)",Humanities
+7031,"Humanities (Ss, History)",Humanities
+7031,Biology,Science
+7031,Chemistry,Science
+7031,"Higher Chinese Language",Language
+7031,Physics,Science
+7031,"Physical Education",Others
+3048,Art,Art
+3048,"Basic Chinese Language",Language
+3048,"Computer Applications",Science
+3048,"Design & Technology",Science
+3048,"Elements of Business Skills",Others
+3048,"English Language",Language
+3048,"Food & Consumer Education",Others
+3048,Mathematics,Math
+3048,"Basic Malay Language",Language
+3048,"Mobile Robotics",Science
+3048,Science,Science
+3048,"Social Studies",Humanities
+3048,"Additional Mathematics",Math
+3048,"Chinese Language",Language
+3048,Geography,Humanities
+3048,History,Humanities
+3048,"Literature in English",Humanities
+3048,"Malay Language",Language
+3048,"Nutrition and Food Science",Science
+3048,"Principles of Accounts",Math
+3048,"Science (Phy, Chem)",Science
+3048,"Humanities (Ss, Geography)",Humanities
+3048,"Humanities (Ss, History)",Humanities
+3048,Biology,Science
+3048,Chemistry,Science
+3048,Electronics,Science
+3048,"Higher Chinese Language",Language
+3048,Physics,Science
+3048,Music,Art
+3048,"Physical Education",Others
+7108,"Chinese Language Syllabus B",Language
+7108,Art,Art
+7108,"Basic Chinese Language",Language
+7108,"Computer Applications",Science
+7108,"Design & Technology",Science
+7108,"Elements of Business Skills",Others
+7108,"English Language",Language
+7108,Mathematics,Math
+7108,"Basic Malay Language",Language
+7108,"Additional Mathematics",Math
+7108,"Chinese Language",Language
+7108,Geography,Humanities
+7108,"Malay Language",Language
+7108,"Nutrition and Food Science",Science
+7108,"Principles of Accounts",Math
+7108,"Science (Phy, Chem)",Science
+7108,"Humanities (Ss, Geography)",Humanities
+7108,"Humanities (Ss, History)",Humanities
+7108,Biology,Science
+7108,Chemistry,Science
+7108,Computing,Science
+7108,"Higher Chinese Language",Language
+7108,History,Humanities
+7108,"Literature in English",Humanities
+7108,Music,Art
+7108,Physics,Science
+7108,"Science (Chem, Bio)",Science
+7108,"Physical Education",Others
+3046,Art,Art
+3046,"Basic Chinese Language",Language
+3046,"Computer Applications",Science
+3046,"Design & Technology",Science
+3046,"Elements of Business Skills",Others
+3046,"English Language",Language
+3046,"Food & Consumer Education",Others
+3046,Mathematics,Math
+3046,"Basic Malay Language",Language
+3046,Music,Art
+3046,Science,Science
+3046,"Social Studies",Humanities
+3046,"Chinese Language",Language
+3046,Geography,Humanities
+3046,History,Humanities
+3046,"Literature in English",Humanities
+3046,"Malay Language",Language
+3046,"Nutrition and Food Science",Science
+3046,"Principles of Accounts",Math
+3046,"Science (Phy, Chem)",Science
+3046,"Humanities (Ss, Geography)",Humanities
+3046,"Humanities (Ss, History)",Humanities
+3046,"Additional Mathematics",Math
+3046,Biology,Science
+3046,Chemistry,Science
+3046,Computing,Science
+3046,"Higher Chinese Language",Language
+3046,Physics,Science
+3046,"Science (Chem, Bio)",Science
+3046,"Humanities (Ss, Literature in Malay)",Humanities
+3046,"Physical Education",Others
+3226,"Computer Applications",Science
+3226,"Design & Technology",Science
+3226,"Elements of Business Skills",Others
+3226,"English Language",Language
+3226,Mathematics,Math
+3226,"Basic Malay Language",Language
+3226,"Nutrition and Food Science",Science
+3226,Science,Science
+3226,"Social Studies",Humanities
+3226,"Basic Tamil Language",Language
+3226,"Additional Mathematics",Math
+3226,Art,Art
+3226,"Food & Consumer Education",Others
+3226,Geography,Humanities
+3226,History,Humanities
+3226,"Literature in English",Humanities
+3226,"Malay Language",Language
+3226,"Science (Chem, Bio)",Science
+3226,"Science (Phy, Chem)",Science
+3226,"Humanities (Ss, Geography)",Humanities
+3226,"Humanities (Ss, History)",Humanities
+3226,"Humanities (Ss, Literature in English)",Humanities
+3226,Biology,Science
+3226,Chemistry,Science
+3226,"Chinese Language",Language
+3226,"Higher Chinese Language",Language
+3226,"Higher Art",Art
+3226,Music,Art
+3226,Physics,Science
+806,"Appreciation of Chinese Culture",Humanities
+806,"Additional Mathematics",Math
+806,Art,Art
+806,Biology,Science
+806,Chemistry,Science
+806,"English Language",Language
+806,Geography,Humanities
+806,"Higher Chinese Language",Language
+806,"Literature in English",Humanities
+806,Mathematics,Math
+806,"Malay Language (Special Programme)",Language
+806,Physics,Science
+806,"Humanities (Ss, History)",Humanities
+3608,Art,Art
+3608,"Basic Chinese Language",Language
+3608,"Computer Applications",Science
+3608,"Design & Technology",Science
+3608,"Elements of Business Skills",Others
+3608,"English Language",Language
+3608,"Food & Consumer Education",Others
+3608,Mathematics,Math
+3608,"Basic Malay Language",Language
+3608,Science,Science
+3608,"Social Studies",Humanities
+3608,"Additional Mathematics",Math
+3608,"Chinese Language",Language
+3608,"Malay Language",Language
+3608,"Nutrition and Food Science",Science
+3608,"Principles of Accounts",Math
+3608,"Science (Chem, Bio)",Science
+3608,"Science (Phy, Chem)",Science
+3608,"Humanities (Ss, Geography)",Humanities
+3608,"Humanities (Ss, History)",Humanities
+3608,Biology,Science
+3608,Chemistry,Science
+3608,Computing,Science
+3608,Geography,Humanities
+3608,History,Humanities
+3608,"Literature in English",Humanities
+3608,Physics,Science
+3608,"Humanities (Ss, Literature in Malay)",Humanities
+3608,Music,Art
+3608,"Physical Education",Others
+3211,Art,Art
+3211,"Design & Technology",Science
+3211,"Food & Consumer Education",Others
+3211,"Basic Chinese Language",Language
+3211,"Computer Applications",Science
+3211,"Elements of Business Skills",Others
+3211,"English Language",Language
+3211,Mathematics,Math
+3211,"Basic Malay Language",Language
+3211,"Mobile Robotics",Science
+3211,Science,Science
+3211,"Social Studies",Humanities
+3211,"Basic Tamil Language",Language
+3211,"Additional Mathematics",Math
+3211,"Chinese Language",Language
+3211,"Malay Language",Language
+3211,"Principles of Accounts",Math
+3211,"Science (Chem, Bio)",Science
+3211,"Science (Phy, Chem)",Science
+3211,"Humanities (Ss, Geography)",Humanities
+3211,"Humanities (Ss, History)",Humanities
+3211,"Humanities (Ss, Literature in English)",Humanities
+3211,"Tamil Language",Language
+3211,Biology,Science
+3211,Chemistry,Science
+3211,Computing,Science
+3211,Geography,Humanities
+3211,"Higher Chinese Language",Language
+3211,History,Humanities
+3211,"Higher Malay Language",Language
+3211,"Literature in Chinese",Humanities
+3211,Physics,Science
+3211,Music,Art
+3211,"Physical Education",Others
+3068,Art,Art
+3068,"Basic Chinese Language",Language
+3068,"Computer Applications",Science
+3068,"Design & Technology",Science
+3068,"Elements of Business Skills",Others
+3068,"English Language",Language
+3068,"Food & Consumer Education",Others
+3068,Mathematics,Math
+3068,"Basic Malay Language",Language
+3068,Science,Science
+3068,"Social Studies",Humanities
+3068,"Basic Tamil Language",Language
+3068,"Additional Mathematics",Math
+3068,"Chinese Language",Language
+3068,Geography,Humanities
+3068,History,Humanities
+3068,"Literature in English",Humanities
+3068,"Malay Language",Language
+3068,"Nutrition and Food Science",Science
+3068,"Principles of Accounts",Math
+3068,"Science (Chem, Bio)",Science
+3068,"Science (Phy, Chem)",Science
+3068,"Humanities (Ss, Geography)",Humanities
+3068,"Humanities (Ss, History)",Humanities
+3068,"Humanities (Ss, Literature in English)",Humanities
+3068,"Tamil Language",Language
+3068,Biology,Science
+3068,Chemistry,Science
+3068,Computing,Science
+3068,"Exercise & Sports Science",Others
+3068,"Higher Chinese Language",Language
+3068,"Higher Art",Art
+3068,"Higher Malay Language",Language
+3068,"Higher Tamil Language",Language
+3068,Physics,Science
+3068,Music,Art
+3068,"Physical Education",Others
+3063,"Basic Chinese Language",Language
+3063,"Computer Applications",Science
+3063,"Design & Technology",Science
+3063,"English Language",Language
+3063,"Smart Electrical Technology",Science
+3063,Mathematics,Math
+3063,"Basic Malay Language",Language
+3063,Science,Science
+3063,"Basic Tamil Language",Language
+3063,Art,Art
+3063,"Chinese Language",Language
+3063,"Malay Language",Language
+3063,"Principles of Accounts",Math
+3063,"Science (Chem, Bio)",Science
+3063,"Science (Phy, Chem)",Science
+3063,"Humanities (Ss, Geography)",Humanities
+3063,"Humanities (Ss, History)",Humanities
+3063,"Tamil Language",Language
+3063,"Additional Mathematics",Math
+3063,Biology,Science
+3063,Chemistry,Science
+3063,Electronics,Science
+3063,"Higher Chinese Language",Language
+3063,"Higher Malay Language",Language
+3063,Physics,Science
+3063,"Humanities (Ss, Literature in English)",Humanities
+3063,Music,Art
+3063,"Physical Education",Others
+3066,"Chinese Language Syllabus B",Language
+3066,"Basic Chinese Language",Language
+3066,"Computer Applications",Science
+3066,"Design & Technology",Science
+3066,"Elements of Business Skills",Others
+3066,"English Language",Language
+3066,Mathematics,Math
+3066,"Basic Malay Language",Language
+3066,"Mobile Robotics",Science
+3066,Science,Science
+3066,"Social Studies",Humanities
+3066,"Additional Mathematics",Math
+3066,"Chinese Language",Language
+3066,Geography,Humanities
+3066,History,Humanities
+3066,"Literature in English",Humanities
+3066,"Principles of Accounts",Math
+3066,"Science (Chem, Bio)",Science
+3066,"Science (Phy, Chem)",Science
+3066,"Humanities (Ss, Geography)",Humanities
+3066,"Humanities (Ss, History)",Humanities
+3066,"Humanities (Ss, Literature in English)",Humanities
+3066,Biology,Science
+3066,Chemistry,Science
+3066,"Higher Chinese Language",Language
+3066,"Higher Malay Language",Language
+3066,"Malay Language",Language
+3066,Physics,Science
+3066,Music,Art
+3619,"Chinese Language Syllabus B",Language
+3619,Art,Art
+3619,"Basic Chinese Language",Language
+3619,"Computer Applications",Science
+3619,"Design & Technology",Science
+3619,"Elements of Business Skills",Others
+3619,"English Language",Language
+3619,"Food & Consumer Education",Others
+3619,Mathematics,Math
+3619,"Basic Malay Language",Language
+3619,Music,Art
+3619,Science,Science
+3619,"Social Studies",Humanities
+3619,"Additional Mathematics",Math
+3619,"Chinese Language",Language
+3619,Geography,Humanities
+3619,History,Humanities
+3619,"Literature in English",Humanities
+3619,"Malay Language",Language
+3619,"Nutrition and Food Science",Science
+3619,"Principles of Accounts",Math
+3619,"Science (Phy, Chem)",Science
+3619,"Humanities (Ss, Geography)",Humanities
+3619,"Humanities (Ss, History)",Humanities
+3619,Biology,Science
+3619,Chemistry,Science
+3619,Computing,Science
+3619,"Higher Chinese Language",Language
+3619,"Higher Malay Language",Language
+3619,Physics,Science
+3619,"Physical Education",Others
+3065,Art,Art
+3065,"Basic Chinese Language",Language
+3065,"Computer Applications",Science
+3065,"Design & Technology",Science
+3065,"English Language",Language
+3065,"Food & Consumer Education",Others
+3065,"Basic Malay Language",Language
+3065,Music,Art
+3065,Science,Science
+3065,"Social Studies",Humanities
+3065,"Basic Tamil Language",Language
+3065,Geography,Humanities
+3065,History,Humanities
+3065,"Literature in English",Humanities
+3065,"Principles of Accounts",Math
+3065,"Science (Chem, Bio)",Science
+3065,"Science (Phy, Chem)",Science
+3065,"Humanities (Ss, Geography)",Humanities
+3065,"Humanities (Ss, History)",Humanities
+3065,"Tamil Language",Language
+3065,"Additional Mathematics",Math
+3065,Biology,Science
+3065,Chemistry,Science
+3065,"Chinese Language",Language
+3065,Computing,Science
+3065,"Higher Chinese Language",Language
+3065,"Higher Malay Language",Language
+3065,"Higher Tamil Language",Language
+3065,Mathematics,Math
+3065,"Malay Language",Language
+3065,Physics,Science
+3065,"Physical Education",Others
+7028,Art,Art
+7028,"Chinese Language",Language
+7028,"Design & Technology",Science
+7028,"English Language",Language
+7028,"Food & Consumer Education",Others
+7028,Mathematics,Math
+7028,"Malay Language",Language
+7028,"Principles of Accounts",Math
+7028,Science,Science
+7028,"Science (Chem, Bio)",Science
+7028,"Science (Phy, Chem)",Science
+7028,"Humanities (Ss, Geography)",Humanities
+7028,"Humanities (Ss, History)",Humanities
+7028,"Tamil Language",Language
+7028,"Additional Mathematics",Math
+7028,Biology,Science
+7028,Chemistry,Science
+7028,"Higher Chinese Language",Language
+7028,"Higher Tamil Language",Language
+7028,"Literature in English",Humanities
+7028,Physics,Science
+7028,Music,Art
+7028,"Physical Education",Others
+3077,"Basic Chinese Language",Language
+3077,"Computer Applications",Science
+3077,"Design & Technology",Science
+3077,"English Language",Language
+3077,"Food & Consumer Education",Others
+3077,Mathematics,Math
+3077,"Basic Malay Language",Language
+3077,Music,Art
+3077,Science,Science
+3077,"Social Studies",Humanities
+3077,"Basic Tamil Language",Language
+3077,"Additional Mathematics",Math
+3077,Art,Art
+3077,"Chinese Language",Language
+3077,Geography,Humanities
+3077,History,Humanities
+3077,"Malay Language",Language
+3077,"Principles of Accounts",Math
+3077,"Science (Phy, Chem)",Science
+3077,"Humanities (Ss, Geography)",Humanities
+3077,"Humanities (Ss, History)",Humanities
+3077,"Tamil Language",Language
+3077,Biology,Science
+3077,Chemistry,Science
+3077,Physics,Science
+3077,"Science (Chem, Bio)",Science
+3077,"Humanities (Ss, Literature in English)",Humanities
+3077,"Physical Education",Others
+7307,"Chinese Language Syllabus B",Language
+7307,Art,Art
+7307,"Basic Chinese Language",Language
+7307,"Computer Applications",Science
+7307,"Design & Technology",Science
+7307,"Elements of Business Skills",Others
+7307,"English Language",Language
+7307,"Food & Consumer Education",Others
+7307,Mathematics,Math
+7307,"Basic Malay Language",Language
+7307,Science,Science
+7307,"Social Studies",Humanities
+7307,"Chinese Language",Language
+7307,"Literature in English",Humanities
+7307,"Malay Language",Language
+7307,"Nutrition and Food Science",Science
+7307,"Principles of Accounts",Math
+7307,"Science (Chem, Bio)",Science
+7307,"Science (Phy, Chem)",Science
+7307,"Humanities (Ss, Geography)",Humanities
+7307,"Humanities (Ss, History)",Humanities
+7307,"Additional Mathematics",Math
+7307,Biology,Science
+7307,Chemistry,Science
+7307,"Higher Chinese Language",Language
+7307,Physics,Science
+7307,"Humanities (Ss, Literature in Chinese)",Humanities
+7307,Music,Art
+7111,"Conversational Malay",Language
+7111,"Information and Communications Technology",Science
+7111,"Appreciation of Chinese Culture",Humanities
+7111,"Additional Mathematics",Math
+7111,Art,Art
+7111,Biology,Science
+7111,Chemistry,Science
+7111,"Chinese Language",Language
+7111,Computing,Science
+7111,"Design & Technology",Science
+7111,"English Language",Language
+7111,"Exercise & Sports Science",Others
+7111,"Food & Consumer Education",Others
+7111,Geography,Humanities
+7111,"Higher Chinese Language",Language
+7111,History,Humanities
+7111,"Literature in Chinese",Humanities
+7111,"Literature in English",Humanities
+7111,Mathematics,Math
+7111,Music,Art
+7111,Physics,Science
+7111,"Principles of Accounts",Math
+7111,Science,Science
+7111,"Science (Phy, Chem)",Science
+7111,"Humanities (Ss, Geography)",Humanities
+7111,"Humanities (Ss, History)",Humanities
+7111,"Humanities (Ss, Literature in Chinese)",Humanities
+7111,"Humanities (Ss, Literature in English)",Humanities
+3615,Art,Art
+3615,"Chinese Language Syllabus B",Language
+3615,"Design & Technology",Science
+3615,"Food & Consumer Education",Others
+3615,"Basic Chinese Language",Language
+3615,"Computer Applications",Science
+3615,"Elements of Business Skills",Others
+3615,"English Language",Language
+3615,Mathematics,Math
+3615,"Basic Malay Language",Language
+3615,"Retail Operations",Others
+3615,Science,Science
+3615,"Social Studies",Humanities
+3615,"Basic Tamil Language",Language
+3615,"Additional Mathematics",Math
+3615,"Chinese Language",Language
+3615,Geography,Humanities
+3615,History,Humanities
+3615,"Literature in English",Humanities
+3615,"Malay Language",Language
+3615,"Nutrition and Food Science",Science
+3615,"Principles of Accounts",Math
+3615,"Science (Chem, Bio)",Science
+3615,"Science (Phy, Chem)",Science
+3615,"Humanities (Ss, Geography)",Humanities
+3615,"Humanities (Ss, History)",Humanities
+3615,"Tamil Language",Language
+3615,Chemistry,Science
+3615,"Higher Chinese Language",Language
+3615,"Higher Malay Language",Language
+3615,"Higher Tamil Language",Language
+3615,Physics,Science
+3615,"Humanities (Ss, Literature in English)",Humanities
+3615,"Malay Language Syllabus B",Language
+3615,Music,Art
+3615,"Physical Education",Others
+3615,"Tamil Language Syllabus B",Language
+3031,Art,Art
+3031,"Chinese Language Syllabus B",Language
+3031,"Design & Technology",Science
+3031,"Food & Consumer Education",Others
+3031,"Basic Chinese Language",Language
+3031,"Computer Applications",Science
+3031,"Elements of Business Skills",Others
+3031,"English Language",Language
+3031,Mathematics,Math
+3031,"Basic Malay Language",Language
+3031,"Mobile Robotics",Science
+3031,Science,Science
+3031,"Social Studies",Humanities
+3031,"Additional Mathematics",Math
+3031,"Chinese Language",Language
+3031,Geography,Humanities
+3031,History,Humanities
+3031,"Malay Language",Language
+3031,"Nutrition and Food Science",Science
+3031,"Principles of Accounts",Math
+3031,"Science (Chem, Bio)",Science
+3031,"Science (Phy, Chem)",Science
+3031,"Humanities (Ss, Geography)",Humanities
+3031,"Humanities (Ss, History)",Humanities
+3031,Biology,Science
+3031,Chemistry,Science
+3031,"Higher Chinese Language",Language
+3031,"Higher Malay Language",Language
+3031,"Literature in English",Humanities
+3031,Physics,Science
+3031,"Humanities (Ss, Literature in English)",Humanities
+3031,Music,Art
+3031,"Physical Education",Others
+3076,"Computer Applications",Science
+3076,"Design & Technology",Science
+3076,"Elements of Business Skills",Others
+3076,Mathematics,Math
+3076,Science,Science
+3076,"Additional Mathematics",Math
+3076,Art,Art
+3076,"Chinese Language",Language
+3076,"English Language",Language
+3076,"Malay Language",Language
+3076,"Principles of Accounts",Math
+3076,"Science (Phy, Chem)",Science
+3076,"Humanities (Ss, Geography)",Humanities
+3076,"Humanities (Ss, History)",Humanities
+3076,Biology,Science
+3076,Chemistry,Science
+3076,Geography,Humanities
+3076,"Higher Chinese Language",Language
+3076,History,Humanities
+3076,"Literature in English",Humanities
+3076,Physics,Science
+3076,"Humanities (Ss, Literature in English)",Humanities
+7030,"Chinese Language Syllabus B",Language
+7030,"Additional Mathematics",Math
+7030,Biology,Science
+7030,Chemistry,Science
+7030,"Chinese Language",Language
+7030,"English Language",Language
+7030,Geography,Humanities
+7030,"Higher Chinese Language",Language
+7030,"Higher Art",Art
+7030,"Higher Music",Art
+7030,History,Humanities
+7030,"Higher Malay Language",Language
+7030,"Higher Tamil Language",Language
+7030,"Literature in English",Humanities
+7030,Mathematics,Math
+7030,"Malay Language",Language
+7030,Music,Art
+7030,Physics,Science
+7030,"Project Work",Others
+7030,"Humanities (Ss, Geography)",Humanities
+7030,"Humanities (Ss, History)",Humanities
+7030,"Humanities (Ss, Literature in English)",Humanities
+7030,"Tamil Language",Language
+7011,Art,Art
+7011,"Design & Technology",Science
+7011,"Basic Chinese Language",Language
+7011,"Computer Applications",Science
+7011,"Elements of Business Skills",Others
+7011,"English Language",Language
+7011,"Food & Consumer Education",Others
+7011,Mathematics,Math
+7011,"Basic Malay Language",Language
+7011,Science,Science
+7011,"Social Studies",Humanities
+7011,"Basic Tamil Language",Language
+7011,"Additional Mathematics",Math
+7011,"Chinese Language",Language
+7011,Geography,Humanities
+7011,History,Humanities
+7011,"Literature in English",Humanities
+7011,"Malay Language",Language
+7011,"Principles of Accounts",Math
+7011,"Science (Chem, Bio)",Science
+7011,"Science (Phy, Chem)",Science
+7011,"Humanities (Ss, Geography)",Humanities
+7011,"Humanities (Ss, History)",Humanities
+7011,"Tamil Language",Language
+7011,Biology,Science
+7011,Chemistry,Science
+7011,Computing,Science
+7011,"Higher Chinese Language",Language
+7011,Physics,Science
+7011,Music,Art
+7011,"Physical Education",Others
+7112,Puppetry,Art
+7112,"Additional Mathematics",Math
+7112,Art,Art
+7112,Biology,Science
+7112,Chemistry,Science
+7112,"Chinese Language",Language
+7112,"Design & Technology",Science
+7112,"English Language",Language
+7112,"Food & Consumer Education",Others
+7112,Geography,Humanities
+7112,"Higher Chinese Language",Language
+7112,"Higher Music",Art
+7112,History,Humanities
+7112,"Literature in Chinese",Humanities
+7112,"Literature in English",Humanities
+7112,Mathematics,Math
+7112,"Malay Language (Special Programme)",Language
+7112,"Nutrition and Food Science",Science
+7112,Physics,Science
+7112,Science,Science
+7112,"Humanities (Ss, Geography)",Humanities
+7112,"Humanities (Ss, History)",Humanities
+7112,"Humanities (Ss, Literature in Chinese)",Humanities
+7112,"Humanities (Ss, Literature in English)",Humanities
+7112,Music,Art
+7112,"Physical Education",Others
+3047,"Additional Mathematics",Math
+3047,Art,Art
+3047,Biology,Science
+3047,Chemistry,Science
+3047,"Chinese Language",Language
+3047,"Design & Technology",Science
+3047,"English Language",Language
+3047,"Food & Consumer Education",Others
+3047,Geography,Humanities
+3047,"Higher Chinese Language",Language
+3047,"Higher Art",Art
+3047,History,Humanities
+3047,"Literature in Chinese",Humanities
+3047,"Literature in English",Humanities
+3047,Mathematics,Math
+3047,"Malay Language (Special Programme)",Language
+3047,Physics,Science
+3047,Science,Science
+3047,"Humanities (Ss, Geography)",Humanities
+3047,"Humanities (Ss, History)",Humanities
+3047,"Humanities (Ss, Literature in Chinese)",Humanities
+3047,Music,Art
+3047,"Physical Education",Others
+7114,"Advanced Music",Art
+7114,"Appreciation of Chinese Culture",Humanities
+7114,Art,Art
+7114,Dance,Art
+7114,"Food Studies",Others
+7114,Geography,Humanities
+7114,"Higher Art",Art
+7114,"Higher Chinese Language",Language
+7114,History,Humanities
+7114,Chemistry,Science
+7114,"Integrated Mathematics 2",Math
+7114,"Language Arts",Language
+7114,Literature,Humanities
+7114,"Literature in Chinese",Humanities
+7114,"Literature in English",Humanities
+7114,"Malay Special Programme",Language
+7114,Physics,Science
+7114,"Malay Language (Special Programme)",Language
+701,"General Arts Programme (Art)",Art
+701,"General Arts Programme (Music)",Art
+701,"Integrated Sciences",Science
+701,"Language Arts",Language
+701,Thinking,Others
+701,Drama-In-Production,Art
+701,"Art Elective Programme",Art
+701,"Music Programme",Art
+701,"Advanced Inquiry in Mathematics",Math
+701,"Advanced Science",Science
+701,Spire,Others
+701,"Advanced Humanities",Humanities
+701,"Advanced Language Arts",Language
+701,"Man and Ideas",Others
+701,"Governance & Society",Humanities
+701,Biology,Science
+701,Chemistry,Science
+701,"Chinese Language",Language
+701,Geography,Humanities
+701,"Higher Chinese Language",Language
+701,History,Humanities
+701,"Higher Malay Language",Language
+701,"Higher Tamil Language",Language
+701,Mathematics,Math
+701,Physics,Science
+701,"Physical Education",Others
+3214,"Chinese Language Syllabus B",Language
+3214,Art,Art
+3214,"Basic Chinese Language",Language
+3214,"Computer Applications",Science
+3214,"Design & Technology",Science
+3214,"English Language",Language
+3214,"Food & Consumer Education",Others
+3214,Mathematics,Math
+3214,"Basic Malay Language",Language
+3214,Music,Art
+3214,Science,Science
+3214,"Social Studies",Humanities
+3214,"Basic Tamil Language",Language
+3214,"Chinese Language",Language
+3214,"Malay Language",Language
+3214,"Nutrition and Food Science",Science
+3214,"Principles of Accounts",Math
+3214,"Science (Chem, Bio)",Science
+3214,"Science (Phy, Chem)",Science
+3214,"Humanities (Ss, Geography)",Humanities
+3214,"Humanities (Ss, History)",Humanities
+3214,"Humanities (Ss, Literature in English)",Humanities
+3214,"Tamil Language",Language
+3214,"Additional Mathematics",Math
+3214,Biology,Science
+3214,Chemistry,Science
+3214,"Higher Chinese Language",Language
+3214,Physics,Science
+3214,"Malay Language Syllabus B",Language
+3214,"Physical Education",Others
+3214,"Tamil Language Syllabus B",Language
+3507,"Basic Chinese Language",Language
+3507,"Computer Applications",Science
+3507,"English Language",Language
+3507,"Smart Electrical Technology",Science
+3507,Mathematics,Math
+3507,"Basic Malay Language",Language
+3507,Science,Science
+3507,"Social Studies",Humanities
+3507,"Basic Tamil Language",Language
+3507,"Additional Mathematics",Math
+3507,Art,Art
+3507,"Chinese Language",Language
+3507,"Design & Technology",Science
+3507,"Malay Language",Language
+3507,"Science (Phy, Chem)",Science
+3507,"Humanities (Ss, History)",Humanities
+3507,"Humanities (Ss, Literature in English)",Humanities
+3507,"Tamil Language",Language
+3507,Biology,Science
+3507,Chemistry,Science
+3507,Electronics,Science
+3507,Geography,Humanities
+3507,"Nutrition and Food Science",Science
+3507,Physics,Science
+3507,"Science (Chem, Bio)",Science
+3507,"Humanities (Ss, Geography)",Humanities
+7310,"Basic Chinese Language",Language
+7310,"Computer Applications",Science
+7310,"Elements of Business Skills",Others
+7310,"Smart Electrical Technology",Science
+7310,"Basic Malay Language",Language
+7310,Science,Science
+7310,"Social Studies",Humanities
+7310,"Additional Mathematics",Math
+7310,Art,Art
+7310,Biology,Science
+7310,Chemistry,Science
+7310,"Chinese Language",Language
+7310,Computing,Science
+7310,"Design & Technology",Science
+7310,"English Language",Language
+7310,Geography,Humanities
+7310,"Higher Chinese Language",Language
+7310,History,Humanities
+7310,"Higher Malay Language",Language
+7310,"Literature in English",Humanities
+7310,Mathematics,Math
+7310,"Malay Language",Language
+7310,Physics,Science
+7310,"Principles of Accounts",Math
+7310,"Science (Chem, Bio)",Science
+7310,"Science (Phy, Chem)",Science
+7310,"Humanities (Ss, Geography)",Humanities
+7310,"Humanities (Ss, History)",Humanities
+7310,Music,Art
+7310,"Physical Education",Others
+3071,"Basic Chinese Language",Language
+3071,"Computer Applications",Science
+3071,"Elements of Business Skills",Others
+3071,"English Language",Language
+3071,"Food & Consumer Education",Others
+3071,Mathematics,Math
+3071,"Basic Malay Language",Language
+3071,Science,Science
+3071,"Social Studies",Humanities
+3071,Art,Art
+3071,"Chinese Language",Language
+3071,Geography,Humanities
+3071,History,Humanities
+3071,"Malay Language",Language
+3071,"Science (Phy, Chem)",Science
+3071,"Humanities (Ss, Geography)",Humanities
+3071,"Humanities (Ss, History)",Humanities
+3071,"Humanities (Ss, Literature in English)",Humanities
+3071,"Additional Mathematics",Math
+3071,Biology,Science
+3071,Chemistry,Science
+3071,"Design & Technology",Science
+3071,"Exercise & Sports Science",Others
+3071,"Higher Chinese Language",Language
+3071,"Higher Malay Language",Language
+3071,"Literature in English",Humanities
+3071,"Nutrition and Food Science",Science
+3071,Physics,Science
+3071,"Science (Chem, Bio)",Science
+3071,"Physical Education",Others
+3612,"Chinese Language Syllabus B",Language
+3612,"Food & Consumer Education",Others
+3612,Art,Art
+3612,"Basic Chinese Language",Language
+3612,"Computer Applications",Science
+3612,"Design & Technology",Science
+3612,"Elements of Business Skills",Others
+3612,"English Language",Language
+3612,Mathematics,Math
+3612,"Basic Malay Language",Language
+3612,"Nutrition and Food Science",Science
+3612,Science,Science
+3612,"Social Studies",Humanities
+3612,"Chinese Language",Language
+3612,"Malay Language",Language
+3612,"Science (Chem, Bio)",Science
+3612,"Science (Phy, Chem)",Science
+3612,"Humanities (Ss, Geography)",Humanities
+3612,"Humanities (Ss, History)",Humanities
+3612,"Additional Mathematics",Math
+3612,Biology,Science
+3612,Chemistry,Science
+3612,Geography,Humanities
+3612,"Higher Chinese Language",Language
+3612,History,Humanities
+3612,Physics,Science
+3612,"Humanities (Ss, Literature in English)",Humanities
+3612,"Malay Language Syllabus B",Language
+3612,Music,Art
+3058,"Computer Applications",Science
+3058,"Retail Operations",Others
+3058,Science,Science
+3058,"Social Studies",Humanities
+3058,"Additional Mathematics",Math
+3058,Art,Art
+3058,Biology,Science
+3058,Chemistry,Science
+3058,"Chinese Language",Language
+3058,"Design & Technology",Science
+3058,"English Language",Language
+3058,"Food & Consumer Education",Others
+3058,Geography,Humanities
+3058,History,Humanities
+3058,"Literature in English",Humanities
+3058,Mathematics,Math
+3058,"Malay Language",Language
+3058,Physics,Science
+3058,"Science (Chem, Bio)",Science
+3058,"Science (Phy, Chem)",Science
+3058,"Humanities (Ss, Geography)",Humanities
+3058,"Humanities (Ss, History)",Humanities
+3058,"Tamil Language",Language
+3058,Music,Art
+3058,"Physical Education",Others
+3605,"Chinese Language Syllabus B",Language
+3605,"Basic Chinese Language",Language
+3605,"Computer Applications",Science
+3605,"Design & Technology",Science
+3605,"Elements of Business Skills",Others
+3605,"English Language",Language
+3605,Mathematics,Math
+3605,"Basic Malay Language",Language
+3605,Music,Art
+3605,Science,Science
+3605,"Social Studies",Humanities
+3605,"Additional Mathematics",Math
+3605,Art,Art
+3605,"Chinese Language",Language
+3605,"Malay Language",Language
+3605,"Nutrition and Food Science",Science
+3605,"Principles of Accounts",Math
+3605,"Science (Chem, Bio)",Science
+3605,"Science (Phy, Chem)",Science
+3605,"Humanities (Ss, Geography)",Humanities
+3605,"Humanities (Ss, History)",Humanities
+3605,Biology,Science
+3605,Chemistry,Science
+3605,Geography,Humanities
+3605,"Higher Chinese Language",Language
+3605,"Higher Malay Language",Language
+3605,Physics,Science
+3605,"Humanities (Ss, Literature in English)",Humanities
+3605,"Malay Language Syllabus B",Language
+3215,Cce,Others
+3215,"Chinese Language Syllabus B",Language
+3215,Art,Art
+3215,"Basic Chinese Language",Language
+3215,"Computer Applications",Science
+3215,"Design & Technology",Science
+3215,"English Language",Language
+3215,Mathematics,Math
+3215,"Basic Malay Language",Language
+3215,"Retail Operations",Others
+3215,Science,Science
+3215,"Social Studies",Humanities
+3215,"Basic Tamil Language",Language
+3215,"Chinese Language",Language
+3215,"Malay Language",Language
+3215,"Principles of Accounts",Math
+3215,"Science (Chem, Bio)",Science
+3215,"Science (Phy, Chem)",Science
+3215,"Humanities (Ss, Geography)",Humanities
+3215,"Humanities (Ss, History)",Humanities
+3215,"Humanities (Ss, Literature in English)",Humanities
+3215,"Tamil Language",Language
+3215,"Additional Mathematics",Math
+3215,Biology,Science
+3215,"Business Studies",Humanities
+3215,Chemistry,Science
+3215,"Higher Chinese Language",Language
+3215,Physics,Science
+3215,Music,Art
+3215,"Physical Education",Others
+3613,Art,Art
+3613,"Basic Chinese Language",Language
+3613,"Computer Applications",Science
+3613,"Elements of Business Skills",Others
+3613,"English Language",Language
+3613,Mathematics,Math
+3613,"Basic Malay Language",Language
+3613,Music,Art
+3613,"Nutrition and Food Science",Science
+3613,Science,Science
+3613,"Social Studies",Humanities
+3613,"Basic Tamil Language",Language
+3613,"Additional Mathematics",Math
+3613,"Chinese Language",Language
+3613,Geography,Humanities
+3613,History,Humanities
+3613,"Literature in English",Humanities
+3613,"Malay Language",Language
+3613,"Principles of Accounts",Math
+3613,"Science (Chem, Bio)",Science
+3613,"Science (Phy, Chem)",Science
+3613,"Humanities (Ss, Geography)",Humanities
+3613,"Humanities (Ss, History)",Humanities
+3613,"Humanities (Ss, Literature in English)",Humanities
+3613,"Tamil Language",Language
+3613,Biology,Science
+3613,Chemistry,Science
+3613,"Higher Chinese Language",Language
+3613,"Higher Tamil Language",Language
+3613,Physics,Science
+3613,"Physical Education",Others
+3235,"Basic Chinese Language",Language
+3235,"Computer Applications",Science
+3235,"Elements of Business Skills",Others
+3235,"Basic Malay Language",Language
+3235,Geography,Humanities
+3235,History,Humanities
+3235,"Literature in English",Humanities
+3235,"Principles of Accounts",Math
+3235,"Science (Chem, Bio)",Science
+3235,"Science (Phy, Chem)",Science
+3235,"Additional Mathematics",Math
+3235,Biology,Science
+3235,Chemistry,Science
+3235,"Chinese Language",Language
+3235,"English Language",Language
+3235,"Higher Chinese Language",Language
+3235,"Higher Malay Language",Language
+3235,Mathematics,Math
+3235,"Malay Language",Language
+3235,Physics,Science
+3235,"Project Work",Others
+3235,Music,Art
+7026,Art,Art
+7026,"Design & Technology",Science
+7026,"Food & Consumer Education",Others
+7026,"Basic Chinese Language",Language
+7026,"Computer Applications",Science
+7026,"Elements of Business Skills",Others
+7026,"English Language",Language
+7026,Mathematics,Math
+7026,"Basic Malay Language",Language
+7026,Science,Science
+7026,"Social Studies",Humanities
+7026,"Basic Tamil Language",Language
+7026,"Additional Mathematics",Math
+7026,"Chinese Language",Language
+7026,Geography,Humanities
+7026,History,Humanities
+7026,"Literature in English",Humanities
+7026,"Malay Language",Language
+7026,"Nutrition and Food Science",Science
+7026,"Principles of Accounts",Math
+7026,"Science (Chem, Bio)",Science
+7026,"Science (Phy, Chem)",Science
+7026,"Humanities (Ss, History)",Humanities
+7026,"Humanities (Ss, Literature in English)",Humanities
+7026,"Tamil Language",Language
+7026,Biology,Science
+7026,Chemistry,Science
+7026,"Higher Chinese Language",Language
+7026,"Higher Music",Art
+7026,"Higher Malay Language",Language
+7026,"Higher Tamil Language",Language
+7026,Music,Art
+7026,Physics,Science
+7026,"Humanities (Ss, Geography)",Humanities
+7026,"Physical Education",Others
+3073,"Student Initiated Learning",Others
+3073,Art,Art
+3073,"Chinese Language Syllabus B",Language
+3073,"Design & Technology",Science
+3073,"Food & Consumer Education",Others
+3073,"Basic Chinese Language",Language
+3073,"Computer Applications",Science
+3073,"English Language",Language
+3073,Mathematics,Math
+3073,"Basic Malay Language",Language
+3073,Science,Science
+3073,"Social Studies",Humanities
+3073,"Additional Mathematics",Math
+3073,"Chinese Language",Language
+3073,Geography,Humanities
+3073,History,Humanities
+3073,"Malay Language",Language
+3073,"Principles of Accounts",Math
+3073,"Science (Chem, Bio)",Science
+3073,"Science (Phy, Chem)",Science
+3073,"Humanities (Ss, Geography)",Humanities
+3073,"Humanities (Ss, History)",Humanities
+3073,Biology,Science
+3073,Chemistry,Science
+3073,"Higher Chinese Language",Language
+3073,"Literature in English",Humanities
+3073,Physics,Science
+3073,"Project Work",Others
+3073,"Humanities (Ss, Literature in English)",Humanities
+3073,Music,Art
+3073,"Physical Education",Others
+3232,"Chinese Language Syllabus B",Language
+3232,Art,Art
+3232,"Basic Chinese Language",Language
+3232,"Computer Applications",Science
+3232,"Design & Technology",Science
+3232,"English Language",Language
+3232,"Food & Consumer Education",Others
+3232,Mathematics,Math
+3232,"Basic Malay Language",Language
+3232,Science,Science
+3232,"Social Studies",Humanities
+3232,"Additional Mathematics",Math
+3232,"Chinese Language",Language
+3232,Geography,Humanities
+3232,History,Humanities
+3232,"Literature in English",Humanities
+3232,"Malay Language",Language
+3232,"Nutrition and Food Science",Science
+3232,"Principles of Accounts",Math
+3232,"Science (Chem, Bio)",Science
+3232,"Science (Phy, Chem)",Science
+3232,"Humanities (Ss, Geography)",Humanities
+3232,"Humanities (Ss, History)",Humanities
+3232,"Humanities (Ss, Literature in English)",Humanities
+3232,Biology,Science
+3232,Chemistry,Science
+3232,"Higher Chinese Language",Language
+3232,Physics,Science
+3232,"Malay Language Syllabus B",Language
+3232,Music,Art
+3232,"Physical Education",Others
+3061,"Character & Citizenship Education",Others
+3061,"Values in Action",Others
+3061,Art,Art
+3061,"Design & Technology",Science
+3061,"Food & Consumer Education",Others
+3061,"Basic Chinese Language",Language
+3061,"English Language",Language
+3061,Mathematics,Math
+3061,"Basic Malay Language",Language
+3061,"Retail Operations",Others
+3061,Science,Science
+3061,"Social Studies",Humanities
+3061,"Basic Tamil Language",Language
+3061,"Additional Mathematics",Math
+3061,"Chinese Language",Language
+3061,Geography,Humanities
+3061,History,Humanities
+3061,"Literature in English",Humanities
+3061,"Malay Language",Language
+3061,"Nutrition and Food Science",Science
+3061,"Principles of Accounts",Math
+3061,"Science (Chem, Bio)",Science
+3061,"Science (Phy, Chem)",Science
+3061,"Humanities (Ss, Geography)",Humanities
+3061,"Humanities (Ss, History)",Humanities
+3061,"Tamil Language",Language
+3061,Biology,Science
+3061,Chemistry,Science
+3061,Computing,Science
+3061,"Higher Chinese Language",Language
+3061,Physics,Science
+3061,Music,Art
+3061,"Physical Education",Others
+7308,Art,Art
+7308,"Basic Chinese Language",Language
+7308,"Computer Applications",Science
+7308,"Design & Technology",Science
+7308,"English Language",Language
+7308,"Food & Consumer Education",Others
+7308,Mathematics,Math
+7308,"Basic Malay Language",Language
+7308,Music,Art
+7308,Science,Science
+7308,"Social Studies",Humanities
+7308,"Additional Mathematics",Math
+7308,"Chinese Language",Language
+7308,Geography,Humanities
+7308,History,Humanities
+7308,"Literature in English",Humanities
+7308,"Malay Language",Language
+7308,"Nutrition and Food Science",Science
+7308,"Principles of Accounts",Math
+7308,"Science (Chem, Bio)",Science
+7308,"Science (Phy, Chem)",Science
+7308,"Humanities (Ss, Geography)",Humanities
+7308,"Humanities (Ss, History)",Humanities
+7308,Biology,Science
+7308,Chemistry,Science
+7308,Economics,Humanities
+7308,"Higher Chinese Language",Language
+7308,Physics,Science
+7308,"Physical Education",Others
+3070,"Chinese Language Syllabus B",Language
+3070,"Basic Chinese Language",Language
+3070,"Computer Applications",Science
+3070,"Elements of Business Skills",Others
+3070,"English Language",Language
+3070,"Food & Consumer Education",Others
+3070,Mathematics,Math
+3070,"Basic Malay Language",Language
+3070,"Mobile Robotics",Science
+3070,"Social Studies",Humanities
+3070,"Basic Tamil Language",Language
+3070,Art,Art
+3070,"Chinese Language",Language
+3070,"Design & Technology",Science
+3070,"Literature in English",Humanities
+3070,"Malay Language",Language
+3070,"Nutrition and Food Science",Science
+3070,"Principles of Accounts",Math
+3070,"Science (Phy, Chem)",Science
+3070,"Humanities (Ss, Geography)",Humanities
+3070,"Humanities (Ss, History)",Humanities
+3070,"Tamil Language",Language
+3070,"Additional Mathematics",Math
+3070,Biology,Science
+3070,Chemistry,Science
+3070,"Higher Chinese Language",Language
+3070,History,Humanities
+3070,"Higher Tamil Language",Language
+3070,Physics,Science
+3070,Science,Science
+3070,"Science (Chem, Bio)",Science
+3070,"Malay Language Syllabus B",Language
+3070,Music,Art
+3070,"Physical Education",Others
+3070,"Tamil Language Syllabus B",Language
+3508,Art,Art
+3508,"Chinese Language Syllabus B",Language
+3508,"Design & Technology",Science
+3508,"Food & Consumer Education",Others
+3508,"Basic Chinese Language",Language
+3508,"Computer Applications",Science
+3508,"Elements of Business Skills",Others
+3508,"English Language",Language
+3508,Mathematics,Math
+3508,"Basic Malay Language",Language
+3508,Science,Science
+3508,"Social Studies",Humanities
+3508,"Basic Tamil Language",Language
+3508,"Additional Mathematics",Math
+3508,"Chinese Language",Language
+3508,Geography,Humanities
+3508,"Malay Language",Language
+3508,"Nutrition and Food Science",Science
+3508,"Principles of Accounts",Math
+3508,"Science (Phy, Chem)",Science
+3508,"Humanities (Ss, Geography)",Humanities
+3508,"Humanities (Ss, History)",Humanities
+3508,"Tamil Language",Language
+3508,Biology,Science
+3508,Chemistry,Science
+3508,"Literature in English",Humanities
+3508,Physics,Science
+3508,"Science (Phy, Bio)",Science
+3508,"Malay Language Syllabus B",Language
+3508,Music,Art
+3007,"Chinese Language Syllabus B",Language
+3007,"Basic Chinese Language",Language
+3007,"Computer Applications",Science
+3007,"Design & Technology",Science
+3007,"Elements of Business Skills",Others
+3007,"English Language",Language
+3007,"Food & Consumer Education",Others
+3007,Mathematics,Math
+3007,"Basic Malay Language",Language
+3007,Science,Science
+3007,"Social Studies",Humanities
+3007,"Basic Tamil Language",Language
+3007,"Additional Mathematics",Math
+3007,"Chinese Language",Language
+3007,Geography,Humanities
+3007,History,Humanities
+3007,"Literature in English",Humanities
+3007,"Malay Language",Language
+3007,"Principles of Accounts",Math
+3007,"Science (Chem, Bio)",Science
+3007,"Science (Phy, Chem)",Science
+3007,"Humanities (Ss, Geography)",Humanities
+3007,"Humanities (Ss, History)",Humanities
+3007,"Tamil Language",Language
+3007,Biology,Science
+3007,Chemistry,Science
+3007,"Higher Chinese Language",Language
+3007,Physics,Science
+3007,Music,Art
+3007,"Physical Education",Others
+3008,"Art & Design",Art
+3008,"Music & Design",Art
+3008,"Inquiry & Advocacy",Others
+3008,"Additional Mathematics",Math
+3008,Biology,Science
+3008,Chemistry,Science
+3008,"Chinese Language",Language
+3008,"English Language",Language
+3008,Geography,Humanities
+3008,"Higher Chinese Language",Language
+3008,History,Humanities
+3008,"Higher Malay Language",Language
+3008,"Higher Tamil Language",Language
+3008,"Literature in English",Humanities
+3008,Mathematics,Math
+3008,"Malay Language",Language
+3008,Physics,Science
+3008,Science,Science
+3008,"Tamil Language",Language
+3008,"Physical Education",Others
+3009,"Chinese Language",Language
+3009,"English Language",Language
+3009,Geography,Humanities
+3009,"Higher Chinese Language",Language
+3009,History,Humanities
+3009,"Higher Malay Language",Language
+3009,"Higher Tamil Language",Language
+3009,"Literature in English",Humanities
+3009,Mathematics,Math
+3009,"Malay Language (Special Programme)",Language
+3009,Science,Science
+3618,"Chinese Language Syllabus B",Language
+3618,"Food & Consumer Education",Others
+3618,"Computer Applications",Science
+3618,Art,Art
+3618,"Chinese Language",Language
+3618,"Design & Technology",Science
+3618,"English Language",Language
+3618,Mathematics,Math
+3618,"Malay Language",Language
+3618,"Nutrition and Food Science",Science
+3618,"Principles of Accounts",Math
+3618,"Science (Chem, Bio)",Science
+3618,"Science (Phy, Chem)",Science
+3618,"Humanities (Ss, Geography)",Humanities
+3618,"Humanities (Ss, History)",Humanities
+3618,"Additional Mathematics",Math
+3618,Biology,Science
+3618,Chemistry,Science
+3618,"Exercise & Sports Science",Others
+3618,Geography,Humanities
+3618,History,Humanities
+3618,"Literature in English",Humanities
+3618,Physics,Science
+3618,Music,Art
+3103,"Cid 1",Others
+3103,"Cid 2",Others
+3103,"Bicultural Studies",Humanities
+3103,"Singapore Studies",Humanities
+3103,Cid3,Others
+3103,Cid4,Others
+3103,"Additional Mathematics",Math
+3103,Biology,Science
+3103,Chemistry,Science
+3103,Computing,Science
+3103,"Design & Technology",Science
+3103,"English Language",Language
+3103,"Food & Consumer Education",Others
+3103,Geography,Humanities
+3103,"Higher Chinese Language",Language
+3103,"Higher Art",Art
+3103,"Higher Music",Art
+3103,History,Humanities
+3103,"Literature in Chinese",Humanities
+3103,"Literature in English",Humanities
+3103,Mathematics,Math
+3103,Physics,Science
+3103,Science,Science
+3239,Art,Art
+3239,"Chinese Language Syllabus B",Language
+3239,"Design & Technology",Science
+3239,"Food & Consumer Education",Others
+3239,"Basic Chinese Language",Language
+3239,"Computer Applications",Science
+3239,"English Language",Language
+3239,Mathematics,Math
+3239,"Basic Malay Language",Language
+3239,Science,Science
+3239,"Social Studies",Humanities
+3239,"Basic Tamil Language",Language
+3239,"Additional Mathematics",Math
+3239,"Chinese Language",Language
+3239,Geography,Humanities
+3239,History,Humanities
+3239,"Literature in English",Humanities
+3239,"Malay Language",Language
+3239,"Nutrition and Food Science",Science
+3239,"Principles of Accounts",Math
+3239,"Science (Chem, Bio)",Science
+3239,"Science (Phy, Chem)",Science
+3239,"Humanities (Ss, Geography)",Humanities
+3239,"Humanities (Ss, History)",Humanities
+3239,"Tamil Language",Language
+3239,Biology,Science
+3239,Chemistry,Science
+3239,"Higher Chinese Language",Language
+3239,"Higher Malay Language",Language
+3239,"Higher Tamil Language",Language
+3239,"Literature in Tamil",Humanities
+3239,Physics,Science
+3239,"Humanities (Ss, Literature in Tamil)",Humanities
+3239,"Malay Language Syllabus B",Language
+3239,Music,Art
+3239,"Physical Education",Others
+3239,"Tamil Language Syllabus B",Language
+7805,Changemakers,Others
+7805,"Sports and Wellness",Others
+7805,"Additional Mathematics",Math
+7805,Biology,Science
+7805,Biotechnology,Science
+7805,Chemistry,Science
+7805,"Chinese Language",Language
+7805,Computing,Science
+7805,"Design Studies",Others
+7805,"English Language",Language
+7805,Electronics,Science
+7805,"Higher Chinese Language",Language
+7805,"Higher Malay Language",Language
+7805,"Higher Tamil Language",Language
+7805,Mathematics,Math
+7805,"Malay Language",Language
+7805,Physics,Science
+7805,"Humanities (Ss, Geography)",Humanities
+7805,"Humanities (Ss, History)",Humanities
+7805,"Tamil Language",Language
+3606,"Basic Chinese Language",Language
+3606,"Computer Applications",Science
+3606,"Design & Technology",Science
+3606,"English Language",Language
+3606,"Food & Consumer Education",Others
+3606,Mathematics,Math
+3606,"Basic Malay Language",Language
+3606,Science,Science
+3606,"Social Studies",Humanities
+3606,"Basic Tamil Language",Language
+3606,"Additional Mathematics",Math
+3606,Art,Art
+3606,"Chinese Language",Language
+3606,Geography,Humanities
+3606,"Malay Language",Language
+3606,"Nutrition and Food Science",Science
+3606,"Principles of Accounts",Math
+3606,"Science (Phy, Chem)",Science
+3606,"Humanities (Ss, Geography)",Humanities
+3606,"Humanities (Ss, History)",Humanities
+3606,"Tamil Language",Language
+3606,Biology,Science
+3606,Chemistry,Science
+3606,"Higher Chinese Language",Language
+3606,History,Humanities
+3606,"Literature in English",Humanities
+3606,Physics,Science
+3606,"Science (Chem, Bio)",Science
+3606,"Humanities (Ss, Literature in English)",Humanities
+3606,Music,Art
+3606,"Physical Education",Others
+3607,Ft,Others
+3607,"Chinese Language Syllabus B",Language
+3607,Art,Art
+3607,"Basic Chinese Language",Language
+3607,"Computer Applications",Science
+3607,"Design & Technology",Science
+3607,"Elements of Business Skills",Others
+3607,"English Language",Language
+3607,"Food & Consumer Education",Others
+3607,Mathematics,Math
+3607,"Basic Malay Language",Language
+3607,Science,Science
+3607,"Social Studies",Humanities
+3607,"Basic Tamil Language",Language
+3607,"Additional Mathematics",Math
+3607,"Chinese Language",Language
+3607,Geography,Humanities
+3607,History,Humanities
+3607,"Literature in English",Humanities
+3607,"Malay Language",Language
+3607,"Nutrition and Food Science",Science
+3607,"Science (Chem, Bio)",Science
+3607,"Science (Phy, Chem)",Science
+3607,"Humanities (Ss, Geography)",Humanities
+3607,"Humanities (Ss, History)",Humanities
+3607,"Tamil Language",Language
+3607,Biology,Science
+3607,Chemistry,Science
+3607,"Exercise & Sports Science",Others
+3607,Physics,Science
+3607,Music,Art
+3607,"Physical Education",Others
+3509,"Chinese Language Syllabus B",Language
+3509,Art,Art
+3509,"Basic Chinese Language",Language
+3509,"Computer Applications",Science
+3509,"Design & Technology",Science
+3509,"English Language",Language
+3509,"Food & Consumer Education",Others
+3509,Mathematics,Math
+3509,"Basic Malay Language",Language
+3509,Music,Art
+3509,"Nutrition and Food Science",Science
+3509,Science,Science
+3509,"Social Studies",Humanities
+3509,"Basic Tamil Language",Language
+3509,"Chinese Language",Language
+3509,"Malay Language",Language
+3509,"Principles of Accounts",Math
+3509,"Science (Chem, Bio)",Science
+3509,"Science (Phy, Chem)",Science
+3509,"Humanities (Ss, Geography)",Humanities
+3509,"Tamil Language",Language
+3509,"Additional Mathematics",Math
+3509,Biology,Science
+3509,Chemistry,Science
+3509,Computing,Science
+3509,Geography,Humanities
+3509,"Higher Chinese Language",Language
+3509,"Higher Tamil Language",Language
+3509,"Literature in English",Humanities
+3509,Physics,Science
+3509,"Science (Phy, Bio)",Science
+3509,"Humanities (Ss, History)",Humanities
+3509,"Humanities (Ss, Literature in English)",Humanities
+3509,"Malay Language Syllabus B",Language
+3509,"Tamil Language Syllabus B",Language
+3010,Art,Art
+3010,"Basic Chinese Language",Language
+3010,"Computer Applications",Science
+3010,"Design & Technology",Science
+3010,"English Language",Language
+3010,"Food & Consumer Education",Others
+3010,Mathematics,Math
+3010,"Basic Malay Language",Language
+3010,"Mobile Robotics",Science
+3010,Science,Science
+3010,"Social Studies",Humanities
+3010,"Basic Tamil Language",Language
+3010,"Additional Mathematics",Math
+3010,"Chinese Language",Language
+3010,Geography,Humanities
+3010,History,Humanities
+3010,"Literature in English",Humanities
+3010,"Malay Language",Language
+3010,"Nutrition and Food Science",Science
+3010,"Principles of Accounts",Math
+3010,"Science (Chem, Bio)",Science
+3010,"Science (Phy, Chem)",Science
+3010,"Humanities (Ss, Geography)",Humanities
+3010,"Humanities (Ss, History)",Humanities
+3010,"Tamil Language",Language
+3010,Biology,Science
+3010,Chemistry,Science
+3010,Computing,Science
+3010,Physics,Science
+3010,Music,Art
+3010,"Physical Education",Others
+7014,"Additional Mathematics",Math
+7014,Biology,Science
+7014,Chemistry,Science
+7014,"Chinese Language",Language
+7014,"English Language",Language
+7014,Geography,Humanities
+7014,"Higher Chinese Language",Language
+7014,"Higher Art",Art
+7014,"Higher Music",Art
+7014,History,Humanities
+7014,"Higher Malay Language",Language
+7014,"Higher Tamil Language",Language
+7014,"Literature in English",Humanities
+7014,Mathematics,Math
+7014,"Malay Language",Language
+7014,Music,Art
+7014,Physics,Science
+7014,"Humanities (Ss, Geography)",Humanities
+7014,"Humanities (Ss, History)",Humanities
+7014,"Humanities (Ss, Literature in English)",Humanities
+7014,"Tamil Language",Language
+7807,Art,Art
+7807,Music,Art
+7807,"Basic Chinese Language",Language
+7807,"English Language",Language
+7807,Mathematics,Math
+7807,"Basic Malay Language",Language
+7807,Science,Science
+7807,"Basic Tamil Language",Language
+7807,"Chinese Language",Language
+7807,"Malay Language",Language
+7807,"Tamil Language",Language
+7807,"Physical Education",Others
+3053,"Chinese Language Syllabus B",Language
+3053,Art,Art
+3053,"Basic Chinese Language",Language
+3053,"Computer Applications",Science
+3053,"Design & Technology",Science
+3053,"English Language",Language
+3053,"Food & Consumer Education",Others
+3053,Mathematics,Math
+3053,"Basic Malay Language",Language
+3053,Music,Art
+3053,Science,Science
+3053,"Social Studies",Humanities
+3053,"Additional Mathematics",Math
+3053,"Chinese Language",Language
+3053,Geography,Humanities
+3053,History,Humanities
+3053,"Literature in English",Humanities
+3053,"Malay Language",Language
+3053,"Nutrition and Food Science",Science
+3053,"Science (Chem, Bio)",Science
+3053,"Science (Phy, Chem)",Science
+3053,"Humanities (Ss, Geography)",Humanities
+3053,"Humanities (Ss, History)",Humanities
+3053,"Humanities (Ss, Literature in English)",Humanities
+3053,Biology,Science
+3053,Chemistry,Science
+3053,Computing,Science
+3053,"Higher Chinese Language",Language
+3053,"Higher Malay Language",Language
+3053,Physics,Science
+3053,"Principles of Accounts",Math
+3053,"Malay Language Syllabus B",Language
+3053,"Physical Education",Others
+7015,Art,Art
+7015,"Design & Technology",Science
+7015,"Food & Consumer Education",Others
+7015,"Basic Chinese Language",Language
+7015,"Computer Applications",Science
+7015,"Elements of Business Skills",Others
+7015,"English Language",Language
+7015,Mathematics,Math
+7015,"Basic Malay Language",Language
+7015,Music,Art
+7015,"Mobile Robotics",Science
+7015,Science,Science
+7015,"Social Studies",Humanities
+7015,"Basic Tamil Language",Language
+7015,"Additional Mathematics",Math
+7015,"Chinese Language",Language
+7015,"Literature in English",Humanities
+7015,"Malay Language",Language
+7015,"Nutrition and Food Science",Science
+7015,"Principles of Accounts",Math
+7015,"Science (Phy, Chem)",Science
+7015,"Humanities (Ss, Geography)",Humanities
+7015,"Humanities (Ss, History)",Humanities
+7015,"Tamil Language",Language
+7015,Biology,Science
+7015,Chemistry,Science
+7015,Electronics,Science
+7015,Geography,Humanities
+7015,History,Humanities
+7015,Physics,Science
+7015,"Physical Education",Others
+7016,Art,Art
+7016,"Design & Technology",Science
+7016,"Food & Consumer Education",Others
+7016,"Basic Chinese Language",Language
+7016,"Computer Applications",Science
+7016,"Elements of Business Skills",Others
+7016,"English Language",Language
+7016,Mathematics,Math
+7016,"Basic Malay Language",Language
+7016,Science,Science
+7016,"Social Studies",Humanities
+7016,"Additional Mathematics",Math
+7016,"Chinese Language",Language
+7016,"Malay Language",Language
+7016,"Nutrition and Food Science",Science
+7016,"Principles of Accounts",Math
+7016,"Science (Chem, Bio)",Science
+7016,"Science (Phy, Chem)",Science
+7016,"Humanities (Ss, Geography)",Humanities
+7016,"Humanities (Ss, History)",Humanities
+7016,"Humanities (Ss, Literature in English)",Humanities
+7016,Biology,Science
+7016,Chemistry,Science
+7016,Drama,Art
+7016,Geography,Humanities
+7016,"Literature in English",Humanities
+7016,Physics,Science
+7016,"Science (Phy, Bio)",Science
+7016,Music,Art
+7016,"Physical Education",Others
+7017,"Basic Chinese Language",Language
+7017,"Computer Applications",Science
+7017,"Design & Technology",Science
+7017,"Elements of Business Skills",Others
+7017,"English Language",Language
+7017,"Food & Consumer Education",Others
+7017,Mathematics,Math
+7017,"Basic Malay Language",Language
+7017,Science,Science
+7017,"Social Studies",Humanities
+7017,"Basic Tamil Language",Language
+7017,"Additional Mathematics",Math
+7017,Art,Art
+7017,"Chinese Language",Language
+7017,"Literature in English",Humanities
+7017,"Malay Language",Language
+7017,"Nutrition and Food Science",Science
+7017,"Principles of Accounts",Math
+7017,"Science (Phy, Chem)",Science
+7017,"Humanities (Ss, Geography)",Humanities
+7017,"Humanities (Ss, History)",Humanities
+7017,"Tamil Language",Language
+7017,Biology,Science
+7017,Chemistry,Science
+7017,Physics,Science
+7017,"Science (Chem, Bio)",Science
+7017,Music,Art
+7017,"Physical Education",Others
+7029,"Chinese Language Syllabus B",Language
+7029,Art,Art
+7029,"Basic Chinese Language",Language
+7029,"Computer Applications",Science
+7029,"Design & Technology",Science
+7029,"Elements of Business Skills",Others
+7029,"English Language",Language
+7029,"Food & Consumer Education",Others
+7029,Mathematics,Math
+7029,"Basic Malay Language",Language
+7029,Science,Science
+7029,"Social Studies",Humanities
+7029,"Basic Tamil Language",Language
+7029,"Chinese Language",Language
+7029,Geography,Humanities
+7029,History,Humanities
+7029,"Literature in English",Humanities
+7029,"Malay Language",Language
+7029,"Nutrition and Food Science",Science
+7029,"Principles of Accounts",Math
+7029,"Science (Chem, Bio)",Science
+7029,"Science (Phy, Chem)",Science
+7029,"Humanities (Ss, Geography)",Humanities
+7029,"Humanities (Ss, History)",Humanities
+7029,"Tamil Language",Language
+7029,"Additional Mathematics",Math
+7029,Biology,Science
+7029,Chemistry,Science
+7029,"Higher Chinese Language",Language
+7029,Physics,Science
+7029,"Humanities (Ss, Literature in English)",Humanities
+7029,Music,Art
+7020,"Additional Mathematics",Math
+7020,Art,Art
+7020,Biology,Science
+7020,Chemistry,Science
+7020,"Chinese Language",Language
+7020,"English Language",Language
+7020,Geography,Humanities
+7020,"Higher Chinese Language",Language
+7020,"Higher Art",Art
+7020,History,Humanities
+7020,"Higher Malay Language",Language
+7020,"Higher Tamil Language",Language
+7020,"Literature in English",Humanities
+7020,Mathematics,Math
+7020,"Malay Language",Language
+7020,Physics,Science
+7020,"Humanities (Ss, Geography)",Humanities
+7020,"Humanities (Ss, History)",Humanities
+7020,"Tamil Language",Language
+7021,"Computer Applications",Science
+7021,"Elements of Business Skills",Others
+7021,"English Language",Language
+7021,Mathematics,Math
+7021,Science,Science
+7021,"Additional Mathematics",Math
+7021,Art,Art
+7021,"Chinese Language",Language
+7021,Geography,Humanities
+7021,"Malay Language",Language
+7021,"Nutrition and Food Science",Science
+7021,"Principles of Accounts",Math
+7021,"Science (Chem, Bio)",Science
+7021,"Science (Phy, Chem)",Science
+7021,"Humanities (Ss, Geography)",Humanities
+7021,"Humanities (Ss, History)",Humanities
+7021,"Tamil Language",Language
+7021,Biology,Science
+7021,Chemistry,Science
+7021,Drama,Art
+7021,"Higher Chinese Language",Language
+7021,"Higher Music",Art
+7021,History,Humanities
+7021,"Higher Tamil Language",Language
+7021,"Literature in English",Humanities
+7021,Music,Art
+7021,Physics,Science
+7021,"Humanities (Ss, Literature in English)",Humanities
+7022,Art,Art
+7022,"Chinese Language Syllabus B",Language
+7022,"Design & Technology",Science
+7022,"Food & Consumer Education",Others
+7022,"Basic Chinese Language",Language
+7022,"Computer Applications",Science
+7022,"English Language",Language
+7022,Mathematics,Math
+7022,"Basic Malay Language",Language
+7022,Music,Art
+7022,Science,Science
+7022,"Social Studies",Humanities
+7022,"Basic Tamil Language",Language
+7022,"Chinese Language",Language
+7022,Geography,Humanities
+7022,History,Humanities
+7022,"Malay Language",Language
+7022,"Nutrition and Food Science",Science
+7022,"Science (Chem, Bio)",Science
+7022,"Science (Phy, Chem)",Science
+7022,"Humanities (Ss, Geography)",Humanities
+7022,"Humanities (Ss, History)",Humanities
+7022,"Tamil Language",Language
+7022,"Additional Mathematics",Math
+7022,Biology,Science
+7022,Chemistry,Science
+7022,Computing,Science
+7022,"Higher Chinese Language",Language
+7022,"Literature in English",Humanities
+7022,Physics,Science
+7022,"Principles of Accounts",Math
+7022,"Malay Language Syllabus B",Language
+7022,"Physical Education",Others
+7022,"Tamil Language Syllabus B",Language
+3304,Art,Art
+3304,"Chinese Language Syllabus B",Language
+3304,"Design & Technology",Science
+3304,"Food & Consumer Education",Others
+3304,"Basic Chinese Language",Language
+3304,"Computer Applications",Science
+3304,"English Language",Language
+3304,"Smart Electrical Technology",Science
+3304,Mathematics,Math
+3304,"Basic Malay Language",Language
+3304,Science,Science
+3304,"Social Studies",Humanities
+3304,"Basic Tamil Language",Language
+3304,"Additional Mathematics",Math
+3304,"Chinese Language",Language
+3304,Geography,Humanities
+3304,History,Humanities
+3304,"Literature in English",Humanities
+3304,"Malay Language",Language
+3304,"Nutrition and Food Science",Science
+3304,"Principles of Accounts",Math
+3304,"Science (Chem, Bio)",Science
+3304,"Science (Phy, Chem)",Science
+3304,"Humanities (Ss, Geography)",Humanities
+3304,"Humanities (Ss, History)",Humanities
+3304,"Humanities (Ss, Literature in English)",Humanities
+3304,"Tamil Language",Language
+3304,Biology,Science
+3304,Chemistry,Science
+3304,"Higher Chinese Language",Language
+3304,"Higher Art",Art
+3304,"Higher Malay Language",Language
+3304,"Higher Tamil Language",Language
+3304,"Literature in Malay",Humanities
+3304,Physics,Science
+3304,"Humanities (Ss, Literature in Chinese)",Humanities
+3304,"Humanities (Ss, Literature in Malay)",Humanities
+3304,Music,Art
+3304,"Physical Education",Others
+3304,"Tamil Language Syllabus B",Language
+3037,"Computer Applications",Science
+3037,"Elements of Business Skills",Others
+3037,Music,Art
+3037,Science,Science
+3037,Art,Art
+3037,"Additional Mathematics",Math
+3037,Biology,Science
+3037,Chemistry,Science
+3037,"Chinese Language",Language
+3037,"Design & Technology",Science
+3037,"English Language",Language
+3037,Electronics,Science
+3037,"Food & Consumer Education",Others
+3037,Geography,Humanities
+3037,"Higher Chinese Language",Language
+3037,History,Humanities
+3037,"Literature in English",Humanities
+3037,Mathematics,Math
+3037,"Malay Language",Language
+3037,"Malay Language (Special Programme)",Language
+3037,Physics,Science
+3037,"Principles of Accounts",Math
+3037,"Science (Chem, Bio)",Science
+3037,"Science (Phy, Chem)",Science
+3037,"Humanities (Ss, Geography)",Humanities
+3037,"Humanities (Ss, History)",Humanities
+3037,"Physical Education",Others
+3013,"Additional Mathematics",Math
+3013,Art,Art
+3013,Biology,Science
+3013,Chemistry,Science
+3013,"Chinese Language",Language
+3013,"Design & Technology",Science
+3013,"English Language",Language
+3013,"Food & Consumer Education",Others
+3013,Geography,Humanities
+3013,"Higher Chinese Language",Language
+3013,"Higher Music",Art
+3013,History,Humanities
+3013,"Higher Malay Language",Language
+3013,"Higher Tamil Language",Language
+3013,"Literature in English",Humanities
+3013,Mathematics,Math
+3013,"Malay Language",Language
+3013,Music,Art
+3013,Physics,Science
+3013,Science,Science
+3013,"Science (Chem, Bio)",Science
+3013,"Humanities (Ss, Geography)",Humanities
+3013,"Humanities (Ss, History)",Humanities
+3013,"Humanities (Ss, Literature in English)",Humanities
+3013,"Tamil Language",Language
+3512,"Additional Mathematics",Math
+3512,Art,Art
+3512,Biology,Science
+3512,Chemistry,Science
+3512,"Chinese Language",Language
+3512,"Design & Technology",Science
+3512,"English Language",Language
+3512,"Exercise & Sports Science",Others
+3512,"Food & Consumer Education",Others
+3512,Geography,Humanities
+3512,"Higher Chinese Language",Language
+3512,History,Humanities
+3512,"Higher Malay Language",Language
+3512,"Literature in English",Humanities
+3512,Mathematics,Math
+3512,"Malay Language",Language
+3512,Physics,Science
+3512,"Science (Chem, Bio)",Science
+3512,"Science (Phy, Chem)",Science
+3512,"Humanities (Ss, Geography)",Humanities
+3512,"Humanities (Ss, History)",Humanities
+3512,"Humanities (Ss, Literature in Malay)",Humanities
+3512,"Physical Education",Others
+702,Aesthetics,Art
+702,"Fundamental Humanities",Humanities
+702,"Fundamental Mathematics",Math
+702,"Green Science",Science
+702,"Language Arts",Language
+702,"Music Elective Programme",Art
+702,"Physical Education",Others
+702,"Advanced Mathematics",Math
+702,Biology,Science
+702,Chemistry,Science
+702,"Chinese Literature",Humanities
+702,"English Literature",Humanities
+702,Geography,Humanities
+702,History,Humanities
+702,"Intermediate Mathematics",Math
+702,Physics,Science
+702,"Singapore Studies and Chinese Literature",Humanities
+702,"Singapore Studies and English Literature",Humanities
+702,"Singapore Studies and Geography",Humanities
+702,"Singapore Studies and History",Humanities
+702,"Innovation and Research Project",Science
+702,"Chinese Language",Language
+702,"Higher Chinese Language",Language
+702,"Higher Malay Language",Language
+702,"Higher Tamil Language",Language
+702,"Malay Language",Language
+702,"Tamil Language",Language
+3030,Art,Art
+3030,"Design & Technology",Science
+3030,"Food & Consumer Education",Others
+3030,"Basic Chinese Language",Language
+3030,"Computer Applications",Science
+3030,"Elements of Business Skills",Others
+3030,"English Language",Language
+3030,Mathematics,Math
+3030,"Basic Malay Language",Language
+3030,Music,Art
+3030,Science,Science
+3030,"Social Studies",Humanities
+3030,"Additional Mathematics",Math
+3030,"Chinese Language",Language
+3030,"Malay Language",Language
+3030,"Principles of Accounts",Math
+3030,"Science (Phy, Chem)",Science
+3030,"Humanities (Ss, Geography)",Humanities
+3030,"Humanities (Ss, Literature in English)",Humanities
+3030,"Tamil Language",Language
+3030,Biology,Science
+3030,Chemistry,Science
+3030,Computing,Science
+3030,Economics,Humanities
+3030,Geography,Humanities
+3030,"Higher Chinese Language",Language
+3030,History,Humanities
+3030,"Higher Malay Language",Language
+3030,"Higher Tamil Language",Language
+3030,"Literature in English",Humanities
+3030,Physics,Science
+3030,"Humanities (Ss, History)",Humanities
+3030,"Physical Education",Others
+3611,"Computer Applications",Science
+3611,"Design & Technology",Science
+3611,"English Language",Language
+3611,"Food & Consumer Education",Others
+3611,Mathematics,Math
+3611,Science,Science
+3611,"Social Studies",Humanities
+3611,"Additional Mathematics",Math
+3611,Art,Art
+3611,"Chinese Language",Language
+3611,History,Humanities
+3611,"Principles of Accounts",Math
+3611,"Science (Chem, Bio)",Science
+3611,"Science (Phy, Chem)",Science
+3611,"Humanities (Ss, Geography)",Humanities
+3611,"Humanities (Ss, History)",Humanities
+3611,Biology,Science
+3611,Chemistry,Science
+3611,Geography,Humanities
+3611,"Higher Chinese Language",Language
+3611,"Higher Malay Language",Language
+3611,"Higher Tamil Language",Language
+3611,"Literature in English",Humanities
+3611,"Malay Language",Language
+3611,Physics,Science
+3611,"Science (Phy, Bio)",Science
+3611,"Tamil Language",Language
+3611,Music,Art
+3014,"Chinese Language Syllabus B",Language
+3014,"Additional Mathematics",Math
+3014,Art,Art
+3014,"Bahasa Indonesia",Language
+3014,Biology,Science
+3014,Chemistry,Science
+3014,"Chinese Language",Language
+3014,"Design & Technology",Science
+3014,"English Language",Language
+3014,"Exercise & Sports Science",Others
+3014,"Food & Consumer Education",Others
+3014,Geography,Humanities
+3014,"Higher Chinese Language",Language
+3014,"Higher Art",Art
+3014,History,Humanities
+3014,"Higher Malay Language",Language
+3014,"Higher Tamil Language",Language
+3014,"Literature in English",Humanities
+3014,Mathematics,Math
+3014,"Malay Language",Language
+3014,"Malay Language (Special Programme)",Language
+3014,Physics,Science
+3014,"Tamil Language",Language
+3014,Music,Art
+3014,"Physical Education",Others
+3067,Art,Art
+3067,"Design & Technology",Science
+3067,"Food & Consumer Education",Others
+3067,"Basic Chinese Language",Language
+3067,"Computer Applications",Science
+3067,"Elements of Business Skills",Others
+3067,"English Language",Language
+3067,Mathematics,Math
+3067,"Basic Malay Language",Language
+3067,Science,Science
+3067,"Social Studies",Humanities
+3067,"Additional Mathematics",Math
+3067,"Chinese Language",Language
+3067,"Malay Language",Language
+3067,"Principles of Accounts",Math
+3067,"Science (Chem, Bio)",Science
+3067,"Science (Phy, Chem)",Science
+3067,"Humanities (Ss, Geography)",Humanities
+3067,"Humanities (Ss, History)",Humanities
+3067,Biology,Science
+3067,Chemistry,Science
+3067,"Higher Chinese Language",Language
+3067,"Literature in English",Humanities
+3067,"Nutrition and Food Science",Science
+3067,Physics,Science
+3067,Music,Art
+3620,"Chinese Language Syllabus B",Language
+3620,"Basic Chinese Language",Language
+3620,"Computer Applications",Science
+3620,"Design & Technology",Science
+3620,"Elements of Business Skills",Others
+3620,"English Language",Language
+3620,"Basic Malay Language",Language
+3620,Science,Science
+3620,"Social Studies",Humanities
+3620,"Additional Mathematics",Math
+3620,Art,Art
+3620,"Chinese Language",Language
+3620,"Food & Consumer Education",Others
+3620,Geography,Humanities
+3620,History,Humanities
+3620,Mathematics,Math
+3620,"Science (Phy, Chem)",Science
+3620,"Humanities (Ss, Geography)",Humanities
+3620,"Humanities (Ss, History)",Humanities
+3620,Biology,Science
+3620,Chemistry,Science
+3620,Economics,Humanities
+3620,"Higher Chinese Language",Language
+3620,"Literature in English",Humanities
+3620,"Malay Language",Language
+3620,"Nutrition and Food Science",Science
+3620,Physics,Science
+3620,"Principles of Accounts",Math
+3620,"Science (Chem, Bio)",Science
+3620,"Humanities (Ss, Literature in English)",Humanities
+3620,"Malay Language Syllabus B",Language
+3620,Music,Art
+3620,"Physical Education",Others
+3015,Art,Art
+3015,"Chinese Language Syllabus B",Language
+3015,"Design & Technology",Science
+3015,"Food & Consumer Education",Others
+3015,"Basic Chinese Language",Language
+3015,"Computer Applications",Science
+3015,"English Language",Language
+3015,Mathematics,Math
+3015,"Basic Malay Language",Language
+3015,Science,Science
+3015,"Basic Tamil Language",Language
+3015,"Additional Mathematics",Math
+3015,"Chinese Language",Language
+3015,Geography,Humanities
+3015,History,Humanities
+3015,"Literature in English",Humanities
+3015,"Malay Language",Language
+3015,"Principles of Accounts",Math
+3015,"Science (Chem, Bio)",Science
+3015,"Science (Phy, Chem)",Science
+3015,"Humanities (Ss, Geography)",Humanities
+3015,"Humanities (Ss, History)",Humanities
+3015,"Humanities (Ss, Literature in English)",Humanities
+3015,"Tamil Language",Language
+3015,Biology,Science
+3015,Chemistry,Science
+3015,"Higher Chinese Language",Language
+3015,"Nutrition and Food Science",Science
+3015,Physics,Science
+3015,Music,Art
+3015,"Physical Education",Others
+3616,"Chinese Language Syllabus B",Language
+3616,Art,Art
+3616,"Basic Chinese Language",Language
+3616,"Computer Applications",Science
+3616,"Design & Technology",Science
+3616,"Elements of Business Skills",Others
+3616,"English Language",Language
+3616,"Food & Consumer Education",Others
+3616,Mathematics,Math
+3616,"Basic Malay Language",Language
+3616,Science,Science
+3616,"Social Studies",Humanities
+3616,"Additional Mathematics",Math
+3616,"Chinese Language",Language
+3616,Geography,Humanities
+3616,History,Humanities
+3616,"Literature in English",Humanities
+3616,"Malay Language",Language
+3616,"Nutrition and Food Science",Science
+3616,"Science (Phy, Chem)",Science
+3616,"Humanities (Ss, Geography)",Humanities
+3616,"Humanities (Ss, Literature in English)",Humanities
+3616,Biology,Science
+3616,Chemistry,Science
+3616,"Higher Chinese Language",Language
+3616,Physics,Science
+3616,"Science (Chem, Bio)",Science
+3616,"Humanities (Ss, History)",Humanities
+3616,Music,Art
+3616,"Physical Education",Others
+3604,"Chinese Language Syllabus B",Language
+3604,Art,Art
+3604,"Basic Chinese Language",Language
+3604,"Computer Applications",Science
+3604,"Elements of Business Skills",Others
+3604,"English Language",Language
+3604,"Food & Consumer Education",Others
+3604,Mathematics,Math
+3604,"Basic Malay Language",Language
+3604,"Mobile Robotics",Science
+3604,Science,Science
+3604,"Social Studies",Humanities
+3604,"Additional Mathematics",Math
+3604,"Chinese Language",Language
+3604,"Design & Technology",Science
+3604,Geography,Humanities
+3604,"Literature in English",Humanities
+3604,"Nutrition and Food Science",Science
+3604,"Science (Chem, Bio)",Science
+3604,"Science (Phy, Bio)",Science
+3604,"Science (Phy, Chem)",Science
+3604,"Humanities (Ss, Geography)",Humanities
+3604,"Humanities (Ss, History)",Humanities
+3604,"Humanities (Ss, Literature in English)",Humanities
+3604,Biology,Science
+3604,Chemistry,Science
+3604,Electronics,Science
+3604,"Higher Chinese Language",Language
+3604,History,Humanities
+3604,"Higher Malay Language",Language
+3604,"Malay Language",Language
+3604,Physics,Science
+3604,Music,Art
+3041,"Chinese Language Syllabus B",Language
+3041,Art,Art
+3041,"Basic Chinese Language",Language
+3041,"Computer Applications",Science
+3041,"Design & Technology",Science
+3041,"Elements of Business Skills",Others
+3041,"English Language",Language
+3041,Mathematics,Math
+3041,"Basic Malay Language",Language
+3041,Science,Science
+3041,"Social Studies",Humanities
+3041,"Basic Tamil Language",Language
+3041,"Additional Mathematics",Math
+3041,"Chinese Language",Language
+3041,"Literature in English",Humanities
+3041,"Malay Language",Language
+3041,"Nutrition and Food Science",Science
+3041,"Science (Chem, Bio)",Science
+3041,"Science (Phy, Chem)",Science
+3041,"Humanities (Ss, Geography)",Humanities
+3041,"Humanities (Ss, History)",Humanities
+3041,"Humanities (Ss, Literature in English)",Humanities
+3041,"Tamil Language",Language
+3041,Biology,Science
+3041,Chemistry,Science
+3041,Geography,Humanities
+3041,"Higher Chinese Language",Language
+3041,"Higher Malay Language",Language
+3041,"Higher Tamil Language",Language
+3041,Physics,Science
+3041,Music,Art
+3041,"Physical Education",Others
+3041,"Tamil Language Syllabus B",Language
+3050,Art,Art
+3050,"Basic Chinese Language",Language
+3050,"Computer Applications",Science
+3050,"Design & Technology",Science
+3050,"Elements of Business Skills",Others
+3050,"English Language",Language
+3050,"Food & Consumer Education",Others
+3050,Mathematics,Math
+3050,"Basic Malay Language",Language
+3050,Science,Science
+3050,"Social Studies",Humanities
+3050,"Additional Mathematics",Math
+3050,"Chinese Language",Language
+3050,Geography,Humanities
+3050,History,Humanities
+3050,"Literature in English",Humanities
+3050,"Malay Language",Language
+3050,"Nutrition and Food Science",Science
+3050,"Principles of Accounts",Math
+3050,"Science (Chem, Bio)",Science
+3050,"Science (Phy, Chem)",Science
+3050,"Humanities (Ss, Geography)",Humanities
+3050,"Humanities (Ss, History)",Humanities
+3050,Biology,Science
+3050,Chemistry,Science
+3050,Computing,Science
+3050,Drama,Art
+3050,"Higher Chinese Language",Language
+3050,"Higher Malay Language",Language
+3050,Physics,Science
+3050,"Humanities (Ss, Literature in Chinese)",Humanities
+3050,"Humanities (Ss, Literature in English)",Humanities
+3050,Music,Art
+3050,"Physical Education",Others
+3222,"Computer Applications",Science
+3222,"Elements of Business Skills",Others
+3222,"Smart Electrical Technology",Science
+3222,Mathematics,Math
+3222,Science,Science
+3222,"Social Studies",Humanities
+3222,Art,Art
+3222,"Chinese Language",Language
+3222,Geography,Humanities
+3222,History,Humanities
+3222,"Literature in English",Humanities
+3222,"Malay Language",Language
+3222,"Principles of Accounts",Math
+3222,"Science (Chem, Bio)",Science
+3222,"Science (Phy, Chem)",Science
+3222,"Humanities (Ss, Geography)",Humanities
+3222,"Humanities (Ss, History)",Humanities
+3222,"Tamil Language",Language
+3222,"Additional Mathematics",Math
+3222,Biology,Science
+3222,Chemistry,Science
+3222,"English Language",Language
+3222,"Exercise & Sports Science",Others
+3222,"Higher Chinese Language",Language
+3222,Physics,Science
+3222,Music,Art
+3222,"Physical Education",Others
+3020,"Character and Citizenship Education",Others
+3020,"Chinese Language Syllabus B",Language
+3020,Art,Art
+3020,"Basic Chinese Language",Language
+3020,"Computer Applications",Science
+3020,"Design & Technology",Science
+3020,"English Language",Language
+3020,"Food & Consumer Education",Others
+3020,Mathematics,Math
+3020,"Basic Malay Language",Language
+3020,Music,Art
+3020,"Retail Operations",Others
+3020,Science,Science
+3020,"Social Studies",Humanities
+3020,"Basic Tamil Language",Language
+3020,"Additional Mathematics",Math
+3020,"Chinese Language",Language
+3020,Geography,Humanities
+3020,History,Humanities
+3020,"Literature in English",Humanities
+3020,"Malay Language",Language
+3020,"Principles of Accounts",Math
+3020,"Science (Chem, Bio)",Science
+3020,"Science (Phy, Chem)",Science
+3020,"Humanities (Ss, Geography)",Humanities
+3020,"Humanities (Ss, History)",Humanities
+3020,"Tamil Language",Language
+3020,Biology,Science
+3020,Chemistry,Science
+3020,"Exercise & Sports Science",Others
+3020,"Higher Chinese Language",Language
+3020,"Higher Malay Language",Language
+3020,"Higher Tamil Language",Language
+3020,Physics,Science
+3020,"Malay Language Syllabus B",Language
+3020,"Physical Education",Others
+3045,"Computer Applications",Science
+3045,Music,Art
+3045,Science,Science
+3045,"Social Studies",Humanities
+3045,"Design & Technology",Science
+3045,"Principles of Accounts",Math
+3045,"Additional Mathematics",Math
+3045,Art,Art
+3045,Biology,Science
+3045,Chemistry,Science
+3045,"Chinese Language",Language
+3045,"English Language",Language
+3045,Geography,Humanities
+3045,"Higher Chinese Language",Language
+3045,"Higher Art",Art
+3045,History,Humanities
+3045,"Literature in English",Humanities
+3045,"Literature in Tamil",Humanities
+3045,Mathematics,Math
+3045,"Malay Language",Language
+3045,Physics,Science
+3045,"Science (Chem, Bio)",Science
+3045,"Science (Phy, Chem)",Science
+3045,"Humanities (Ss, Geography)",Humanities
+3045,"Humanities (Ss, History)",Humanities
+3045,"Humanities (Ss, Literature in Tamil)",Humanities
+3045,"Tamil Language",Language
+3045,"Physical Education",Others
+3223,"Portfolio Preparation Programme",Others
+3223,"Chinese Language Syllabus B",Language
+3223,Art,Art
+3223,"Basic Chinese Language",Language
+3223,"Computer Applications",Science
+3223,"Design & Technology",Science
+3223,"English Language",Language
+3223,"Food & Consumer Education",Others
+3223,Mathematics,Math
+3223,"Basic Malay Language",Language
+3223,Science,Science
+3223,"Social Studies",Humanities
+3223,"Basic Tamil Language",Language
+3223,"Chinese Language",Language
+3223,Geography,Humanities
+3223,History,Humanities
+3223,"Literature in English",Humanities
+3223,"Malay Language",Language
+3223,"Nutrition and Food Science",Science
+3223,"Principles of Accounts",Math
+3223,"Science (Phy, Chem)",Science
+3223,"Humanities (Ss, Geography)",Humanities
+3223,"Humanities (Ss, History)",Humanities
+3223,"Tamil Language",Language
+3223,"Additional Mathematics",Math
+3223,Biology,Science
+3223,Chemistry,Science
+3223,"Higher Chinese Language",Language
+3223,Physics,Science
+3223,"Science (Chem, Bio)",Science
+3223,Music,Art
+3223,"Physical Education",Others
+3019,Cce,Others
+3019,Alp,Others
+3019,Art,Art
+3019,"Basic Chinese Language",Language
+3019,"Computer Applications",Science
+3019,"Design & Technology",Science
+3019,"Elements of Business Skills",Others
+3019,"English Language",Language
+3019,"Food & Consumer Education",Others
+3019,Mathematics,Math
+3019,"Basic Malay Language",Language
+3019,"Mobile Robotics",Science
+3019,Science,Science
+3019,"Social Studies",Humanities
+3019,"Basic Tamil Language",Language
+3019,"Chinese Language",Language
+3019,Geography,Humanities
+3019,History,Humanities
+3019,"Malay Language",Language
+3019,"Nutrition and Food Science",Science
+3019,"Science (Chem, Bio)",Science
+3019,"Science (Phy, Chem)",Science
+3019,"Humanities (Ss, Geography)",Humanities
+3019,"Humanities (Ss, History)",Humanities
+3019,"Humanities (Ss, Literature in English)",Humanities
+3019,"Tamil Language",Language
+3019,"Additional Mathematics",Math
+3019,Biology,Science
+3019,Chemistry,Science
+3019,Electronics,Science
+3019,"Literature in English",Humanities
+3019,Music,Art
+3019,Physics,Science
+3019,"Physical Education",Others
+3307,Art,Art
+3307,"Chinese Language Syllabus B",Language
+3307,"Design & Technology",Science
+3307,"Food & Consumer Education",Others
+3307,"Basic Chinese Language",Language
+3307,"Computer Applications",Science
+3307,"English Language",Language
+3307,Mathematics,Math
+3307,"Basic Malay Language",Language
+3307,Science,Science
+3307,"Social Studies",Humanities
+3307,"Additional Mathematics",Math
+3307,"Chinese Language",Language
+3307,"Food & Nutrition",Others
+3307,History,Humanities
+3307,"Literature in English",Humanities
+3307,"Malay Language",Language
+3307,"Science (Phy, Chem)",Science
+3307,"Humanities (Ss, Geography)",Humanities
+3307,"Humanities (Ss, History)",Humanities
+3307,Biology,Science
+3307,Chemistry,Science
+3307,Geography,Humanities
+3307,"Higher Chinese Language",Language
+3307,Physics,Science
+3307,"Physical Education",Others
+7027,"Basic Chinese Language",Language
+7027,"Computer Applications",Science
+7027,"Design & Technology",Science
+7027,"Elements of Business Skills",Others
+7027,"Basic Malay Language",Language
+7027,Science,Science
+7027,"Additional Mathematics",Math
+7027,Art,Art
+7027,"Principles of Accounts",Math
+7027,"Science (Chem, Bio)",Science
+7027,"Science (Phy, Chem)",Science
+7027,"Humanities (Ss, Geography)",Humanities
+7027,"Humanities (Ss, History)",Humanities
+7027,Biology,Science
+7027,Chemistry,Science
+7027,"Chinese Language",Language
+7027,"English Language",Language
+7027,"Exercise & Sports Science",Others
+7027,"Higher Chinese Language",Language
+7027,"Literature in English",Humanities
+7027,Mathematics,Math
+7027,"Malay Language",Language
+7027,"Nutrition and Food Science",Science
+7027,Physics,Science
+7027,"Science (Phy, Bio)",Science
+7027,"Physical Education",Others
+3617,Art,Art
+3617,"Design & Technology",Science
+3617,"Food & Consumer Education",Others
+3617,"Basic Chinese Language",Language
+3617,"Computer Applications",Science
+3617,"English Language",Language
+3617,Mathematics,Math
+3617,"Basic Malay Language",Language
+3617,Science,Science
+3617,"Social Studies",Humanities
+3617,"Additional Mathematics",Math
+3617,"Chinese Language",Language
+3617,"Malay Language",Language
+3617,"Nutrition and Food Science",Science
+3617,"Principles of Accounts",Math
+3617,"Science (Chem, Bio)",Science
+3617,"Science (Phy, Chem)",Science
+3617,"Humanities (Ss, Geography)",Humanities
+3617,"Humanities (Ss, History)",Humanities
+3617,Biology,Science
+3617,Chemistry,Science
+3617,Geography,Humanities
+3617,"Higher Chinese Language",Language
+3617,History,Humanities
+3617,"Literature in English",Humanities
+3617,Physics,Science
+3617,Music,Art
+3617,"Physical Education",Others
+3240,Art,Art
+3240,"Basic Chinese Language",Language
+3240,"Computer Applications",Science
+3240,"Design & Technology",Science
+3240,"Elements of Business Skills",Others
+3240,"English Language",Language
+3240,Mathematics,Math
+3240,"Basic Malay Language",Language
+3240,Science,Science
+3240,"Social Studies",Humanities
+3240,"Additional Mathematics",Math
+3240,"Chinese Language",Language
+3240,"Food & Consumer Education",Others
+3240,Geography,Humanities
+3240,History,Humanities
+3240,"Literature in English",Humanities
+3240,"Malay Language",Language
+3240,"Nutrition and Food Science",Science
+3240,"Principles of Accounts",Math
+3240,"Science (Phy, Chem)",Science
+3240,"Humanities (Ss, Geography)",Humanities
+3240,"Humanities (Ss, History)",Humanities
+3240,Biology,Science
+3240,Chemistry,Science
+3240,Computing,Science
+3240,"Higher Chinese Language",Language
+3240,"Higher Art",Art
+3240,"Malay Language (Special Programme)",Language
+3240,Physics,Science
+3240,Music,Art
+3240,"Physical Education",Others
