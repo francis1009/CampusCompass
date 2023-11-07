@@ -17,7 +17,7 @@ create Table GeneralDetails (
     School_Image_Source varchar(200) not null,
     Primary Key (School_Code)
     );
-#drop table PSLE_Score_Details
+#drop table PSLE_Score_Details;
 create table PSLE_Score_Details (
 	School_Code int not null,
     IP_Affiliation varchar(20) not null,
@@ -32,7 +32,7 @@ create table PSLE_Score_Details (
     Constraint PSLE_Score_Details_fk1 Foreign Key (School_Code) References GeneralDetails(School_Code)
     );
 
-#drop table Subjects_Offered
+#drop table Subjects_Offered;
 create table Subjects_Offered (
 	School_Code int not null,
     Subject_Offered varchar(50) not null,
@@ -40,7 +40,7 @@ create table Subjects_Offered (
     Constraint Subjects_Offered_fk1 Foreign Key (School_Code) References GeneralDetails(School_Code)
     );
     
-#drop table dsa_opportunities    
+#drop table dsa_opportunities;   
 create table dsa_opportunities (
 	school_code int not null,
     dsa_cca varchar(150) not null,
@@ -48,7 +48,7 @@ create table dsa_opportunities (
     constraint dsa_opportunities_fk1 foreign key (school_code) references generaldetails(school_code)
     );
 
-#drop table cca_offered
+#drop table cca_offered;
 create table cca_offered (
 	school_code int not null,
     cca varchar(150),
@@ -56,7 +56,7 @@ create table cca_offered (
     constraint cca_offered_fk1 foreign key (school_code) references generaldetails(school_code)
     );
 
-#drop table special_ed_support
+#drop table special_ed_support;
 create table special_ed_support (
 	school_code int not null,
     support_scheme varchar(100) not null,
@@ -75,7 +75,7 @@ create table electives (
     constraint elective_fk1 foreign key (school_code) references generaldetails(school_code)
     );
 
-#drop table affiliations    
+#drop table affiliations;    
 create table affiliations (
 	school_code int not null,
     affiliated_school varchar(50) not null,
@@ -102,8 +102,4 @@ select * from psle_score_details;
 select * from special_ed_support;
 select * from subjects_offered;
 
-
-select * from cca_offered;
-select * from subjects_offered;
-select * from GeneralDetails;
 

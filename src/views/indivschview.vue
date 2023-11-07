@@ -36,30 +36,47 @@
                 <h3 class="mb-4">School Characteristics</h3>
             </div>
             <div class="container d-flex justify-content-center">
-            <div class="col-lg-4 bubble">
+            <div class="row">
+            <div class="col-lg-4 my-2">
+                <div class="bordered-text">
                 <b>School Mode:</b> {{ school.School_Mode }}
             </div>
-            <div class="col-lg-4 bubble">
+            </div>
+            <div class="col-lg-4 my-2">
+                <div class="bordered-text">
                 <b>School Nature:</b> {{ school.School_Nature }}
+                </div>
             </div>
-            <div class="col-lg-4 bubble">
+            <div class="col-lg-4 my-2">
+                <div class="bordered-text">
                 <b>School Type:</b> {{ school.School_Type }}
+                </div>
             </div>
-            </div>
+        </div>
+        </div>
+            
             <div class="container d-flex justify-content-center mt-4">
             
             <h3 class="mb-4">School Contact Information</h3>
         </div>
         <div class="container d-flex justify-content-center">
-        <div class="col-lg-4">
+            <div class="row">
+        <div class="col-lg-4 my-2">
+            <div class="bordered-text">
             <b>School Phone Number:</b> {{ school.School_Number }}
         </div>
-        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4 my-2">
+            <div class="bordered-text">
             <b>School Email:</b> {{ school.School_Email }}
+            </div>
         </div>
-        <div class="col-lg-4">
-            <b>School Website:</b> <a :href="schoolwebsitesrc">{{ school.School_Website }}</a>
+        <div class="col-lg-4 my-2">
+            <div class="bordered-text">
+            <b>School Website:</b> <a :href="school_website_src">{{ school.School_Website }}</a>
         </div>
+        </div>
+    </div>
         </div>
             <!--<ul>
                 <li>{{ school.School_Name }}</li>
@@ -116,15 +133,15 @@
             <h1>School Offerings</h1>
         </div>
 
-        <div class="text-center">
-        <div class="row">
-        <div class="col-12 mt-4" v-if="subjects">
-            <div class="d-flex justify-content-center">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mt-4" v-if="subjects">
+                    <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapseSubjects" role="button" aria-expanded="isCollapsedSubjects"
+                <button class="btn btn-success btn-block" @click="toggleCollapseSubjects" role="button" aria-expanded="isCollapsedSubjects"
                     aria-controls="collapseExampleSubjects">
                     Subjects
-                </a>
+                </button>
             </p>
         </div>
             <div :class="['collapse', { 'show': isCollapsedSubjects }]" id="collapseExampleSubjects">
@@ -137,13 +154,13 @@
         </div>
 
 
-        <div class="col-12 mt-4 " v-if="dsa">
+        <div class="col-md-3 col-sm-6 mt-4 " v-if="dsa">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapseDSA" role="button" aria-expanded="isCollapsedDSA"
+                <button class="btn btn-success btn-block" @click="toggleCollapseDSA" role="button" aria-expanded="isCollapsedDSA"
                     aria-controls="collapseExampleDSA">
                     DSA
-                </a>
+            </button>
             </p>
         </div>
             <div :class="['collapse', { 'show': isCollapsedDSA }]" id="collapseExampleDSA">
@@ -156,13 +173,13 @@
         </div>
 
 
-        <div class="col-12 mt-4" v-if="cca">
+        <div class="col-md-3 col-sm-6 mt-4" v-if="cca">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapseCCA" role="button" aria-expanded="isCollapsedCCA"
+                <button class="btn btn-success btn-block" @click="toggleCollapseCCA" role="button" aria-expanded="isCollapsedCCA"
                     aria-controls="collapseExampleCCA">
                     CCA
-                </a>
+                </button>
             </p>
         </div>
             <div :class="['collapse', { 'show': isCollapsedCCA }]" id="collapseExampleCCA">
@@ -173,13 +190,13 @@
                 </ul>
             </div>
         </div>
-        <div class="col-12 mt-4" v-if="affiliations">
+        <div class="col-md-3 col-sm-6 mt-4" v-if="affiliations">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapseAffiliations" role="button"
+                <button class="btn btn-success btn-block" @click="toggleCollapseAffiliations" role="button"
                     aria-expanded="isCollapsedAffiliations" aria-controls="collapseExampleAffiliations">
                     Affiliated Schools
-                </a>
+            </button>
             </p>
         </div>
         <div v-if="affiliations.length > 0">
@@ -203,15 +220,15 @@
         </div>
     </div>
     </div>
-    <div class="text-center">
+    <div class=" container text-center">
     <div class="row">
-        <div class="col-12 mt-4 text-center" v-if="psle">
+        <div class="col-sm-4 mt-4 text-center" v-if="psle">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapsePSLE" role="button" aria-expanded="isCollapsedPSLE"
+                <button class="btn btn-success btn-block btn-lg" @click="toggleCollapsePSLE" role="button" aria-expanded="isCollapsedPSLE"
                     aria-controls="collapseExamplePSLE">
                     PSLE scores
-                </a>
+            </button>
             </p>
         </div>
             <div :class="['collapse', { 'show': isCollapsedPSLE }]" id="collapseExamplePSLE">
@@ -252,13 +269,13 @@
                 </ul>-->
             </div>
         </div>
-        <div class="col-12 mt-4" v-if="electives">
+        <div class="col-sm-4 mt-4" v-if="electives">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapseElective" role="button" aria-expanded="isCollapsedElective"
+                <button class="btn btn-success btn-block btn-lg" @click="toggleCollapseElective" role="button" aria-expanded="isCollapsedElective"
                     aria-controls="collapseExampleElective">
                     Electives
-                </a>
+                </button>
             </p>
         </div>
             <div :class="['collapse', { 'show': isCollapsedElective }]" id="collapseExampleElective">
@@ -285,13 +302,13 @@
                     </div>
                 </div>
             </div>-->
-            <div class="col-12 mt-4" v-if="special_ed">
+            <div class="col-sm-4 mt-4" v-if="special_ed">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
-                <a class="btn btn-success btn-responsive" @click="toggleCollapseSpecialEd" role="button" aria-expanded="isCollapsedSpecialEd"
+                <button class="btn btn-success btn-block btn-lg" @click="toggleCollapseSpecialEd" role="button" aria-expanded="isCollapsedSpecialEd"
                     aria-controls="specialedcondition">
                     Special Education Programmes
-                </a>
+                </button>
             </p>
             </div>
             <div v-if="special_ed.length > 0">
@@ -330,9 +347,13 @@
 }
 
 .btn {
-    width: 600px;
     height: 50px;
-    
+}
+
+.btn-responsive {
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+    overflow: hidden;
 }
 
 ul {
@@ -347,6 +368,13 @@ ul {
 .psle_table {
     border-color: green;
     border-style: solid;
+}
+
+.bordered-text {
+    border: 1px solid #ccc; /* Border style */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Round corners for the border */
+    text-align: center; /* Center text */
 }
 
 .psle_table_data {
@@ -380,7 +408,7 @@ li:hover {
     border: 1px solid black;
     border-radius: 5%;
     text-align:center;
-    width: 400px;
+    width: auto;
     margin: auto;
     padding: 5px;
 }
@@ -390,8 +418,6 @@ li:hover {
     border-radius: 25%;
     padding: 10px;
     text-align: center;
-    width: 20%;
-    margin: 20px;
     background-color: #ade3ca;
 }
 
@@ -440,7 +466,7 @@ export default {
             destlong: "",
             route_data: {},
             route_steps: [],
-            schoolwebsitesrc: "",
+            school_website_src: "",
             total_route_details: {},
             route_fare: "",
             route_duration: "",
