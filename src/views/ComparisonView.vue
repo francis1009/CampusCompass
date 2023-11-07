@@ -66,12 +66,12 @@
       </div>
     </div>
     
-    <div class="row">
-      <div class="col-12">
+  
         
-        <div class="comparison-container ">
+        <div class="container-fluid ">
+          <div class="row">
           <!-- Start of compare 1 -->
-          <div class="comparison-box ">
+          <div class="comparison-box col-6 col-md-12">
             <div
               class="item-dropzone-area"
               style="height: 100vh;"
@@ -202,7 +202,8 @@
           <!-- End of compare 1 -->
           
           <!-- Start of compare 2 -->
-          <div class="comparison-box">
+          <div class="container comparison-box col-6 col-md-12">
+          
             <div
               class="item-dropzone-area"
               style="height: 100vh;"
@@ -326,12 +327,11 @@
                 </div>
               </div>
               </div>
-            </div>
+     </div>
+          </div>
           </div>
           <!-- End of compare 2 -->
         </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -648,13 +648,13 @@ export default {
 }
 
 .comparison-container {
-  display: flex;
+  
   width: 100%;
   justify-content: space-between;
 }
 
 .comparison-box {
-  flex: 1;
+  
   margin: 10px;
   padding: 20px;
   border: 1px solid #ccc;
