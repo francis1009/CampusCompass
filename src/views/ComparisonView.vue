@@ -55,7 +55,7 @@
                   <td>{{ element }}</td>
                   <td>
                     <button @click="removeSchool(index)" class="btn btn-danger">
-                      <font-awesome-icon icon="fas fa-trash" />
+                      <font-awesome-icon icon="fa-solid fa-angle-double-left" />
                     </button>
                   </td>
                 </tr>
