@@ -36,7 +36,7 @@
         <h1 ref="recommend" id="recommend" >These are your recommended schools:</h1>
         <br />
         <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-3">
 
             <div class="col" v-for="(school, index) in schoolsList" :key="index">
             <SchoolCard :school="school" />
