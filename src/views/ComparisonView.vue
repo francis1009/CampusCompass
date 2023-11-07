@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" style="width:97vw">
     <div class="row">
       <div class="col-12">
         <h1 class="search-title">Search Your School</h1>
@@ -85,7 +85,7 @@
                 @change="getschooldetails1"
               >
                 <template v-slot:item="{ element }">
-                  <div id="drag">{{ element }}</div>
+                  <div id="drag"><h3>{{ element }}</h3></div>
                 </template>
               </draggable>
               <!-- Content for Compare School 1 -->
@@ -116,26 +116,26 @@
                 </div>
 
                 <div class="table-container">
-                  <table class="table chosen-schools-table header-table">
-            <thead>
+                 
+           
               <h4>Subjects Offered</h4>
-            </thead>
-          </table>
-          <div class="table-scroll">
-                  <table class="table chosen-schools-table">
+          
+       
+              <table class="table table-bordered">
                     <tbody>
                       <tr v-for="subject in subjects1">
-                        <td>{{ subject }}</td>
+                        <div v-bind:style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
                       </tr>
                     </tbody>
                   </table>
+  
                 </div>
-                </div>
-
+                <br>
                 <div class="table-container">
                   
                   <h4>PSLE Details</h4>
-                  <table class="table table-bordered">
+                  <div class="table-scroll">
+                  <table class="table chosen-schools-table" >
                     <tbody>
                       <tr>
                         <th>Track</th>
@@ -174,22 +174,21 @@
                         <td>Normal Technical Non-Affiliated</td>
                         <td>{{ psle1.NT_NONAffiliation }}</td>
                       </tr>
-                      <!-- Add more PSLE details as needed -->
+                     
                     </tbody>
                   </table>
                 </div>
-
+                </div>  
+                <br>
                 <div class="table-container">
-                  <table class="table chosen-schools-table header-table">
-            <thead>
+             
               <h4>CCA Offered</h4>
-            </thead>
-          </table>
+        
           <div class="table-scroll">
                   <table class="table chosen-schools-table">
                     <tbody>
                       <tr v-for="cca in cca1" :class="{ 'highlight-difference': sch1.CCA_Offered !== sch2.CCA_Offered }">
-                        <td>{{ cca }}</td>
+                        <div v-bind:style="{ color: cca2.includes(cca) ? 'green' : 'red' }">{{ cca }}</div>
                       </tr>
                     </tbody>
                   </table>
@@ -215,7 +214,7 @@
                 @change="getschooldetails2"
               >
                 <template v-slot:item="{ element }">
-                  <div id="drag">{{ element }}</div>
+                  <div id="drag"><h3>{{ element }}</h3></div>
                 </template>
               </draggable>
               <!-- Content for Compare School 2 -->
@@ -246,25 +245,25 @@
                 </div>
 
                 <div class="table-container">
-                  <table class="table chosen-schools-table header-table">
-            <thead>
+                  <table class="table table-bordered">
               <h4>Subjects Offered</h4>
-            </thead>
+                    
           </table>
           <div class="table-scroll">
-                  <table class="table chosen-schools-table">
+                  <table class="table chosen-schools-table" >
                     <tbody>
-                      <tr v-for="subject in subjects1">
-                        <td>{{ subject }}</td>
+                      <tr v-for="subject in subjects1" >
+                        <div v-bind:style="{ color: subjects1.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 </div>
-
+                <br>
                 <div class="table-container">
                   <h4>PSLE Details</h4>
-                  <table class="table table-bordered">
+                  <div class="table-scroll">
+                  <table class="table chosen-schools-table" >
                     <tbody>
                       <tr>
                         <th>Track</th>
@@ -297,28 +296,28 @@
                       </tr>
                       <tr v-if="psle2.NT_Affiliation !== '-'">
                         <td>Normal Technical Affiliated</td>
-                        <td>{{ psle2.NT_Affiliation }}</td>
+                        <td>{{ psle1.NT_Affiliation }}</td>
                       </tr>
                       <tr v-if="psle2.NT_NONAffiliation !== '-'">
                         <td>Normal Technical Non-Affiliated</td>
                         <td>{{ psle2.NT_NONAffiliation }}</td>
                       </tr>
-                      <!-- Add more PSLE details as needed -->
+                     
                     </tbody>
                   </table>
                 </div>
-
+              </div>
+                <br>
                 <div class="table-container">
-                  <table class="table chosen-schools-table header-table">
-            <thead>
+                  <table class="table table-bordered">
               <h4>CCA Offered</h4>
-            </thead>
+    
           </table>
           <div class="table-scroll">
                   <table class="table chosen-schools-table">
                     <tbody>
-                      <tr v-for="cca in cca2">
-                        <td>{{ cca }}</td>
+                      <tr v-for="cca in cca2" >
+                        <div v-bind:style="{ color: cca1.includes(cca) ? 'green' : 'red' }">{{ cca }}</div>
                       </tr>
                     </tbody>
                   </table>
