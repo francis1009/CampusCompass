@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 
 </script>
 
@@ -12,7 +12,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <script>
 import Sidebar from "@/components/sidebar/Sidebar.vue";
-import SchoolCard from "@/components/SchoolCard.vue"
 
 export default {
   components: {

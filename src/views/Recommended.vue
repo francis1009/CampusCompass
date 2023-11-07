@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import SchoolCard from "../components/SchoolCard.vue";
-import carousel from "./carousel.vue";
+import SchoolCard from "../components/schoolcard/SchoolCard.vue";
+import carousel from "../components/carousel/carousel.vue";
 import Filter from "../components/filter/Filter.vue";
 import { RouterLink } from 'vue-router';
 
@@ -37,10 +37,6 @@ export default {
         }
     },
     mounted() {
-        // this.$router.push({
-        //     name: 'recommended', 
-        //     query: { schools: JSON.stringify([]) }
-        // });
         this.$router.push({
             name: 'recommended', 
             query: { schoolsList: JSON.stringify([]) }
@@ -66,23 +62,8 @@ export default {
         });
         }
     },
-    // watch: {
-    //     // If you're not using 'to' and 'from', you can omit them
-    //     '$route'() {
-    //         // this.schoolsList = [];
-    //     }
-    // },
     data() {
         return {
-            // schools: [
-            //     3072, 3001
-            //     // { name: "School1", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            //     // { name: "School2", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            //     // { name: "School3", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            //     // { name: "School4", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            //     // { name: "School5", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            //     // { name: "School6", info: "SchoolInfo", imageUrl: "https://via.placeholder.com/150" },
-            // ]
         };
     },
 };

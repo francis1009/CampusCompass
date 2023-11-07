@@ -17,7 +17,7 @@
 <script>
 import axios from 'axios';
 import { RouterLink } from 'vue-router';
-import SchoolCard from "../components/SchoolCard.vue";
+import SchoolCard from "../components/schoolcard/SchoolCard.vue";
 
 export default {
     components: {
@@ -37,7 +37,6 @@ export default {
         GetSchoolNames() {
             axios.get('http://localhost:5000/details')
                 .then(response => {
-                console.log(response.data);
                 var variable = response.data;
                 for (var i = 0; i < variable.length; i++) {
                     this.schoolsList.push(variable[i].School_Code);

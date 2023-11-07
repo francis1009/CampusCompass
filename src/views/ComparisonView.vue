@@ -341,7 +341,6 @@
 <script>
 import draggable from 'vuedraggable';
 import axios from 'axios';
-import { faTurkishLiraSign } from '@fortawesome/free-solid-svg-icons';
 
 export default {
   components: {
@@ -386,7 +385,6 @@ export default {
     GetSchoolNames() {
       axios.get('http://localhost:5000/details')
         .then(response => {
-          console.log(response.data);
           for (var school in response.data) {
             this.schools.push(response.data[school].School_Name);
             var schoolIDpair = {
@@ -400,24 +398,11 @@ export default {
             this.SchoolandIDpairs.push(schoolIDpair);
             this.school_logo_pairs.push(school_logo_pair);
           }
-          console.log(this.schools);
-          console.log(this.SchoolandIDpairs);
-          console.log(this.school_logo_pairs);
         })
         .catch(error => {
           console.error(error);
         });
     },
-    // AddSchool() {
-    //   if (this.search != "" && this.selectedSchools.includes(this.search) == false) {
-    //     this.selectedSchools.push(this.search);
-    //     this.search = "";
-    //   }
-    //   else {
-    //     alert("Please enter a valid school name")
-    //     this.search = "";
-    //   }
-    // },
     addSchoolFromSearch(schoolName) {
     if (schoolName && !this.selectedSchools.includes(schoolName)) {
       this.selectedSchools.push(schoolName);
@@ -428,15 +413,10 @@ export default {
   },
     removeSchool(index) {
       // Use this method to remove the selected school from the list
-      // const index = this.selectedSchools.indexOf(school);
-      // if (index !== -1) {
-      //   this.selectedSchools.splice(index, 1);
-      // }
       this.selectedSchools.splice(index, 1);
     },
     getSchoolLogo(schoolName) {
       const schoolLogoPair = this.school_logo_pairs.find(pair => pair.schoolName === schoolName);
-      console.log(schoolLogoPair);
       return schoolLogoPair.schoollogo;
     },
     highlightSearchTerm(item) {
@@ -453,9 +433,6 @@ export default {
       return item.id; // Specify a unique identifier for each item
     },
     getschooldetails1() {
-      console.log(this.school_to_compare1);
-      console.log(this.school_to_compare1[0]);
-      //this.compare_value1 = true; 
       for (var pair in this.SchoolandIDpairs) {
 
         if (this.SchoolandIDpairs[pair].schoolName == this.school_to_compare1[0]) {
@@ -463,22 +440,16 @@ export default {
 
         }
       }
-      console.log(this.sch1id)
       axios.get('http://localhost:5000/details/' + this.sch1id)
         .then(response => {
-          console.log(response.data);
           this.sch1 = response.data;
-          console.log(this.sch1);
-
         })
         .catch(error => {
           console.error(error);
         });
       axios.get('http://localhost:5000/subjects/' + this.sch1id)
         .then(response => {
-          console.log(response.data);
           this.subjects1 = response.data.Subjects_Offered;
-          console.log(this.subjects1);
 
         })
         .catch(error => {
@@ -486,18 +457,14 @@ export default {
         });
       axios.get('http://localhost:5000/cca/' + this.sch1id)
         .then(response => {
-            console.log(response.data);
             this.cca1 = response.data.CCA_Offered;
-            console.log(this.cca1);
         })
         .catch(error => {
             console.error(error);
         });
      axios.get('http://localhost:5000/psle/' + this.sch1id)
         .then(response => {
-            console.log(response.data);
             this.psle1 = response.data;
-            console.log(this.psle1);
         })
         .catch(error => {
             console.error(error);
@@ -505,9 +472,6 @@ export default {
         });
     },
     getschooldetails2() {
-      console.log(this.school_to_compare2);
-      console.log(this.school_to_compare2[0]);
-      //this.compare_value2 = true; 
       for (var pair in this.SchoolandIDpairs) {
 
         if (this.SchoolandIDpairs[pair].schoolName == this.school_to_compare2[0]) {
@@ -515,12 +479,9 @@ export default {
 
         }
       }
-      console.log(this.sch2id)
       axios.get('http://localhost:5000/details/' + this.sch2id)
         .then(response => {
-          console.log(response.data);
           this.sch2 = response.data;
-          console.log(this.sch2);
 
         })
         .catch(error => {
@@ -528,9 +489,7 @@ export default {
         });
       axios.get('http://localhost:5000/subjects/' + this.sch2id)
         .then(response => {
-          console.log(response.data);
           this.subjects2 = response.data.Subjects_Offered;
-          console.log(this.subjects2);
 
         })
         .catch(error => {
@@ -538,18 +497,14 @@ export default {
         });
         axios.get('http://localhost:5000/cca/' + this.sch2id)
         .then(response => {
-            console.log(response.data);
             this.cca2 = response.data.CCA_Offered;
-            console.log(this.cca2);
         })
         .catch(error => {
             console.error(error);
         });
      axios.get('http://localhost:5000/psle/' + this.sch2id)
         .then(response => {
-            console.log(response.data);
             this.psle2 = response.data;
-            console.log(this.psle2);
         })
         .catch(error => {
             console.error(error);
