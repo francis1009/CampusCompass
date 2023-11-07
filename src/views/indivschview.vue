@@ -78,12 +78,6 @@
         </div>
     </div>
         </div>
-            <!--<ul>
-                <li>{{ school.School_Name }}</li>
-                <li>{{ school.School_Address }}</li>
-                <li>{{ school.School_Code }}</li>
-                <li>{{ school.School_Postal_Code }}</li>
-            </ul>-->
         </div>
         <hr>
         <div class="background_green">
@@ -261,12 +255,6 @@
                     </tr>
                 </table>
                 </div>
-                <!--<ul>
-                    <li>IP: {{ psle.IP_NonAffiliation }}</li>
-                    <li>Express: {{ psle.Express_NonAffiliation }}</li>
-                    <li>Normal(A): {{ psle.NA_NonAffiliation }}</li>
-                    <li>Normal(T): {{ psle.NT_NonAffiliation }}</li>
-                </ul>-->
             </div>
         </div>
         <div class="col-md-4 col-sm-6 mt-4" v-if="electives">
@@ -288,21 +276,7 @@
             </div>
         </div>
         
-            <!--<div  class="col-12 mt-4" v-if="one_map">
-                <p class="dropdown">
-                    <a class="btn btn-success" @click="toggleCollapseMap" role="button" aria-expanded="isCollapsedMap"
-                        aria-controls="collapseExampleMap">
-                        Map
-                    </a>
-                </p>
-                <div :class="['collapse', { 'show': isCollapsedMap }]" id="collapseExampleMap">
-                    <div class="dropdown_data">
-                    <h2 class="map">Map</h2>
-                    <img :src=one_map alt="map" width="260" height="260"/>
-                    </div>
-                </div>
-            </div>-->
-            <div class="col-md-4 col-sm-12 mt-4" v-if="special_ed">
+            <div class="col-sm-4 mt-4" v-if="special_ed">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
                 <button class="btn btn-success btn-block btn-lg" @click="toggleCollapseSpecialEd" role="button" aria-expanded="isCollapsedSpecialEd"
@@ -327,9 +301,6 @@
                 </ul>
             </div>
             </div>
-            <!--<div :class="['collapse', {'show': isCollapsedSpecialEd}]" id="collapseSpecialEdError">
-                no special ed programmes
-            </div>-->
         </div>
         
     </div>
@@ -359,11 +330,6 @@
 ul {
     list-style-type: none;
 }
-/*.btn-responsive {
-    width: 100%; 
-    max-width: 600px;
-    white-space: normal; 
-}*/
 
 .psle_table {
     border-color: green;
@@ -421,9 +387,6 @@ li:hover {
     background-color: #ade3ca;
 }
 
-/*.background_green {
-    background-color: #ade3ca;
-}*/
 .map {
     margin: auto;
 }
@@ -487,27 +450,16 @@ export default {
         this.getelectives();
         this.getmap();
         this.getminimapsource();
-    }, // mounted
-    // computed: {
-    //     postal_code(){
-    //         return this.school.School_Postal_Code.slice(0,8);
-    //     }
-
-    // },
+    },
     methods: {
         async GetSchoolDetails() {
-            console.log(this.searchID)
-            console.log(this.searchID);
             try {
             await axios.get('http://localhost:5000/details/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.school = response.data;
                     this.school_image = response.data.School_Image_Source;
                     this.school_website_src = response.data.School_Website;
-                    console.log(this.school);
                     this.new_postal_code = response.data.School_Postal_Code.slice(1,7);
-                    console.log(this.new_postal_code);
 
                 })
             }
@@ -518,9 +470,7 @@ export default {
         GetSubjectDetails() {
             axios.get('http://localhost:5000/subjects/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.subjects = response.data.Subjects_Offered;
-                    console.log(this.subjects);
 
                 })
                 .catch(error => {
@@ -530,9 +480,7 @@ export default {
         GetDSADetails() {
             axios.get('http://localhost:5000/dsa/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.dsa = response.data.DSA_CCA;
-                    console.log(this.dsa);
 
                 })
                 .catch(error => {
@@ -542,9 +490,7 @@ export default {
         GetCCADetails() {
             axios.get('http://localhost:5000/cca/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.cca = response.data.CCA_Offered;
-                    console.log(this.cca);
                 })
                 .catch(error => {
                     console.error(error);
@@ -553,9 +499,7 @@ export default {
         getspecialed() {
             axios.get('http://localhost:5000/special_ed/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.special_ed = response.data.Special_Education_Support;
-                    console.log(this.special_ed)
                 })
                 .catch(error => {
                     console.error(error);
@@ -564,9 +508,7 @@ export default {
         getaffiliated() {
             axios.get('http://localhost:5000/affiliations/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.affiliations = response.data.Affiliated_Schools;
-                    console.log(this.affiliations)
 
                 })
                 .catch(error => {
@@ -576,9 +518,7 @@ export default {
         getpslescores() {
             axios.get('http://localhost:5000/psle/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.psle = response.data;
-                    console.log(this.psle);
                 })
                 .catch(error => {
                     console.error(error);
@@ -587,9 +527,7 @@ export default {
         getelectives() {
             axios.get('http://localhost:5000/electives/' + this.searchID)
                 .then(response => {
-                    console.log(response.data);
                     this.electives = response.data.Electives;
-                    console.log(this.electives);
                 })
                 .catch(error => {
                     console.error(error);
@@ -622,19 +560,15 @@ export default {
         async getmap() {
            await this.GetSchoolDetails();
            try {
-                console.log(this.new_postal_code)
                 axios.get(`https://www.onemap.gov.sg/api/staticmap/getStaticImage?layerchosen=default&zoom=17&width=400&height=512&postal=${this.new_postal_code}`)
                     .then(response => {
-                        console.log(response.data);
                         this.one_map = response.config.url;
-                        console.log(response.config.url);
                     })
                 
            }
             
                 catch(error) {
     
-                    console.log("ONE MAP ERROR");
                     console.error(error);
                 };
 
@@ -643,11 +577,9 @@ export default {
             await this.GetSchoolDetails();
             try {
                 this.minimapsrc = `https://www.onemap.gov.sg/amm/amm.html?mapStyle=Night&zoomLevel=15&marker=postalcode:${this.new_postal_code}!colour:red&popupWidth=200`
-                console.log(this.minimapsrc)    
             }
             catch(error) {
     
-                    console.log("ONE MAP ERROR");
                     console.error(error);
                 };  
         }, 
@@ -661,49 +593,32 @@ export default {
             try {
                 axios.get(`https://www.onemap.gov.sg/api/common/elastic/search?searchVal=${this.originpostal}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
                     .then(response => {
-                        console.log(response.data);
                         this.originlat = response.data.results[0].LATITUDE;
                         this.originlong = response.data.results[0].LONGITUDE;
-                        console.log(this.originlat);
-                        console.log(this.originlong);
                         axios.get(`https://www.onemap.gov.sg/api/common/elastic/search?searchVal=${this.new_postal_code}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
                             .then(response => {
-                                console.log(response.data);
                                 this.destlat = response.data.results[0].LATITUDE;
                                 this.destlong = response.data.results[0].LONGITUDE;
-                                console.log(this.destlat);
-                                console.log(this.destlong);
-                                //var length = this.minimapsrc.length;
-                                //this.subset = this.minimapsrc.slice(0, length-14);
-                                //console.log(this.subset);
-                                //this.minimapsrc = this.subset + `marker=postalcode:${this.originpostal}!colour:red!rType:TRANSIT!rDest:${this.destlat},${this.destlong}&popupWidth=200`;
-                                //console.log(this.minimapsrc);
                                 this.minimapsrc = `https://www.onemap.gov.sg/amm/amm.html?mapStyle=Night&zoomLevel=15&marker=postalcode:${this.new_postal_code}!colour:red&marker=postalcode:${this.originpostal}!colour:red!rType:TRANSIT!rDest:${this.destlat},${this.destlong}&popupWidth=200`
                                 var current_date = new Date();
-                                console.log(current_date)
                                 var month = ("0" + (current_date.getMonth() + 1)).slice(-2);
                                 var day = ("0" + current_date.getDate()).slice(-2);
                                 var year = current_date.getFullYear();  
                                 var hours = current_date.getHours();
                                 var minutes = current_date.getMinutes();
                                 var seconds = current_date.getSeconds();
-                                console.log(month);
-                                console.log(day);
                                 axios.get(`https://www.onemap.gov.sg/api/public/routingsvc/route?start=${this.originlat}%2C${this.originlong}&end=${this.destlat}%2C${this.destlong}&routeType=pt&date=${month}-${day}-${year}&time=${hours}%3A${minutes}%3A${seconds}&mode=TRANSIT`, {
                                             headers: {
                                                 "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjNmFlMDQwNDU5MjA5MjkyMGNlMTU3NzU4Mzg3Njc3YyIsImlzcyI6Imh0dHA6Ly9pbnRlcm5hbC1hbGItb20tcHJkZXppdC1pdC0xMjIzNjk4OTkyLmFwLXNvdXRoZWFzdC0xLmVsYi5hbWF6b25hd3MuY29tL2FwaS92Mi91c2VyL3Bhc3N3b3JkIiwiaWF0IjoxNjk5MTkzMDIyLCJleHAiOjE2OTk0NTIyMjIsIm5iZiI6MTY5OTE5MzAyMiwianRpIjoiQTY0TjJ1RXZOMmNxTzlPdiIsInVzZXJfaWQiOjExNTQsImZvcmV2ZXIiOmZhbHNlfQ.B_OzEzNfZnRldrr94HlxNLaBVJ3_khLYQpXZYjb6_Qo"
                                             }
                                         })
                                     .then(response => {
-                                        console.log(response.data);
                                         this.route_data = response.data;
-                                        console.log(this.route_data)
                                         this.total_route_details = response.data.plan.itineraries[0];
                                         this.route_steps = response.data.plan.itineraries[0].legs;
                                         
                                         this.route_fare = response.data.plan.itineraries[0].fare;
                                         this.route_duration = response.data.plan.itineraries[0].duration/60;
-                                        console.log(this.route_steps)
                                         
                                     })
                                 
@@ -711,13 +626,12 @@ export default {
                     })
             }
             catch(error) {
-                console.log("ONE MAP ERROR");
                 console.error(error);
             };
         
         }
 
-    } // methods
+    }
 };
 
 </script>

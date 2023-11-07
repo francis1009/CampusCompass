@@ -91,17 +91,6 @@
             </div>
             </div>
         </div>
-    <!--    <div>
-            <label for="psle-slider">PSLE Score: {{ psle }}</label>
-            <input
-            id="psle-slider"
-            type="range"
-            min="4"
-            max="32"
-            v-model="psle"
-            class="form-range"
-            />
-        </div>-->
     </div>
     <div>
         <center>
@@ -330,7 +319,6 @@
                     name: 'search', 
                     query: { schoolsList: JSON.stringify([]) }
                 });
-                console.log("started");
                 this.loading = true;
                 try  {
                     
@@ -368,7 +356,6 @@
                 } catch (error) {
                     console.error('Error fetching data:', error);
                 }
-                console.log("filtered schools: "+this.filteredSchools);
                 this.loading=false;
                 if(this.filteredSchools.length == 0){
                     this.noSchools = true;

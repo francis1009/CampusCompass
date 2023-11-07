@@ -1,32 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/index.html',
       name: 'recommended',
       component: () => import('../views/Recommended.vue'),
       props: (route) => ({ schoolsList: route.query.schoolsList ? JSON.parse(route.query.schoolsList) : [] })
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/test',
-      name: 'test',
-      component: () => import('../views/TestView.vue')
-    },
-    {
-      path: '/test2',
-      name: 'test2',
-      component: () => import('../views/Test2View.vue')
     },
     {
       path: '/indivschool/:searchID',
@@ -44,11 +25,6 @@ const router = createRouter({
       path: '/compare',
       name: 'compare',
       component: () => import('../views/ComparisonView.vue')
-    },
-    {
-      path: '/filter',
-      name: 'filter',
-      component: () => import('../views/FilterView.vue')
     },
     {
       path: '/viewschools',

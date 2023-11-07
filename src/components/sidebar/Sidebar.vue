@@ -8,7 +8,7 @@
             </span>
         </h1>
 
-        <SidebarLink to="/" icon="heart">
+        <SidebarLink to="/index.html" icon="heart">
             Recommender
         </SidebarLink>
         <SidebarLink to="/search" icon="table">

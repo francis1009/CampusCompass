@@ -83,7 +83,6 @@ export default {
     },
     methods: {
         fetchSchoolDetails() {
-          console.error("benis");
             axios.get(`http://localhost:5000/details/${this.school}`)
                 .then(response => {
                     this.schoolName = response.data.School_Name;

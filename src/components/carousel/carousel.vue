@@ -379,7 +379,6 @@ export default {
                     name: 'recommended', 
                     query: { schoolsList: JSON.stringify([]) }
                 });
-                console.log("started");
                 try  {
                     
                     const schoolsResponse = await axios.get('http://localhost:5000/details');
@@ -396,7 +395,6 @@ export default {
                     ]);
 
                     for (let i = 0; i < allSchools.length; i++) {
-                      console.log(i)
                         const school = allSchools[i];
                         const hasSelectedRegion = this.selectedAreas.length === 0 || this.selectedAreas.includes(areas[i]?.data?.School_Region);
                         const hasAllSelectedSubjects = this.selectedSubjects.length === 0 || this.selectedSubjects.every(subject => subjects[i]?.data?.Subjects_Offered.includes(subject));
@@ -408,7 +406,6 @@ export default {
                 } catch (error) {
                     console.error('Error fetching data:', error);
                 }
-                console.log("filtered schools: " + this.filteredSchools);
                 this.loading=false;
                 this.$router.push({
                     name: 'recommended', 
@@ -427,7 +424,7 @@ export default {
 .carousel-item {
   position: relative;
   text-align: center; /* Center-align the content within each carousel item */
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .image {
