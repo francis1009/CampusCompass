@@ -137,7 +137,7 @@
         </div>
 
 
-        <div class="col-12mt-4 " v-if="dsa">
+        <div class="col-12 mt-4 " v-if="dsa">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
                 <a class="btn btn-success btn-responsive" @click="toggleCollapseDSA" role="button" aria-expanded="isCollapsedDSA"

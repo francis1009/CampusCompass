@@ -59,7 +59,7 @@ export default {
           ],
         },
         {
-          question: "What subject are you/is your child interested in?",
+          question: "What subjects are you/is your child interested in?",
           options: [
             { text: 'Language', type: 'btn btn-custom' },
             { text: 'Math', type: 'btn btn-custom' },
@@ -369,7 +369,7 @@ export default {
         // Give enough time for the user to read the last scenario
         setTimeout(() => {
           this.$emit('scrollToRecommend');
-        }, 10000);
+        }, 5000);
       }
       this.flow++;
     },
