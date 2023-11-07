@@ -4,6 +4,10 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/',
+      redirect: '/index.html' // Redirect the root path to '/index.html'
+    },
+    {
       path: '/index.html',
       name: 'recommended',
       component: () => import('../views/Recommended.vue'),
