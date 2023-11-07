@@ -121,13 +121,15 @@
               <h4>Subjects Offered</h4>
           
        
-              <table class="table table-bordered">
+              <div class="table-scroll">
+                  <table class="table chosen-schools-table" >
                     <tbody>
                       <tr v-for="subject in subjects1">
                         <div v-bind:style="{ color: subjects2.includes(subject) ? 'green' : 'red' }">{{ subject }}</div>
                       </tr>
                     </tbody>
                   </table>
+                  </div>
   
                 </div>
                 <br>
