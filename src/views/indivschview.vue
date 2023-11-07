@@ -222,7 +222,7 @@
     </div>
     <div class=" container text-center">
     <div class="row">
-        <div class="col-sm-4 mt-4 text-center" v-if="psle">
+        <div class="col-md-4 col-sm-6 mt-4 text-center" v-if="psle">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
                 <button class="btn btn-success btn-block btn-lg" @click="toggleCollapsePSLE" role="button" aria-expanded="isCollapsedPSLE"
@@ -269,7 +269,7 @@
                 </ul>-->
             </div>
         </div>
-        <div class="col-sm-4 mt-4" v-if="electives">
+        <div class="col-md-4 col-sm-6 mt-4" v-if="electives">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
                 <button class="btn btn-success btn-block btn-lg" @click="toggleCollapseElective" role="button" aria-expanded="isCollapsedElective"
@@ -302,7 +302,7 @@
                     </div>
                 </div>
             </div>-->
-            <div class="col-sm-4 mt-4" v-if="special_ed">
+            <div class="col-md-4 col-sm-12 mt-4" v-if="special_ed">
             <div class="d-flex justify-content-center">
             <p class="dropdown">
                 <button class="btn btn-success btn-block btn-lg" @click="toggleCollapseSpecialEd" role="button" aria-expanded="isCollapsedSpecialEd"
